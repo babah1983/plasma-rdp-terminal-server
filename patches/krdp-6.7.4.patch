@@ -1,0 +1,96 @@
+--- a/src/RdpConnection.cpp
++++ b/src/RdpConnection.cpp
+@@ -13,13 +13,17 @@
+ 
+ #include <fcntl.h>
+ 
++#include <QFile>
+ #include <QHostAddress>
+ #include <QStandardPaths>
+ #include <QTcpSocket>
++#include <QTemporaryFile>
+ #include <QThread>
+ 
+ #include <freerdp/channels/wtsvc.h>
+ #include <freerdp/freerdp.h>
++#include <freerdp/redirection.h>
++#include <winpr/ntlm.h>
+ #include <freerdp/server/cliprdr.h>
+ 
+ #include <freerdp/channels/drdynvc.h>
+@@ -209,6 +213,8 @@
+ 
+     freerdp_peer *peer = nullptr;
+ 
++    QTemporaryFile samFile;
++    QByteArray redirectPath = qgetenv("PLASMA_RDP_REDIRECT_FILE");
+     std::jthread thread;
+ };
+ 
+@@ -353,9 +359,34 @@
+     }
+     freerdp_settings_set_pointer_len(settings, FreeRDP_RdpServerRsaKey, key, 1);
+ 
++    const bool labNla = qEnvironmentVariableIntValue("PLASMA_RDP_LAB_NLA") == 1;
++    if (labNla) {
++        d->samFile.setFileTemplate(QStandardPaths::writableLocation(QStandardPaths::RuntimeLocation) + QStringLiteral("/plasma-rdp-sam-XXXXXX"));
++        if (!d->samFile.open()) {
++            qCWarning(KRDP) << "Could not create the lab transport SAM file";
++            return;
++        }
++        for (const auto &user : d->server->users()) {
++            const auto name = user.name.toUtf8();
++            const auto password = user.password.toUtf8();
++            std::array<BYTE, 16> hash;
++            if (name.isEmpty() || name.contains(':') || name.contains('\n') || password.isEmpty()
++                || !NTOWFv1A(password.constData(), password.size(), hash.data())) {
++                return;
++            }
++            const QByteArray entry = name + ":::" + QByteArray(reinterpret_cast<const char *>(hash.data()), hash.size()).toHex() + ":::\n";
++            if (d->samFile.write(entry) != entry.size()) {
++                return;
++            }
++        }
++        d->samFile.close();
++        if (!freerdp_settings_set_string(settings, FreeRDP_NtlmSamFile, d->samFile.fileName().toUtf8().constData())) {
++            return;
++        }
++    }
+     freerdp_settings_set_bool(settings, FreeRDP_RdpSecurity, false);
+-    freerdp_settings_set_bool(settings, FreeRDP_TlsSecurity, true);
+-    freerdp_settings_set_bool(settings, FreeRDP_NlaSecurity, false);
++    freerdp_settings_set_bool(settings, FreeRDP_TlsSecurity, !labNla);
++    freerdp_settings_set_bool(settings, FreeRDP_NlaSecurity, labNla);
+ 
+     freerdp_settings_set_uint32(settings, FreeRDP_OsMajorType, OSMAJORTYPE_UNIX);
+     // PSEUDO_XSERVER is apparently required for things to work properly.
+@@ -430,7 +461,28 @@
+             break;
+         }
+         // Wait for something to happen on the connection.
+-        WaitForMultipleObjects(1 + handleCount, events.data(), FALSE, INFINITE);
++        const DWORD wait = d->redirectPath.isEmpty() ? INFINITE : 250;
++        WaitForMultipleObjects(1 + handleCount, events.data(), FALSE, wait);
++        if (!d->redirectPath.isEmpty() && d->state == State::Streaming) {
++            QFile tokenFile(QString::fromLocal8Bit(d->redirectPath));
++            if (tokenFile.open(QIODevice::ReadOnly)) {
++                const auto token = tokenFile.read(128);
++                tokenFile.remove();
++                if (token.startsWith("Cookie: msts=") && token.endsWith("\r\n") && token.size() == 47) {
++                    auto *redirection = redirection_new();
++                    if (redirection) {
++                        redirection_set_flags(redirection, LB_LOAD_BALANCE_INFO);
++                        redirection_set_byte_option(redirection, LB_LOAD_BALANCE_INFO, reinterpret_cast<const BYTE *>(token.constData()), token.size());
++                        const auto sent = d->peer->SendServerRedirection(d->peer, redirection);
++                        redirection_free(redirection);
++                        if (sent) {
++                            qCInfo(KRDP) << "Sent server redirection";
++                            d->redirectPath.clear();
++                        }
++                    }
++                }
++            }
++        }
+ 
+         // Read data from the socket and have FreeRDP process it.
+         if (d->peer->CheckFileDescriptor(d->peer) != TRUE) {

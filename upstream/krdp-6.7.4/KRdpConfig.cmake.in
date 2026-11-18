@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2023 Arjen Hiemstra <ahiemstra@heimr.nl>
+# SPDX-License-Identifier: BSD-2-Clause
+
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(Qt6Core @REQUIRED_QT_VERSION@)
+
+find_dependency(ECM @KF_DEP_VERSION@)
+
+@PACKAGE_INCLUDE_QCHTARGETS@

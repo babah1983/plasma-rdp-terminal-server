@@ -1,0 +1,105 @@
+--- a/src/daemon/Display.cpp
++++ b/src/daemon/Display.cpp
+@@ -23,6 +23,9 @@
+ #include "Greeter.h"
+ #include "MainConfigLoader.h"
+ #include "Seat.h"
++#include "SeatManager.h"
++
++#include <QProcess>
+ #include "SocketServer.h"
+ #include "Utils.h"
+ 
+@@ -297,7 +300,8 @@
+         for (const SessionInfo &s : reply.value()) {
+             if (s.userName == user) {
+                 OrgFreedesktopLogin1SessionInterface session(Logind::serviceName(), s.sessionPath.path(), QDBusConnection::systemBus());
+-                if (session.service() == QLatin1String("plasmalogin") && session.state() == QLatin1String("online")) {
++                if (session.service() == QLatin1String("plasmalogin") && (session.state() == QLatin1String("online")
++                    || (qEnvironmentVariableIntValue("PLASMA_RDP_LAB") == 1 && session.state() == QLatin1String("active")))) {
+                     m_reuseSessionId = s.sessionId;
+                     break;
+                 }
+@@ -309,9 +313,10 @@
+     // last session later, in slotAuthenticationFinished()
+     m_sessionName = session.fileName();
+ 
+-    m_sessionTerminalId = m_terminalId;
++    const bool remote = qEnvironmentVariableIntValue("PLASMA_RDP_LAB") == 1;
++    m_sessionTerminalId = remote ? -1 : m_terminalId;
+ 
+-    if (m_greeter->isRunning()) {
++    if (m_greeter->isRunning() && !remote) {
+         // Create a new VT when we need to have another compositor running
+         if (seat()->canTTY()) {
+             m_sessionTerminalId = VirtualTerminal::setUpNewVt();
+@@ -331,16 +336,16 @@
+     }
+     env.insert(QStringLiteral("XDG_SESSION_CLASS"), QStringLiteral("user"));
+     env.insert(QStringLiteral("XDG_SESSION_TYPE"), session.xdgSessionType());
+-    env.insert(QStringLiteral("XDG_SEAT"), seat()->name());
++    if (!remote) {
++        env.insert(QStringLiteral("XDG_SEAT"), seat()->name());
++    }
+     if (m_sessionTerminalId > 0) {
+         env.insert(QStringLiteral("XDG_VTNR"), QString::number(m_sessionTerminalId));
+     }
+     env.insert(QStringLiteral("XDG_SESSION_DESKTOP"), session.desktopNames());
+ 
+     m_auth->setUser(user);
+-    if (m_reuseSessionId.isNull()) {
+-        m_auth->setSession(session.exec());
+-    }
++    m_auth->setSession(m_reuseSessionId.isNull() ? session.exec() : QString());
+     m_auth->insertEnvironment(env);
+     m_auth->start();
+ 
+@@ -356,11 +361,17 @@
+ 
+     if (success) {
+         qDebug() << "Authentication for user " << user << " successful";
++        if (m_socket && qEnvironmentVariableIntValue("PLASMA_RDP_LAB") == 1) {
++            QProcess::startDetached(QStringLiteral("/usr/local/libexec/plasma-rdp-login-complete"), {user});
++        }
++
+ 
+         if (!m_reuseSessionId.isNull()) {
+             OrgFreedesktopLogin1ManagerInterface manager(Logind::serviceName(), Logind::managerPath(), QDBusConnection::systemBus());
+             manager.UnlockSession(m_reuseSessionId);
+-            manager.ActivateSession(m_reuseSessionId);
++            if (qEnvironmentVariableIntValue("PLASMA_RDP_LAB") != 1) {
++                manager.ActivateSession(m_reuseSessionId);
++            }
+         }
+ 
+         if (m_socket) {
+@@ -405,7 +416,12 @@
+     // we want to avoid greeter from restarting when an authentication
+     // error happens (in this case we want to show the message from the
+     // greeter
+-    if (status != Auth::HELPER_AUTH_ERROR) {
++    if (status == Auth::HELPER_SUCCESS && !m_reuseSessionId.isNull() && qEnvironmentVariableIntValue("PLASMA_RDP_LAB") == 1) {
++        QTimer::singleShot(5000, this, &Display::stop);
++        QTimer::singleShot(8000, seat(), [name = seat()->name()] {
++            daemonApp->seatManager()->switchToGreeter(name);
++        });
++    } else if (status != Auth::HELPER_AUTH_ERROR) {
+         stop();
+     }
+ }
+@@ -426,7 +442,14 @@
+ {
+     qDebug() << "Session started" << success;
+     if (success) {
+-        QTimer::singleShot(5000, m_greeter, &Greeter::stop);
++        if (qEnvironmentVariableIntValue("PLASMA_RDP_LAB") == 1) {
++            QTimer::singleShot(6000, m_greeter, &Greeter::stop);
++            QTimer::singleShot(8000, seat(), [name = seat()->name()] {
++                daemonApp->seatManager()->switchToGreeter(name);
++            });
++        } else {
++            QTimer::singleShot(5000, m_greeter, &Greeter::stop);
++        }
+     }
+ }
+ }

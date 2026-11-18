@@ -1,0 +1,91 @@
+--- a/src/encoder_p.h
++++ b/src/encoder_p.h
+@@ -129,6 +129,7 @@
+ {
+ public:
+     SoftwareEncoder(PipeWireProduce *produce);
++    ~SoftwareEncoder() override;
+ 
+     bool filterFrame(const PipeWireFrame &frame) override;
+ 
+@@ -150,6 +151,9 @@
+      */
+     QString m_filterGraphToParse = QStringLiteral("format=pix_fmts=yuv420p");
+     DmaBufHandler m_dmaBufHandler;
++    QSize m_frameSize;
++    AVBufferPool *m_framePool = nullptr;
++    AVPixelFormat m_framePoolFormat = AV_PIX_FMT_NONE;
+ };
+ 
+ /**
+--- a/src/encoder.cpp
++++ b/src/encoder.cpp
+@@ -237,9 +237,18 @@
+ {
+ }
+ 
++SoftwareEncoder::~SoftwareEncoder()
++{
++    // Frames still held by the filter graph keep their buffers alive until released.
++    av_buffer_pool_uninit(&m_framePool);
++}
++
+ bool SoftwareEncoder::filterFrame(const PipeWireFrame &frame)
+ {
+-    auto size = m_produce->m_stream->size();
++    const auto size = m_frameSize;
++    if (m_produce->m_stream->size() != size) {
++        return false;
++    }
+ 
+     QImage image;
+     if (frame.dmabuf) {
+@@ -254,6 +263,12 @@
+         return false;
+     }
+ 
++    // A repeated frame may predate PipeWire's format change. Only submit images
++    // matching the filter graph and the encoder that own this stream.
++    if (image.isNull() || image.size() != size) {
++        return false;
++    }
++
+     AVFrame *avFrame = av_frame_alloc();
+     if (!avFrame) {
+         qFatal("Failed to allocate memory");
+@@ -265,11 +280,25 @@
+         avFrame->quality = percentageToFrameQuality(m_quality.value());
+     }
+ 
+-    if (const auto result = av_frame_get_buffer(avFrame, 32); result < 0) {
+-        qCWarning(PIPEWIRERECORD_LOGGING) << "Failed to allocate a software frame:" << av_err2str(result);
++    const auto format = static_cast<AVPixelFormat>(avFrame->format);
++    if (format != m_framePoolFormat) {
++        av_buffer_pool_uninit(&m_framePool);
++        m_framePoolFormat = format;
++    }
++    if (!m_framePool) {
++        const int bufferSize = av_image_get_buffer_size(format, size.width(), size.height(), 32);
++        if (bufferSize > 0) {
++            m_framePool = av_buffer_pool_init(bufferSize + AV_INPUT_BUFFER_PADDING_SIZE, nullptr);
++        }
++    }
++    avFrame->buf[0] = m_framePool ? av_buffer_pool_get(m_framePool) : nullptr;
++    if (!avFrame->buf[0]) {
++        qCWarning(PIPEWIRERECORD_LOGGING) << "Failed to allocate a software frame buffer";
+         av_frame_free(&avFrame);
+         return false;
+     }
++    av_image_fill_arrays(avFrame->data, avFrame->linesize, avFrame->buf[0]->data, format, size.width(), size.height(), 32);
++    avFrame->extended_data = avFrame->data;
+ 
+     const std::uint8_t *buffers[] = {image.constBits(), nullptr};
+     const int strides[] = {static_cast<int>(image.bytesPerLine()), 0, 0, 0};
+@@ -296,6 +325,7 @@
+ 
+ bool SoftwareEncoder::createFilterGraph(const QSize &size)
+ {
++    m_frameSize = size;
+     m_avFilterGraph = avfilter_graph_alloc();
+     if (!m_avFilterGraph) {
+         qFatal("Failed to allocate memory");

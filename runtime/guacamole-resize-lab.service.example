@@ -1,0 +1,15 @@
+[Unit]
+Description=Isolated Guacamole daemon for KDE resize lab profiles
+After=network.target
+
+[Service]
+User=guacd
+Group=guacd
+Environment=HOME=/var/lib/guacd
+Environment=LD_PRELOAD=/var/lib/guacd/codex-guac-resize.so
+ExecStart=/sbin/guacd -f -b 127.0.0.1 -l 14822
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,234 @@
+--- a/src/VideoStream.cpp
++++ b/src/VideoStream.cpp
+@@ -135,7 +135,9 @@
+     Surface surface;
+     QSize size;
+ 
+-    bool pendingReset = true;
++    std::atomic_bool pendingReset = true;
++    std::atomic_uint64_t sourceGeneration = 0;
++    bool surfaceNeedsFullFrame = true;
+     bool enabled = false;
+     bool streamingEnabled = false;
+     bool capsConfirmed = false;
+@@ -239,6 +241,7 @@
+         return;
+     }
+ 
++    ++d->sourceGeneration;
+     if (d->encodedStream) {
+         d->encodedStream->stop();
+         d->encodedStream.reset();
+@@ -283,7 +286,13 @@
+         d->sourceStream->setAllowDmaBuf(true);
+         d->sourceStream->setDamageEnabled(true);
+         d->sourceStream->setMaxFramerate({static_cast<quint32>(d->requestedFrameRate.load()), 1});
+-        connect(d->sourceStream.get(), &PipeWireSourceStream::frameReceived, this, &VideoStream::onFrameReceived, Qt::QueuedConnection);
++        const auto generation = d->sourceGeneration.load();
++        connect(d->sourceStream.get(), &PipeWireSourceStream::frameReceived, this, [this, generation](const PipeWireFrame &frame) {
++            // Queued signals from a deleted capture source can still be delivered.
++            if (generation == d->sourceGeneration.load()) {
++                onFrameReceived(frame);
++            }
++        }, Qt::QueuedConnection);
+         connect(d->sourceStream.get(), &PipeWireSourceStream::streamParametersChanged, this, [this]() {
+             d->setSize(this, d->sourceStream->size());
+         });
+@@ -352,14 +361,14 @@
+     connect(d->session->networkDetection(), &NetworkDetection::rttChanged, this, &VideoStream::updateRequestedFrameRate);
+ 
+     d->frameSubmissionThread = std::jthread([this](std::stop_token token) {
++        VideoFrame nextFrame;
+         while (!token.stop_requested()) {
+             if (!hasInFlightCapacity() || !d->gfxContext || !d->capsConfirmed) {
+                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
+                 continue;
+             }
+ 
+-            VideoFrame nextFrame;
+-            {
++            if (nextFrame.size.isEmpty()) {
+                 std::unique_lock lock(d->frameQueueMutex);
+                 if (!d->frameQueue.isEmpty()) {
+                     nextFrame = d->frameQueue.takeFirst();
+@@ -369,7 +378,13 @@
+                 std::this_thread::sleep_for(std::chrono::milliseconds(1000) / d->requestedFrameRate.load());
+                 continue;
+             }
+-            sendFrame(nextFrame);
++            // Preserve both pixels and damage until the transport accepts the frame.
++            // Dropping a raster frame here loses updates on otherwise static regions.
++            if (sendFrame(nextFrame)) {
++                nextFrame = {};
++            } else {
++                std::this_thread::sleep_for(std::chrono::milliseconds(1));
++            }
+         }
+     });
+ 
+@@ -426,7 +441,9 @@
+         if (frame.isKeyFrame) {
+             d->frameQueue.clear();
+         }
+-        d->frameQueue.append(frame);
++        auto nextFrame = frame;
++        nextFrame.sourceGeneration = d->sourceGeneration.load();
++        d->frameQueue.append(std::move(nextFrame));
+         return;
+     } else if (d->activeEncodingMode == EncodingMode::Progressive) {
+         // for the raster path we only need to keep the latest frame, but accumulate damage
+@@ -436,6 +453,7 @@
+             d->frameQueue.clear();
+         }
+         KRdp::VideoFrame nextFrame = frame;
++        nextFrame.sourceGeneration = d->sourceGeneration.load();
+         nextFrame.damage += lastDamage;
+         d->frameQueue.append(std::move(nextFrame));
+     }
+@@ -723,10 +741,6 @@
+         }
+     }
+ 
+-    if (d->progressive) {
+-        progressive_delete_surface_context(d->progressive.get(), d->surface.id);
+-    }
+-
+     d->surface = Surface{};
+ }
+ 
+@@ -779,13 +793,10 @@
+         .size = size,
+     };
+ 
+-    if (d->activeEncodingMode == EncodingMode::Progressive) {
+-        if (progressive_create_surface_context(d->progressive.get(), surfaceId, size.width(), size.height()) < 0) {
+-            qCWarning(KRDP) << "Failed to create progressive surface context";
+-            destroySurface();
+-            return;
+-        }
+-    }
++    // progressive_compress() does not use decoder surface/tile caches.
++    // Allocating those on the server only retains large unused tile buffers.
++    d->surfaceNeedsFullFrame = true;
++    qInfo() << "KRdp: graphics surface reset" << size << "surface" << surfaceId;
+ 
+     RDPGFX_MAP_SURFACE_TO_OUTPUT_PDU mapSurfaceToOutputPdu;
+     mapSurfaceToOutputPdu.outputOriginX = 0;
+@@ -805,19 +816,21 @@
+     return d->pendingFrames.size() < MaximumInFlightFrames;
+ }
+ 
+-void VideoStream::sendFrame(const VideoFrame &frame)
+-{
++bool VideoStream::sendFrame(const VideoFrame &frame)
++{
++    if (frame.sourceGeneration != d->sourceGeneration.load()) {
++        return true;
++    }
+     auto peer = d->session->rdpPeer();
+     if (peer->IsWriteBlocked && peer->IsWriteBlocked(peer)) {
+-        return;
++        return false;
+     }
+ 
+     if (!d->gfxContext || !d->capsConfirmed) {
+-        return;
+-    }
+-
+-    if (d->pendingReset) {
+-        d->pendingReset = false;
++        return false;
++    }
++
++    if (d->pendingReset.exchange(false)) {
+         performReset(frame.size);
+     }
+     if (d->surface.size != frame.size) {
+@@ -829,6 +842,7 @@
+     } else if (d->activeEncodingMode == EncodingMode::Progressive) {
+         sendFrameProgressive(frame);
+     }
++    return true;
+ }
+ 
+ void VideoStream::sendFrameH264(const VideoFrame &frame)
+@@ -929,7 +943,9 @@
+ 
+     QImage image = frame.image.convertToFormat(QImage::Format_RGB32);
+     const QRect frameRect(QPoint(0, 0), image.size());
+-    auto invalidRegion = toRegion16(frame.damage, frameRect);
++    // A new surface is blank, regardless of how little the compositor damaged.
++    const QRegion damage = d->surfaceNeedsFullFrame ? QRegion(frameRect) : frame.damage;
++    auto invalidRegion = toRegion16(damage, frameRect);
+     if (!invalidRegion) {
+         qCWarning(KRDP) << "Failed to build invalid region for progressive frame";
+         return;
+@@ -996,6 +1012,19 @@
+     if (status != CHANNEL_RC_OK) {
+         qCWarning(KRDP) << "SurfaceFrameCommand failed" << status << "frameId" << frameId << "surface" << d->surface.id << "encodedBytes" << encodedSize
+                         << "damageRects" << rectCount;
++        {
++            std::lock_guard lock(d->pendingFramesMutex);
++            d->pendingFrames.remove(frameId);
++        }
++        d->session->close(RdpConnection::CloseReason::VideoInitFailed);
++    } else {
++        if (d->surfaceNeedsFullFrame) {
++            qInfo() << "KRdp: progressive full surface submitted" << frame.size << "frame" << frameId;
++        }
++        d->surfaceNeedsFullFrame = false;
++        if (frameId % 500 == 0) {
++            qInfo() << "KRdp: progressive frame submitted" << frameId << "size" << frame.size;
++        }
+     }
+ 
+     d->session->networkDetection()->stopBandwidthMeasure();
+--- a/src/VideoStream.h
++++ b/src/VideoStream.h
+@@ -103,7 +103,7 @@
+     void destroySurface();
+     void performReset(QSize size);
+     bool hasInFlightCapacity() const;
+-    void sendFrame(const VideoFrame &frame);
++    bool sendFrame(const VideoFrame &frame);
+     void sendFrameH264(const VideoFrame &frame);
+     void sendFrameProgressive(const VideoFrame &frame);
+ 
+--- a/src/VideoFrame.h
++++ b/src/VideoFrame.h
+@@ -27,6 +27,7 @@
+      * The size of the frame, in pixels.
+      */
+     QSize size;
++    uint64_t sourceGeneration = 0;
+     /**
+      * h264 compressed data in YUV420 color space.
+      */
+--- a/src/RdpConnection.cpp
++++ b/src/RdpConnection.cpp
+@@ -650,18 +650,19 @@
+ bool RdpConnection::onClose()
+ {
+     d->clipboard->close();
+-    d->videoStream->close();
++    // PipeWireCore enters its loop on the VideoStream owner thread. Calling
++    // pw_stream_set_active from the RDP worker blocks on that loop's lock.
++    QMetaObject::invokeMethod(d->videoStream.get(), &VideoStream::close, Qt::QueuedConnection);
+     setState(State::Closed);
+     return true;
+ }
+ 
+ bool RdpConnection::onSuppressOutput(uint8_t allow)
+ {
+-    if (allow) {
+-        d->videoStream->setEnabled(true);
+-    } else {
+-        d->videoStream->setEnabled(false);
+-    }
++    auto stream = d->videoStream.get();
++    QMetaObject::invokeMethod(stream, [stream, allow]() {
++        stream->setEnabled(allow != 0);
++    }, Qt::QueuedConnection);
+ 
+     return true;
+ }

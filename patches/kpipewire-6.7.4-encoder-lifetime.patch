@@ -1,0 +1,71 @@
+--- a/src/encoder.cpp
++++ b/src/encoder.cpp
+@@ -88,7 +88,12 @@
+     int queued = 0;
+ 
+     for (;;) {
+-        if (auto result = av_buffersink_get_frame(m_outputFilter, frame); result < 0) {
++        int result;
++        {
++            std::lock_guard guard(m_avFilterMutex);
++            result = av_buffersink_get_frame(m_outputFilter, frame);
++        }
++        if (result < 0) {
+             if (result != AVERROR_EOF && result != AVERROR(EAGAIN)) {
+                 qCWarning(PIPEWIRERECORD_LOGGING) << "Failed receiving filtered frame:" << av_err2str(result);
+             }
+@@ -260,7 +265,11 @@
+         avFrame->quality = percentageToFrameQuality(m_quality.value());
+     }
+ 
+-    av_frame_get_buffer(avFrame, 32);
++    if (const auto result = av_frame_get_buffer(avFrame, 32); result < 0) {
++        qCWarning(PIPEWIRERECORD_LOGGING) << "Failed to allocate a software frame:" << av_err2str(result);
++        av_frame_free(&avFrame);
++        return false;
++    }
+ 
+     const std::uint8_t *buffers[] = {image.constBits(), nullptr};
+     const int strides[] = {static_cast<int>(image.bytesPerLine()), 0, 0, 0};
+@@ -271,8 +280,15 @@
+         avFrame->pts = m_produce->framePts(frame.presentationTimestamp);
+     }
+ 
+-    if (auto result = av_buffersrc_add_frame(m_inputFilter, avFrame); result < 0) {
+-        qCWarning(PIPEWIRERECORD_LOGGING) << "Failed to submit frame for filtering";
++    int result;
++    {
++        std::lock_guard guard(m_avFilterMutex);
++        result = av_buffersrc_add_frame(m_inputFilter, avFrame);
++    }
++    av_frame_free(&avFrame);
++    if (result < 0) {
++        qCWarning(PIPEWIRERECORD_LOGGING) << "Failed to submit frame for filtering:" << av_err2str(result);
++        return false;
+     }
+ 
+     return true;
+@@ -405,7 +421,12 @@
+         drmFrame->pts = m_produce->framePts(frame.presentationTimestamp);
+     }
+ 
+-    if (auto result = av_buffersrc_add_frame(m_inputFilter, drmFrame); result < 0) {
++    int result;
++    {
++        std::lock_guard guard(m_avFilterMutex);
++        result = av_buffersrc_add_frame(m_inputFilter, drmFrame);
++    }
++    if (result < 0) {
+         qCDebug(PIPEWIRERECORD_LOGGING) << "Failed sending frame for encoding" << av_err2str(result);
+         av_frame_unref(drmFrame);
+         return false;
+--- a/src/encoder_p.h
++++ b/src/encoder_p.h
+@@ -112,6 +112,7 @@
+     AVCodecContext *m_avCodecContext = nullptr;
+     std::mutex m_avCodecMutex;
+ 
++    std::mutex m_avFilterMutex;
+     AVFilterGraph *m_avFilterGraph = nullptr;
+     AVFilterContext *m_inputFilter = nullptr;
+     AVFilterContext *m_outputFilter = nullptr;

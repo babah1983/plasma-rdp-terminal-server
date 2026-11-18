@@ -1,0 +1,6 @@
+table inet plasma_rdp_lab {
+    chain output {
+        type filter hook output priority filter; policy accept;
+        ip daddr 127.0.0.1 tcp dport 3390-3410 meta skuid != 0 reject with tcp reset
+    }
+}

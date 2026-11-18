@@ -1,0 +1,15 @@
+/build/
+__pycache__/
+*.pyc
+.DS_Store
+*.utm/
+*.qcow2
+*.img
+*.iso
+*.password
+*.pem
+*.key
+.env
+.env.*
+private/
+!upstream/**

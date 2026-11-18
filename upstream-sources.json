@@ -1,0 +1,30 @@
+[
+  {
+    "component": "krdp",
+    "version": "6.7.4",
+    "archive_url": "https://download.kde.org/stable/plasma/6.7.4/krdp-6.7.4.tar.xz",
+    "archive_sha256": "dd952892bfafd06281fd9fd239fb5f3b5807f3f346be456554061183881abf8b",
+    "directory": "upstream/krdp-6.7.4"
+  },
+  {
+    "component": "plasma-login-manager",
+    "version": "6.7.4",
+    "archive_url": "https://download.kde.org/stable/plasma/6.7.4/plasma-login-manager-6.7.4.tar.xz",
+    "archive_sha256": "8ba5f9a5b31b2cb09d6846c590d09891dadb9a5625426b8552577299093b67fd",
+    "directory": "upstream/plasma-login-manager-6.7.4"
+  },
+  {
+    "component": "kpipewire",
+    "version": "6.7.4",
+    "archive_url": "https://download.kde.org/stable/plasma/6.7.4/kpipewire-6.7.4.tar.xz",
+    "archive_sha256": "2020a6a94bb7726ec68004c7946ad7f6ed450dcee8f4e8b710c3680755afb1ab",
+    "directory": "upstream/kpipewire-6.7.4"
+  },
+  {
+    "component": "guacamole-server",
+    "version": "1.6.0",
+    "archive_url": "https://archive.apache.org/dist/guacamole/1.6.0/source/guacamole-server-1.6.0.tar.gz",
+    "archive_sha256": "913b05d19beabed4a3066e6e2be3078783048f55c7a9d2e3a012897a8766c245",
+    "directory": "upstream/guacamole-server-1.6.0"
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "upstream/guacamole-server-1.6.0/bin/guacget": "guacctl",
+  "upstream/krdp-6.7.4/server/krdpserversettings.kcfg": "../src/kcm/krdpserversettings.kcfg",
+  "upstream/plasma-login-manager-6.7.4/data/pam/kde-linux": "arch"
+}

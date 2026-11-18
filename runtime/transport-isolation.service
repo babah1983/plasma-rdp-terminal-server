@@ -1,0 +1,12 @@
+[Unit]
+Description=Isolate Plasma RDP backend ports from guest users
+Before=plasma-rdp-dispatch.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/sbin/nft -f /etc/plasma-rdp-lab.nft
+ExecStop=/usr/sbin/nft delete table inet plasma_rdp_lab
+
+[Install]
+WantedBy=multi-user.target

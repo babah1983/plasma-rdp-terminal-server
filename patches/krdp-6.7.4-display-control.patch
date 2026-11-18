@@ -1,0 +1,315 @@
+--- a/src/RdpConnection.cpp
++++ b/src/RdpConnection.cpp
+@@ -15,6 +15,7 @@
+ 
+ #include <QFile>
+ #include <QHostAddress>
++#include <QSize>
+ #include <QStandardPaths>
+ #include <QTcpSocket>
+ #include <QTemporaryFile>
+@@ -25,6 +26,7 @@
+ #include <freerdp/redirection.h>
+ #include <winpr/ntlm.h>
+ #include <freerdp/server/cliprdr.h>
++#include <freerdp/server/disp.h>
+ 
+ #include <freerdp/channels/drdynvc.h>
+ 
+@@ -210,6 +212,7 @@
+     std::unique_ptr<Cursor> cursor;
+     std::unique_ptr<NetworkDetection> networkDetection;
+     std::unique_ptr<Clipboard> clipboard;
++    const bool resizeVirtualOutput = qEnvironmentVariableIntValue("PLASMA_RDP_RESIZE_VIRTUAL_OUTPUT") == 1;
+ 
+     freerdp_peer *peer = nullptr;
+ 
+@@ -406,6 +409,9 @@
+     freerdp_settings_set_bool(settings, FreeRDP_GfxSmallCache, false);
+     freerdp_settings_set_bool(settings, FreeRDP_GfxThinClient, false);
+     freerdp_settings_set_bool(settings, FreeRDP_SupportDynamicChannels, true);
++    if (d->resizeVirtualOutput) {
++        freerdp_settings_set_bool(settings, FreeRDP_SupportDisplayControl, true);
++    }
+ 
+     freerdp_settings_set_bool(settings, FreeRDP_HasExtendedMouseEvent, true);
+     freerdp_settings_set_bool(settings, FreeRDP_HasHorizontalWheel, true);
+@@ -448,6 +454,7 @@
+ void RdpConnection::run(std::stop_token stopToken)
+ {
+     auto context = reinterpret_cast<PeerContext *>(d->peer->context);
++    std::unique_ptr<DispServerContext, decltype(&disp_server_context_free)> displayControl(nullptr, &disp_server_context_free);
+     auto channelEvent = WTSVirtualChannelManagerGetEventHandle(context->virtualChannelManager);
+     BYTE lastDrdynvcState = 0xFF;
+     bool lastDrdynvcJoined = false;
+@@ -527,6 +534,35 @@
+ 
+         if (d->peer->connected && d->state == State::Activated && drdynvcJoined) {
+             if (drdynvcState == DRDYNVC_STATE_READY) {
++                if (d->resizeVirtualOutput && !displayControl) {
++                    displayControl.reset(disp_server_context_new(context->virtualChannelManager));
++                    if (displayControl) {
++                        displayControl->rdpcontext = d->peer->context;
++                        displayControl->custom = this;
++                        displayControl->MaxNumMonitors = 1;
++                        displayControl->MaxMonitorAreaFactorA = 5120;
++                        displayControl->MaxMonitorAreaFactorB = 2880;
++                        displayControl->DispMonitorLayout = [](DispServerContext *channel, const DISPLAY_CONTROL_MONITOR_LAYOUT_PDU *layout) -> UINT {
++                            if (!layout || layout->NumMonitors != 1 || !layout->Monitors) {
++                                return CHANNEL_RC_OK;
++                            }
++                            const auto &monitor = layout->Monitors[0];
++                            if (monitor.Width < 200 || monitor.Height < 200 || monitor.Width > 5120 || monitor.Height > 5120
++                                || monitor.Width * monitor.Height > 5120 * 2880) {
++                                return CHANNEL_RC_OK;
++                            }
++                            // KWin CVT modes align width to eight pixels. H.264 needs even dimensions.
++                            const QSize size(monitor.Width & ~7u, monitor.Height & ~1u);
++                            Q_EMIT static_cast<RdpConnection *>(channel->custom)->requestedDesktopSizeChanged(size);
++                            return CHANNEL_RC_OK;
++                        };
++                    }
++                    if (!displayControl || displayControl->Open(displayControl.get()) != CHANNEL_RC_OK
++                        || displayControl->DisplayControlCaps(displayControl.get()) != CHANNEL_RC_OK) {
++                        qCWarning(KRDP) << "Could not open RDP Display Control";
++                        displayControl.reset();
++                    }
++                }
+                 if (!d->videoStream->openChannel()) {
+                     qCWarning(KRDP) << "Unable to open RDPGFX channel";
+                 } else {
+@@ -539,6 +575,7 @@
+     }
+ 
+     qCDebug(KRDP) << "Closing session";
++    displayControl.reset();
+     onClose();
+ }
+ 
+--- a/src/RdpConnection.h
++++ b/src/RdpConnection.h
+@@ -8,6 +8,7 @@
+ #include <thread>
+ 
+ #include <QObject>
++#include <QSize>
+ 
+ #include <freerdp/freerdp.h>
+ 
+@@ -74,6 +75,7 @@
+      */
+     State state() const;
+     Q_SIGNAL void stateChanged(State newState);
++    Q_SIGNAL void requestedDesktopSizeChanged(const QSize &size);
+ 
+     /**
+      * Close the connection
+--- a/server/CMakeLists.txt
++++ b/server/CMakeLists.txt
+@@ -4,6 +4,7 @@
+ add_definitions(-DTRANSLATION_DOMAIN=\"krdpserver\")
+ 
+ add_executable(krdpserver)
++find_package(KF6Screen REQUIRED)
+ 
+ target_sources(krdpserver PRIVATE main.cpp SessionController.cpp)
+ 
+@@ -12,6 +13,7 @@
+ target_include_directories(krdpserver PRIVATE ${CMAKE_BINARY_DIR})
+ 
+ target_link_libraries(krdpserver PRIVATE Qt6::Gui KF6::CoreAddons KF6::ConfigGui KF6::DBusAddons KF6::Crash KRdp qt6keychain KF6::StatusNotifierItem KF6::I18n)
++target_link_libraries(krdpserver PRIVATE KF6::Screen)
+ 
+ if (BUILD_PLASMA_SESSION)
+     target_compile_definitions(krdpserver PRIVATE -DWITH_PLASMA_SESSION)
+--- a/server/SessionController.cpp
++++ b/server/SessionController.cpp
+@@ -7,8 +7,14 @@
+ #include <QCoreApplication>
+ #include <QDBusInterface>
+ #include <QMenu>
++#include <QTimer>
+ 
+ #include <KLocalizedString>
++#include <KScreen/Config>
++#include <KScreen/GetConfigOperation>
++#include <KScreen/Mode>
++#include <KScreen/Output>
++#include <KScreen/SetConfigOperation>
+ 
+ #include <PipeWireSourceStream>
+ 
+@@ -50,6 +56,17 @@
+         });
+ 
+         connect(connection, &QObject::destroyed, this, &SessionWrapper::onConnectionDestroyed);
++        m_resizeTimer.setSingleShot(true);
++        m_resizeTimer.setInterval(150);
++        connect(&m_resizeTimer, &QTimer::timeout, this, [this] {
++            if (!m_resizeInProgress) {
++                readOutput(std::exchange(m_pendingSize, QSize()), ResizeStep::FindMode);
++            }
++        });
++        connect(connection, &KRdp::RdpConnection::requestedDesktopSizeChanged, this, [this](const QSize &size) {
++            m_pendingSize = size;
++            m_resizeTimer.start();
++        }, Qt::QueuedConnection);
+     }
+ 
+     void onCursorUpdate(const PipeWireCursor &cursor)
+@@ -88,6 +105,113 @@
+     QPointer<KRdp::RdpConnection> connection;
+     KStatusNotifierItem *m_sni;
+     bool m_sessionStarted = false;
++
++private:
++    enum class ResizeStep {
++        FindMode,
++        SelectNewMode,
++        VerifyMode,
++    };
++
++    void resizeFinished()
++    {
++        m_resizeInProgress = false;
++        if (m_pendingSize.isValid() && !m_resizeTimer.isActive()) {
++            m_resizeTimer.start();
++        }
++    }
++
++    void applyOutput(const KScreen::ConfigPtr &config, const QSize &size, bool addedMode)
++    {
++        auto operation = new KScreen::SetConfigOperation(config, this);
++        connect(operation, &KScreen::ConfigOperation::finished, this, [this, operation, size, addedMode] {
++            if (operation->hasError()) {
++                qWarning() << "KRdp: could not apply display mode" << size << operation->errorString();
++                resizeFinished();
++            } else if (addedMode) {
++                readOutput(size, ResizeStep::SelectNewMode);
++            } else {
++                readOutput(size, ResizeStep::VerifyMode);
++            }
++        });
++    }
++
++    void readOutput(const QSize &size, ResizeStep step)
++    {
++        if (!size.isValid() || !connection || connection->state() != KRdp::RdpConnection::State::Streaming) {
++            resizeFinished();
++            return;
++        }
++
++        m_resizeInProgress = true;
++        auto operation = new KScreen::GetConfigOperation(KScreen::GetConfigOperation::NoEDID, this);
++        connect(operation, &KScreen::ConfigOperation::finished, this, [this, operation, size, step] {
++            const auto config = operation->config();
++            const auto outputs = config ? config->connectedOutputs() : KScreen::OutputList();
++            const auto output = outputs.size() == 1 ? outputs.constBegin().value() : KScreen::OutputPtr();
++            if (!connection || connection->state() != KRdp::RdpConnection::State::Streaming || operation->hasError()
++                || !output || output->name() != u"Virtual-0"_s || !output->isEnabled()
++                || !(output->capabilities() & KScreen::Output::Capability::CustomModes) || !output->currentMode()) {
++                resizeFinished();
++                return;
++            }
++            if (step == ResizeStep::VerifyMode) {
++                const auto actualSize = output->currentMode()->size();
++                if (actualSize == size) {
++                    qInfo() << "KRdp: applied virtual output mode" << size;
++                    // KPipeWire 6.7 configures its encoder only on the first PipeWire format.
++                    m_sessionStarted = false;
++                    connection->videoStream()->setStreamingEnabled(false);
++                    session->start();
++                } else {
++                    qWarning() << "KRdp: virtual output remained at" << actualSize << "after requesting" << size;
++                }
++                resizeFinished();
++                return;
++            }
++            if (output->currentMode()->size() == size) {
++                resizeFinished();
++                return;
++            }
++
++            // Only the dedicated virtual output is managed by the RDP service. Keep its
++            // current custom mode until KWin has generated and advertised the new one.
++            const auto customModes = output->customModes();
++            const auto modes = output->modes();
++            for (const auto &mode : modes) {
++                if (mode->size() != size) {
++                    continue;
++                }
++                output->setCurrentModeId(mode->id());
++                applyOutput(config, size, false);
++                return;
++            }
++
++            if (step == ResizeStep::SelectNewMode) {
++                qWarning() << "KRdp: KWin did not advertise the requested display mode" << size;
++                resizeFinished();
++                return;
++            }
++            QList<KScreen::ModeInfo> retainedModes;
++            for (const auto &custom : customModes) {
++                if (custom.size == output->currentMode()->size() && custom.refreshRate == output->currentMode()->refreshRate()) {
++                    retainedModes.append(custom);
++                    break;
++                }
++            }
++            retainedModes.append(KScreen::ModeInfo{
++                .size = size,
++                .refreshRate = 60.0f,
++                .flags = KScreen::ModeInfo::Flags(KScreen::ModeInfo::Flag::Custom) | KScreen::ModeInfo::Flag::ReducedBlanking,
++            });
++            output->setCustomModes(retainedModes);
++            applyOutput(config, size, true);
++        });
++    }
++
++    QTimer m_resizeTimer;
++    QSize m_pendingSize;
++    bool m_resizeInProgress = false;
+ };
+ 
+ SessionController::SessionController(KRdp::Server *server, SessionType sessionType)
+--- a/src/PlasmaScreencastV1Session.cpp
++++ b/src/PlasmaScreencastV1Session.cpp
+@@ -172,6 +172,10 @@
+ 
+ void PlasmaScreencastV1Session::start()
+ {
++    if (d->request) {
++        setStarted(false);
++        delete std::exchange(d->request, nullptr);
++    }
+     if (auto vm = virtualMonitor()) {
+         d->request = d->m_screencasting.createVirtualMonitorStream(vm->name, vm->size, vm->dpr, Screencasting::Metadata);
+     } else if (const auto streamIndex = activeStream()) {
+@@ -184,6 +188,10 @@
+     } else {
+         d->request = d->m_screencasting.createWorkspaceStream(Screencasting::Metadata);
+     }
++    if (!d->request) {
++        Q_EMIT error();
++        return;
++    }
+     connect(d->request, &ScreencastingStream::failed, this, &PlasmaScreencastV1Session::error);
+     connect(d->request, &ScreencastingStream::created, this, [this](uint nodeId) {
+         qCDebug(KRDP) << "Started Plasma session";
+--- a/src/VideoStream.cpp
++++ b/src/VideoStream.cpp
+@@ -490,8 +490,15 @@
+ 
+ void VideoStream::setPipeWireSource(quint32 nodeId, int fd)
+ {
++    const bool replacingStream = d->nodeId != 0;
+     d->nodeId = nodeId;
+     d->pipeWireFd = fd;
++    if (replacingStream && d->activeEncodingMode) {
++        const auto mode = *d->activeEncodingMode;
++        d->activeEncodingMode.reset();
++        setActiveEncodingMode(mode);
++        return;
++    }
+     if (d->encodedStream) {
+         d->encodedStream->setNodeId(nodeId);
+         d->encodedStream->setFd(d->pipeWireFd);

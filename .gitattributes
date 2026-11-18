@@ -1,0 +1,7 @@
+upstream/** -text
+upstream-metadata/** -text
+*.patch text eol=lf
+*.patch -whitespace
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf

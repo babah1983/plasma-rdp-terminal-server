@@ -1,0 +1,20 @@
+--- a/src/libguac/display-layer.c
++++ b/src/libguac/display-layer.c
+@@ -217,6 +217,17 @@
+ 
+     guac_display* display = layer->display;
+ 
++    /* A replacement external image must be reflected on the client before
++     * frame completion snapshots all pixels into last_frame. Otherwise, an
++     * empty or partial dirty rect can make unchanged pixels of the replacement
++     * image permanently invisible to the rendering plan. */
++    if (context->buffer != NULL
++            && (context->buffer != layer->pending_frame.buffer
++                || context->stride != layer->pending_frame.buffer_stride
++                || guac_rect_width(&context->bounds) != layer->pending_frame.buffer_width
++                || guac_rect_height(&context->bounds) != layer->pending_frame.buffer_height))
++        guac_rect_extend(&context->dirty, &context->bounds);
++
+     /* Replace buffer if requested with an external buffer. This intentionally
+      * falls through to the following buffer_is_external check to update the
+      * buffer details. */

@@ -1,0 +1,20 @@
+[Unit]
+Description=KRdp transport for this Plasma session
+After=plasma-kwin_wayland.service
+PartOf=plasma-workspace-wayland.target
+
+[Service]
+Environment=QT_QPA_PLATFORM=wayland
+Environment=WAYLAND_DISPLAY=wayland-0
+Environment=KPIPEWIRE_FORCE_ENCODER=libx264
+Environment=PLASMA_RDP_LAB_NLA=1
+Environment=PLASMA_RDP_DISABLE_DMABUF=1
+Environment=PLASMA_RDP_RESIZE_VIRTUAL_OUTPUT=1
+Environment=MALLOC_MMAP_THRESHOLD_=131072
+Environment=LD_LIBRARY_PATH=/opt/system-kpipewire-pool/lib:/opt/system-krdp-display/lib
+WorkingDirectory=%h/.local/state/plasma-rdp
+ExecStart=/usr/local/libexec/plasma-rdp-user
+Restart=on-failure
+
+[Install]
+WantedBy=plasma-workspace-wayland.target

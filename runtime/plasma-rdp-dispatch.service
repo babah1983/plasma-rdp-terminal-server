@@ -1,0 +1,19 @@
+[Unit]
+Description=Plasma RDP connection dispatcher
+After=network.target plasma-rdp-isolation.service
+Requires=plasma-rdp-isolation.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/libexec/plasma-rdp-dispatcher
+RuntimeDirectory=plasma-rdp-dispatch
+RuntimeDirectoryMode=0700
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectHome=yes
+ProtectSystem=strict
+RestrictAddressFamilies=AF_INET AF_UNIX
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

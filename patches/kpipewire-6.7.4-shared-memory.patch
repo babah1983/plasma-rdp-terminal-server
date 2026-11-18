@@ -1,0 +1,11 @@
+--- a/src/pipewiresourcestream.cpp
++++ b/src/pipewiresourcestream.cpp
+@@ -488,7 +488,7 @@
+     params.reserve(formats.size() * 2);
+     const EGLDisplay display = RenderNodeResolver::resolveForCurrentSession().eglDisplay;
+ 
+-    if (display == EGL_NO_DISPLAY) {
++    if (display == EGL_NO_DISPLAY || qEnvironmentVariableIntValue("PLASMA_RDP_DISABLE_DMABUF") == 1) {
+         d->m_allowDmaBuf = false;
+     }
+ 
