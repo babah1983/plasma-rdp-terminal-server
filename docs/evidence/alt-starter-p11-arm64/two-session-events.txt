@@ -1,0 +1,2 @@
+2026-11-19T23:26:46.156209+00:00 cut1 Windows App SIGTERM; both user sessions left running
+2026-11-19T23:31:39.894745+00:00 cut2 Windows App SIGTERM; both Kate and load counters preserved

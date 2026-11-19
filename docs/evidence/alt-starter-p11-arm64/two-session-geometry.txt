@@ -1,0 +1,27 @@
+Thu Nov 19 23:25:48 UTC 2026
+native-a
+Geometry: 0,0,1920x1080
+Compositing Type: OpenGL
+native-b
+Geometry: 0,0,960x1018
+Compositing Type: OpenGL
+Thu Nov 19 23:26:08 UTC 2026
+Geometry: 0,0,1920x1080
+Compositing Type: OpenGL
+Thu Nov 19 23:31:12 UTC 2026
+native-a
+Geometry: 0,0,960x1018
+Compositing Type: OpenGL
+native-b
+Geometry: 0,0,960x1018
+Compositing Type: OpenGL
+Thu Nov 19 23:33:43 UTC 2026
+Geometry: 0,0,1920x1080
+Compositing Type: OpenGL
+Thu Nov 19 23:36:31 UTC 2026
+native-a
+Geometry: 0,0,960x1018
+Compositing Type: OpenGL
+native-b
+Geometry: 0,0,1920x1080
+Compositing Type: OpenGL

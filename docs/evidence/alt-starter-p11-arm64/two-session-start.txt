@@ -1,0 +1,14 @@
+native-a    1861 kwin_wayland_wr
+native-a    1866 kwin_wayland
+native-a    1870 krdpserver
+native-a    2463 kate
+native-b    3344 kwin_wayland_wr
+native-b    3348 kwin_wayland
+native-b    3355 krdpserver
+plasmal+    3909 kwin_wayland
+plasmal+    3921 krdpserver
+native-b    4008 kate
+Geometry: 0,0,1920x1080
+Compositing Type: OpenGL
+Geometry: 0,0,1920x1080
+Compositing Type: OpenGL

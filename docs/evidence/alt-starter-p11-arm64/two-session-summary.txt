@@ -1,0 +1,21 @@
+ALT Starter Kit p11 ARM64 / UTM, source 3bff759, Windows App 11.4.1 (3092).
+900s active-load collector, 91 samples per user; final idle 120s, 13 per user.
+Two simultaneous profiles, one server endpoint, dynamic resolution enabled, flag0.
+Client SIGTERM twice, followed by real GUI login for each user.
+Same unsaved Kate documents visibly retained; fresh text and changing counters
+observed after both returns. Half 960x1018 / full 1920x1080 measured via KWin.
+Stable user PID triplets (KRdp / KWin / Kate): A1870/1866/2463 B3355/3348/4008.
+
+PrivateDirty KiB, disconnected warm quiet samples (not active encoders):
+User   first-cut quiet   second-cut quiet   final idle   final-minus-first
+A             33128              32884        32172              -956
+B             32492              33140        33220              +728
+Final A RSS138060 PSS45663 KiB; B RSS153176 PSS48054 KiB.
+Final both: 4 threads, 20 FDs, Swap0; no PID changes in memory collector.
+
+B retains +728KiB (~0.71MiB) relative to first warm quiet sample.
+No monotonic large accumulation established in these TWO reconnects.
+Not a one-hour test; not proof of leak absence or long-term stability.
+Initial wide-aspect mismatch before resize remains unresolved.
+No Guacamole retest on this distro. No server code change during this run.
+Load units stopped and client closed before final idle, Kate left running.
