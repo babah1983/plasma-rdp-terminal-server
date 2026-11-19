@@ -1,0 +1,14 @@
+Windows App native Export -> edit one property -> native Import -> native Export.
+Original Distro Matrix A:
+use redirection server name:i:0
+full address:s:127.0.0.1:13461
+dynamic resolution:i:1
+Re-export of Distro Matrix A Redirect1:
+use redirection server name:i:1
+full address:s:127.0.0.1:13461
+dynamic resolution:i:1
+Both profiles returned original Kate PID 2463 / KWin 1866 / KRdp 1870.
+Both changed real KWin geometry to 960x1018 and 1920x1080.
+Fresh keyboard markers appeared after both changes in both profiles.
+Short sequential checks only, not statistically sufficient to compare failure rates.
+Original profile and unrelated devices were not overwritten. No saved password added.

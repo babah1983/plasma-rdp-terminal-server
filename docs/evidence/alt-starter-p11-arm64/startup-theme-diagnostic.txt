@@ -1,0 +1,61 @@
+Thread 1 "kwin_wayland" received signal SIGSEGV, Segmentation fault.
+0x0000ffffb6b2a878 in ?? () from /lib64/libQt6Gui.so.6
+
+Thread 2 (Thread 0xffffade26640 (LWP 4130) "QDBusConnection"):
+#0  0x0000ffffb5c78278 in ppoll () from /lib64/libc.so.6
+#1  0x0000ffffb44ded4c in ?? () from /lib64/libglib-2.0.so.0
+#2  0x0000ffffb447fdf4 in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#3  0x0000ffffb642bc84 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /lib64/libQt6Core.so.6
+#4  0x0000ffffb61eec4c in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /lib64/libQt6Core.so.6
+#5  0x0000ffffb62d4400 in QThread::exec() () from /lib64/libQt6Core.so.6
+#6  0x0000ffffb66a5ab0 in ?? () from /lib64/libQt6DBus.so.6
+#7  0x0000ffffb63517b8 in ?? () from /lib64/libQt6Core.so.6
+#8  0x0000ffffb5c1722c in ?? () from /lib64/libc.so.6
+#9  0x0000ffffb5c828cc in ?? () from /lib64/libc.so.6
+
+Thread 1 (Thread 0xffffb961d020 (LWP 4128) "kwin_wayland"):
+#0  0x0000ffffb6b2a878 in ?? () from /lib64/libQt6Gui.so.6
+#1  0x0000ffffb6ae2504 in QGuiApplicationPrivate::handleThemeChanged() () from /lib64/libQt6Gui.so.6
+#2  0x0000ffffb73165ec in QApplicationPrivate::handleThemeChanged() () from /lib64/libQt6Widgets.so.6
+#3  0x0000ffffb6ad9674 in QGuiApplicationPrivate::processThemeChanged(QWindowSystemInterfacePrivate::ThemeChangeEvent*) () from /lib64/libQt6Gui.so.6
+#4  0x0000ffffb6ed1d2c in ?? () from /lib64/libQt6Gui.so.6
+#5  0x0000ffffb6eda11c in QKdeTheme::createKdeTheme() () from /lib64/libQt6Gui.so.6
+#6  0x0000ffffb6ad6240 in QGuiApplicationPrivate::createPlatformIntegration() () from /lib64/libQt6Gui.so.6
+#7  0x0000ffffb6ad7088 in QGuiApplicationPrivate::createEventDispatcher() () from /lib64/libQt6Gui.so.6
+#8  0x0000ffffb61e8d20 in QCoreApplicationPrivate::init() () from /lib64/libQt6Core.so.6
+#9  0x0000ffffb6ad718c in QGuiApplicationPrivate::init() () from /lib64/libQt6Gui.so.6
+#10 0x0000ffffb730f3e4 in QApplicationPrivate::init() () from /lib64/libQt6Widgets.so.6
+#11 0x0000ffffb8f39c2c in KWin::Application::Application(int&, char**) () from /lib64/libkwin.so.6
+#12 0x0000aaaae82037e0 in ?? ()
+#13 0x0000ffffb5bbb544 in ?? () from /lib64/libc.so.6
+#14 0x0000ffffb5bbb618 in __libc_start_main () from /lib64/libc.so.6
+#15 0x0000aaaae82086f0 in ?? ()
+Reading Package Lists...
+Building Dependency Tree...
+The following extra packages will be installed:
+  plasma6-integration-common
+The following packages will be upgraded
+  plasma6-integration  plasma6-integration-common
+2 upgraded, 0 newly installed, 0 removed and 434 not upgraded.
+Need to get 154kB of archives.
+After unpacking 24B of additional disk space will be used.
+Get:1 https://mirror.truenetwork.ru p11/branch/noarch/classic plasma6-integration-common 6.7.5-alt1:p11+432807.6000.7.3@1792721005 [49.0kB]
+Get:2 https://mirror.truenetwork.ru p11/branch/aarch64/classic plasma6-integration 6.7.5-alt1:p11+432807.6000.7.3@1792723683 [105kB]
+Fetched 154kB in 0s (296kB/s)
+Committing changes...
+Preparing...                            ################################# [100%]
+Updating / installing...
+1: plasma6-integration-common-6.7.5-alt1 ################################# [ 25%]
+2: plasma6-integration-6.7.5-alt1       ################################# [ 50%]
+Cleaning up / removing...
+3: plasma6-integration-6.7.4-alt1       ################################# [ 75%]
+4: plasma6-integration-common-6.7.4-alt1 ################################# [100%]
+Done.
+Try to install the hash file /usr/lib/debug/.build-id/f4/1f8a7ddb5057567a754edc429983e906059d14.debug
+Missing separate debuginfo for /usr/lib64/qt6/plugins/kwin/plugins/MouseKeysPlugin.so.
+Try to install the hash file /usr/lib/debug/.build-id/bb/7e1c6ccb36ec6e398b0feeac6cea89ed987216.debug
+Missing separate debuginfo for /usr/lib64/qt6/plugins/kwin/plugins/screenshot.so.
+Try to install the hash file /usr/lib/debug/.build-id/29/967a9e6cacac17a15776bb28b9495976bdadfa.debug
+[New Thread 0xffffa227e640 (LWP 4396)]
+
+Session terminated, killing shell... ...killed.

@@ -1,0 +1,20 @@
+ea68f4b5-845f-4ac8-bd7f-d87d51f4792c
+# file: /dev/dri/card0
+# owner: root
+# group: xgrp
+user::rw-
+user:plasmalogin:rw-
+group::rw-
+group:plasma-rdp-render:rw-
+mask::rw-
+other::---
+
+plasmal+    1543 kwin_wayland
+plasmal+    1555 krdpserver
+/etc/pam.d/plasmalogin: OK
+/etc/pam.d/plasmalogin-autologin: OK
+/etc/pam.d/plasmalogin-greeter: OK
+[Autologin]
+User=
+Session=
+Relogin=false

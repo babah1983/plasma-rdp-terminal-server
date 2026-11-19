@@ -1,0 +1,3 @@
+# Optional headless lab setup: allow the dedicated render group to open VGEM.
+# Preserve ALT's root:xgrp owner, mode and logind ACLs. Do not match physical GPUs.
+ACTION=="add", SUBSYSTEM=="drm", KERNEL=="card[0-9]*", KERNELS=="vgem", RUN+="/usr/bin/setfacl -m g:plasma-rdp-render:rw /dev/dri/%k"

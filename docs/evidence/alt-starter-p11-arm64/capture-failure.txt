@@ -1,0 +1,6 @@
+Before VGEM ACL: KWin compositor QPainter.
+Wayland capture reply (trace enabled only for this diagnostic):
+zkde_screencast_stream_unstable_v1.failed("Unsupported compositing type")
+TLS probe then observed a plaintext RDP DisconnectProviderUltimatum before TLS completed.
+After narrow VGEM ACL and reboot: KWin OpenGL; real Windows App handover passed.
+Temporary WAYLAND_DEBUG override removed before final reboot and GUI checks.
