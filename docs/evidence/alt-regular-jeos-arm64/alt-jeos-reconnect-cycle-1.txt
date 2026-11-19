@@ -1,0 +1,11 @@
+Nov 19 08:12:35 matrix-alt-regular-jeos plasmalogin-helper[46246]: pam_succeed_if(plasmalogin:auth): requirement "user ingroup nopasswdlogin" not met by user "native-b"
+Nov 19 08:12:35 matrix-alt-regular-jeos plasmalogin-helper[46246]: pam_tcb(plasmalogin:auth): Authentication passed for native-b from (uid=0)
+Nov 19 08:12:35 matrix-alt-regular-jeos plasmalogin-helper[46246]: [PAM] Asked to close the session but it wasn't previously open
+Nov 19 08:12:40 matrix-alt-regular-jeos plasmalogin[1225]: Couldn't initiate jump to VT 0: No such device or address
+native-a    2307 419676 kwin_wayland
+native-a    2311 257844 krdpserver
+native-a    2904 101360 kate
+native-b    3113 428932 kwin_wayland
+native-b    3117 258048 krdpserver
+native-b    3596 102332 kate
+Thu Nov 19 08:12:43 UTC 2026

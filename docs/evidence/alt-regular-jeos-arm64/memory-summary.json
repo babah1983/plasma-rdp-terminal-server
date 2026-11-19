@@ -1,0 +1,99 @@
+{
+  "duration_note": "Two 900s samples overlap by about 16.5s; overall 29m43.5s, not a one-hour test.",
+  "reconnect_cycles": 2,
+  "users": {
+    "native-a": [
+      {
+        "file": "alt-jeos-two-session-memory.csv",
+        "last_disconnected": {
+          "utc": "2026-11-19T08:10:47.075798+00:00",
+          "rss_kib": "190424",
+          "pss_kib": "77650",
+          "private_dirty_kib": "60328",
+          "threads": "4",
+          "fds": "20",
+          "anon_huge_pages_kib": "22528"
+        },
+        "final_connected": {
+          "utc": "2026-11-19T08:13:24.184874+00:00",
+          "rss_kib": "257844",
+          "pss_kib": "141823",
+          "private_dirty_kib": "119400",
+          "threads": "34",
+          "fds": "68",
+          "anon_huge_pages_kib": "47104",
+          "swap_kib": "0"
+        }
+      },
+      {
+        "file": "alt-jeos-two-session-memory-cycle2.csv",
+        "last_disconnected": {
+          "utc": "2026-11-19T08:16:08.416065+00:00",
+          "rss_kib": "177272",
+          "pss_kib": "72331",
+          "private_dirty_kib": "55496",
+          "threads": "4",
+          "fds": "20",
+          "anon_huge_pages_kib": "18432"
+        },
+        "final_connected": {
+          "utc": "2026-11-19T08:28:07.695986+00:00",
+          "rss_kib": "251308",
+          "pss_kib": "150973",
+          "private_dirty_kib": "129860",
+          "threads": "34",
+          "fds": "68",
+          "anon_huge_pages_kib": "83968",
+          "swap_kib": "0"
+        }
+      }
+    ],
+    "native-b": [
+      {
+        "file": "alt-jeos-two-session-memory.csv",
+        "last_disconnected": {
+          "utc": "2026-11-19T08:12:27.486092+00:00",
+          "rss_kib": "193408",
+          "pss_kib": "78405",
+          "private_dirty_kib": "62864",
+          "threads": "4",
+          "fds": "20",
+          "anon_huge_pages_kib": "30720"
+        },
+        "final_connected": {
+          "utc": "2026-11-19T08:13:24.210704+00:00",
+          "rss_kib": "258088",
+          "pss_kib": "139736",
+          "private_dirty_kib": "118684",
+          "threads": "34",
+          "fds": "68",
+          "anon_huge_pages_kib": "53248",
+          "swap_kib": "0"
+        }
+      },
+      {
+        "file": "alt-jeos-two-session-memory-cycle2.csv",
+        "last_disconnected": {
+          "utc": "2026-11-19T08:17:58.881251+00:00",
+          "rss_kib": "186256",
+          "pss_kib": "78860",
+          "private_dirty_kib": "63584",
+          "threads": "4",
+          "fds": "20",
+          "anon_huge_pages_kib": "24576"
+        },
+        "final_connected": {
+          "utc": "2026-11-19T08:28:07.716605+00:00",
+          "rss_kib": "239508",
+          "pss_kib": "140399",
+          "private_dirty_kib": "124120",
+          "threads": "34",
+          "fds": "68",
+          "anon_huge_pages_kib": "49152",
+          "swap_kib": "0"
+        }
+      }
+    ]
+  },
+  "limitation": "Post-pause final disconnected baseline unavailable: VM was stopped and resumed via fresh boot; old processes no longer exist. No claim of absence of leaks."
+}

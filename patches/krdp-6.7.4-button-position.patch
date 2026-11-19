@@ -1,0 +1,28 @@
+--- a/src/InputHandler.cpp
++++ b/src/InputHandler.cpp
+@@ -153,6 +153,14 @@
+         return true;
+     }
+ 
++    // RDP button PDUs carry their own coordinates. A client need not send a
++    // separate motion PDU before clicking (for example, synthesized clicks).
++    // FakeInput applies button state at the current compositor cursor position.
++    if (button != Qt::NoButton) {
++        d->lastMousePosition = position;
++        Q_EMIT inputEvent(std::make_shared<QMouseEvent>(QEvent::MouseMove, position, QPointF{}, Qt::NoButton, Qt::NoButton, Qt::NoModifier));
++    }
++
+     std::shared_ptr<QMouseEvent> event;
+     if (flags & PTR_FLAGS_DOWN) {
+         event = std::make_shared<QMouseEvent>(QEvent::MouseButtonPress, position, QPointF{}, button, button, Qt::NoModifier);
+@@ -181,6 +189,10 @@
+         return false;
+     }
+ 
++    const QPointF position(x, y);
++    d->lastMousePosition = position;
++    Q_EMIT inputEvent(std::make_shared<QMouseEvent>(QEvent::MouseMove, position, QPointF{}, Qt::NoButton, Qt::NoButton, Qt::NoModifier));
++
+     std::shared_ptr<QMouseEvent> event;
+     if (flags & PTR_XFLAGS_DOWN) {
+         event = std::make_shared<QMouseEvent>(QEvent::MouseButtonPress, QPointF(x, y), QPointF{}, button, button, Qt::KeyboardModifiers{});

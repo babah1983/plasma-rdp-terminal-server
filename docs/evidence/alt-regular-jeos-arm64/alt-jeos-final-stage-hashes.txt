@@ -1,0 +1,6 @@
+Staged files in build/alt-jeos-stage-final
+00ac4dd00780fc3c0fb858769b4b96be45d87d656445b4093e1afce9eb686ac5  opt/system-krdp/lib/libKRdp.so.6.7.4
+d6525b4671e3393d7583ff973b095fa01dadffc1efc3d711f8779b1280c9c5bd  opt/system-krdp-display/lib/libKRdp.so.6.7.4
+38560ccfa7a36fc9ea2ad79c64dd4942195394b405d38bf08a98c50c804ab8e6  opt/system-kpipewire-pool/lib/libKPipeWire.so.6.7.4
+72328a23ba9591494fe31ad1999242f07587c6602a61754113d02204418dbcf4  opt/system-kpipewire-pool/lib/libKPipeWireDmaBuf.so.6.7.4
+443c28236da2593f14df0aa774b03da89ea0247ee443424fb2809aea3e1335e3  opt/system-kpipewire-pool/lib/libKPipeWireRecord.so.6.7.4

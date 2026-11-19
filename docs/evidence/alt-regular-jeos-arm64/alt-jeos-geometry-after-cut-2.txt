@@ -1,0 +1,7 @@
+Thu Nov 19 08:19:31 UTC 2026
+native-a
+Geometry: 0,0,1280x1378
+Scale: 1
+native-b
+Geometry: 0,0,1280x1378
+Scale: 1

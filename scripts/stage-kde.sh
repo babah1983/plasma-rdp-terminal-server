@@ -16,12 +16,10 @@ install -D -m 0755 "$sources/krdp-greeter-6.7.4/build/bin/krdpserver" "$stage/op
 install -D -m 0644 "$sources/krdp-6.7.4/build/bin/libKRdp.so.6.7.4" "$stage/opt/system-krdp-display/lib/libKRdp.so.6.7.4"
 ln -sfn libKRdp.so.6.7.4 "$stage/opt/system-krdp-display/lib/libKRdp.so.6"
 install -D -m 0755 "$sources/krdp-6.7.4/build/bin/krdpserver" "$stage/opt/system-krdp-display/bin/krdpserver"
-install -D -m 0644 "$sources/kpipewire-6.7.4/build/bin/libKPipeWire.so.6.7.4" "$stage/opt/system-kpipewire-shm/lib/libKPipeWire.so.6.7.4"
-ln -sfn libKPipeWire.so.6.7.4 "$stage/opt/system-kpipewire-shm/lib/libKPipeWire.so.6"
-install -D -m 0644 "$sources/kpipewire-6.7.4/build/bin/libKPipeWireRecord.so.6.7.4" "$stage/opt/system-kpipewire-shm/lib/libKPipeWireRecord.so.6.7.4"
-ln -sfn libKPipeWireRecord.so.6.7.4 "$stage/opt/system-kpipewire-shm/lib/libKPipeWireRecord.so.6"
-for library in KPipeWire KPipeWireRecord; do
-    install -D -m 0644 "$sources/kpipewire-6.7.4/build/bin/lib$library.so.6.7.4" "$stage/opt/system-kpipewire-pool/lib/lib$library.so.6.7.4"
-    ln -sfn "lib$library.so.6.7.4" "$stage/opt/system-kpipewire-pool/lib/lib$library.so.6"
+for variant in shm pool; do
+    for library in KPipeWire KPipeWireDmaBuf KPipeWireRecord; do
+        install -D -m 0644 "$sources/kpipewire-6.7.4/build/bin/lib$library.so.6.7.4" "$stage/opt/system-kpipewire-$variant/lib/lib$library.so.6.7.4"
+        ln -sfn "lib$library.so.6.7.4" "$stage/opt/system-kpipewire-$variant/lib/lib$library.so.6"
+    done
 done
 printf 'Staged files in %s\n' "$stage"

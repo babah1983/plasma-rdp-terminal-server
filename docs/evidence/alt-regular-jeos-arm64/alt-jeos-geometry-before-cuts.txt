@@ -1,0 +1,13 @@
+Thu Nov 19 08:08:18 UTC 2026
+native-a
+Geometry: 0,0,1280x1378
+Scale: 1
+native-b
+Geometry: 0,0,1280x1378
+Scale: 1
+native-a    2307 418304 kwin_wayland
+native-a    2311 253456 krdpserver
+native-a    2904 101424 kate
+native-b    3113 428144 kwin_wayland
+native-b    3117 258076 krdpserver
+native-b    3596 102396 kate

@@ -13,10 +13,20 @@ test -x /opt/system-krdp/bin/krdpserver
 test -x /opt/system-krdp-display/bin/krdpserver
 test -r /opt/system-krdp-display/lib/libKRdp.so.6
 test -r /opt/system-kpipewire-shm/lib/libKPipeWire.so.6
+test -r /opt/system-kpipewire-shm/lib/libKPipeWireDmaBuf.so.6
 test -r /opt/system-kpipewire-shm/lib/libKPipeWireRecord.so.6
 test -r /opt/system-kpipewire-pool/lib/libKPipeWire.so.6
+test -r /opt/system-kpipewire-pool/lib/libKPipeWireDmaBuf.so.6
 test -r /opt/system-kpipewire-pool/lib/libKPipeWireRecord.so.6
 test -x /usr/sbin/nft
+if ! command -v pipewire >/dev/null 2>&1; then
+    echo 'Install the PipeWire server and configure its user socket before applying the RDP runtime.' >&2
+    exit 2
+fi
+if ! command -v kscreen-doctor >/dev/null 2>&1; then
+    echo 'Install the KScreen runtime tools and Wayland backend before applying the RDP runtime (see distro instructions).' >&2
+    exit 2
+fi
 greeter=/var/lib/plasmalogin/.local/state/plasma-rdp
 
 install -D -m 0755 dispatcher.py /usr/local/libexec/plasma-rdp-dispatcher
@@ -30,6 +40,7 @@ install -D -m 0644 login-manager.conf /etc/systemd/system/plasmalogin.service.d/
 install -D -m 0644 greeter-kwin.conf /etc/systemd/user/plasma-login-kwin_wayland.service.d/rdp.conf
 install -D -m 0644 greeter-rdp.service /etc/systemd/user/plasma-rdp-greeter.service
 install -D -m 0644 user-rdp.service /etc/systemd/user/plasma-rdp-user.service
+install -D -m 0644 krdp-greeter.desktop /usr/local/share/applications/org.kde.krdpserver-plasma-rdp-greeter.desktop
 install -D -m 0644 krdp-display.desktop /usr/local/share/applications/org.kde.krdpserver-plasma-rdp.desktop
 install -D -m 0644 sleep.conf /etc/systemd/sleep.conf.d/90-plasma-rdp-lab.conf
 install -d /etc/plasmalogin.conf.d

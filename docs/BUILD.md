@@ -15,7 +15,7 @@ Qt не ниже 6.10, KDE Frameworks не ниже 6.26, FreeRDP 3.33.1.
 sudo apt-get update
 sudo apt-get install build-essential cmake ninja-build pkg-config python3 patch dpkg-dev \
     plasma-login-manager plasma-workspace plasma-desktop kwin-wayland krdp \
-    nftables openssl libkscreen-dev
+    nftables openssl libkscreen-dev libkscreen-bin pipewire wireplumber
 sudo apt-get build-dep krdp plasma-login-manager kpipewire
 ```
 
@@ -44,9 +44,11 @@ bash scripts/build-kde.sh "$PWD/build/second-sources"
 bash scripts/stage-kde.sh "$PWD/build/second-sources" "$PWD/build/second-stage"
 ```
 
-Скрипт создаёт две сборки KRdp: greeter с первым NLA/redirection-патчем и
+Скрипт создаёт две сборки KRdp: greeter с NLA/redirection и исправлением координат нажатий, и
 пользовательскую с дополнительными Display Control/Progressive-исправлениями.
-Это сохраняет схему проверенного стенда. Порядок всей серии записан в
+Это сохраняет схему проверенного стенда. В staging включены согласованные
+`KPipeWire`, `KPipeWireDmaBuf` и `KPipeWireRecord` 6.7.4; build-tree RPATH
+отключён у всех переносимых компонентов. Порядок всей серии записан в
 `scripts/prepare.py` и в создаваемом `applied-series.json`.
 
 ## 3. Применение только в одноразовой ВМ

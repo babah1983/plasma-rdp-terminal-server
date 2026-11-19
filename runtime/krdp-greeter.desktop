@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=KRdp for Plasma Login Manager
+TryExec=/opt/system-krdp/bin/krdpserver
+Exec=/opt/system-krdp/bin/krdpserver
+NoDisplay=true
+X-KDE-Wayland-Interfaces=org_kde_kwin_fake_input,zkde_screencast_unstable_v1
