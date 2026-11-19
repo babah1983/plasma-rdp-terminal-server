@@ -47,6 +47,7 @@ independent experiment, not an official KDE or OpenAI product.
 [Инструкция для Debian sid](docs/BUILD.md) · [Архитектура и ограничения](docs/ARCHITECTURE.md)
 · [Проверки и известные проблемы](docs/TESTING.md)
 · [Проверка публикационной сборки](docs/BUILD-VERIFICATION.md)
+· [Матрица дистрибутивов: ARM64 и будущий этап x86_64](docs/DISTRIBUTIONS.md)
 
 Короткий путь **только для сборки**, без установки и перезапуска служб:
 
