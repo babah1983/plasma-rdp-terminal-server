@@ -5,7 +5,6 @@ PartOf=plasma-workspace-wayland.target
 
 [Service]
 Environment=QT_QPA_PLATFORM=wayland
-Environment=WAYLAND_DISPLAY=wayland-0
 Environment=KPIPEWIRE_FORCE_ENCODER=libx264
 Environment=PLASMA_RDP_LAB_NLA=1
 Environment=PLASMA_RDP_DISABLE_DMABUF=1

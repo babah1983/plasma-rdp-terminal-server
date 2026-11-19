@@ -5,7 +5,7 @@ for account in native-a native-b; do
     uid=$(id -u "$account")
     sudo -u "$account" env XDG_RUNTIME_DIR=/run/user/$uid DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$uid/bus \
         systemd-run --user --collect --unit=rdp-guac-hour-load \
-        --setenv=QT_QPA_PLATFORM=wayland --setenv=WAYLAND_DISPLAY=wayland-0 \
+        --setenv=QT_QPA_PLATFORM=wayland \
         /usr/bin/konsole --separate -e /usr/bin/timeout 4200 /bin/sh -c '
             n=0
             while :; do

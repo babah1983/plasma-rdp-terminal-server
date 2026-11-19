@@ -1,0 +1,3 @@
+# Dedicated headless test accounts need software-rendered DMA buffers in KWin 6.8.
+# Keep the distribution's owner, kvm group, mode and logind seat ACLs intact.
+ACTION=="add", SUBSYSTEM=="misc", KERNEL=="udmabuf", RUN+="/usr/bin/setfacl -m g:plasma-rdp-render:rw /dev/udmabuf"

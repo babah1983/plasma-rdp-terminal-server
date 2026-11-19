@@ -1,0 +1,13 @@
+native-a
+Name: Virtual-0
+Geometry: 0,0,1280x800
+native-b
+Name: Virtual-0
+Geometry: 0,0,2560x1440
+    PID USER     COMMAND
+   2288 native-a kate
+   3260 native-b kate
+   1447 native-a kwin_wayland
+   1456 native-a krdpserver
+   2468 native-b kwin_wayland
+   2473 native-b krdpserver

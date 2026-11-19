@@ -1,17 +1,19 @@
 #!/bin/bash
-# Run as root on the isolated Debian sid VM, after building the patched components.
+# Run as root on a disposable VM after building and applying distro prerequisites.
 set -euo pipefail
 if [[ ${1:-} != --apply-to-disposable-vm ]]; then
     echo 'Usage: sudo bash runtime/install-handover.sh --apply-to-disposable-vm' >&2
-    echo 'Changes the login manager and starts a headless lab; use only a disposable Debian VM.' >&2
+    echo 'Changes the login manager and starts a headless lab; use only a disposable VM; see the distribution-specific instructions.' >&2
     exit 2
 fi
 cd -- "$(dirname -- "$0")"
 test -x /opt/system-plasma-login/plasmalogin
 test -r /opt/system-krdp/lib/libKRdp.so.6
+test -x /opt/system-krdp/bin/krdpserver
 test -x /opt/system-krdp-display/bin/krdpserver
 test -r /opt/system-krdp-display/lib/libKRdp.so.6
 test -r /opt/system-kpipewire-shm/lib/libKPipeWire.so.6
+test -r /opt/system-kpipewire-shm/lib/libKPipeWireRecord.so.6
 test -r /opt/system-kpipewire-pool/lib/libKPipeWire.so.6
 test -r /opt/system-kpipewire-pool/lib/libKPipeWireRecord.so.6
 test -x /usr/sbin/nft
@@ -32,6 +34,10 @@ install -D -m 0644 krdp-display.desktop /usr/local/share/applications/org.kde.kr
 install -D -m 0644 sleep.conf /etc/systemd/sleep.conf.d/90-plasma-rdp-lab.conf
 install -d /etc/plasmalogin.conf.d
 printf '[Autologin]\nUser=\nSession=\nRelogin=false\n' > /etc/plasmalogin.conf.d/90-rdp-lab-no-autologin.conf
+# install -d assigns ownership only to its final component. On a fresh image
+# root-owned intermediate directories otherwise prevent greeter state writes.
+install -d -o plasmalogin -g plasmalogin -m 0700 \
+    /var/lib/plasmalogin/.local /var/lib/plasmalogin/.local/state
 install -d -o plasmalogin -g plasmalogin -m 0700 "$greeter"
 runuser -u plasmalogin -- sh -ec 'umask 077
     cd "$1"
@@ -49,6 +55,8 @@ for account in native-a native-b; do
     account_home=$(getent passwd "$account" | cut -d: -f6)
     test -n "$account_home"
     state="$account_home/.local/state/plasma-rdp"
+    install -d -o "$account" -g "$account" -m 0700 \
+        "$account_home/.local" "$account_home/.local/state"
     install -d -o "$account" -g "$account" -m 0700 "$state"
     for item in password cert.pem key.pem; do
         install -o "$account" -g "$account" -m 0600 "$greeter/$item" "$state/$item"

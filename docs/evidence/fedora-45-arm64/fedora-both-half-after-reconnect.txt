@@ -1,0 +1,6 @@
+native-a
+Name: Virtual-0
+Geometry: 0,0,1280x1378
+native-b
+Name: Virtual-0
+Geometry: 0,0,1280x1378
