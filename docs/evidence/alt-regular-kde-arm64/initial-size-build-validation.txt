@@ -1,0 +1,7 @@
+Clean prepare passed; prepared and built RdpConnection.cpp SHA256:
+6575f426df43fc111498e5d75dfaa117db5f11a3f0efd8752bd81418c5f626be
+Patched library SHA256:
+593cb29d9885e8a2069c1627ab9eebd67a6c02987e73b85c3a5f23f75b92ca23
+Existing codec/owner-thread/button-position regressions passed after rebuild.
+Only the user KRdp library was atomically replaced; user KRdp services restarted.
+Kate and KWin were retained. Windows App GUI acceptance is pending.

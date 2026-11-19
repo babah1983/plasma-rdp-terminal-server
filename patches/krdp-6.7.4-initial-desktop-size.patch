@@ -1,0 +1,49 @@
+--- a/src/RdpConnection.cpp
++++ b/src/RdpConnection.cpp
+@@ -10,6 +10,7 @@
+ #include "RdpConnection.h"
+ 
+ #include <filesystem>
++#include <utility>
+ 
+ #include <fcntl.h>
+ 
+@@ -213,6 +214,7 @@
+     std::unique_ptr<NetworkDetection> networkDetection;
+     std::unique_ptr<Clipboard> clipboard;
+     const bool resizeVirtualOutput = qEnvironmentVariableIntValue("PLASMA_RDP_RESIZE_VIRTUAL_OUTPUT") == 1;
++    QSize initialDesktopSize;
+ 
+     freerdp_peer *peer = nullptr;
+ 
+@@ -279,6 +281,13 @@
+ 
+     d->state = newState;
+     Q_EMIT stateChanged(newState);
++    if (newState == State::Streaming && d->resizeVirtualOutput && d->initialDesktopSize.isValid()) {
++        // Consume once per connection. Server-side DesktopResize can reactivate
++        // the same peer; it must not restore this connection's original mode.
++        const QSize size = std::exchange(d->initialDesktopSize, QSize());
++        qInfo() << "KRdp: initial client desktop size" << size;
++        Q_EMIT requestedDesktopSizeChanged(size);
++    }
+ }
+ 
+ void RdpConnection::close(RdpConnection::CloseReason reason)
+@@ -618,6 +627,16 @@
+ 
+     rdpSettings *settings = d->peer->context->settings;
+ 
++    if (d->resizeVirtualOutput) {
++        // Save the authenticated connection's negotiated dimensions before
++        // VideoStream replaces the settings with the current capture size.
++        const auto width = freerdp_settings_get_uint32(settings, FreeRDP_DesktopWidth);
++        const auto height = freerdp_settings_get_uint32(settings, FreeRDP_DesktopHeight);
++        if (width >= 200 && height >= 200 && width <= 5120 && height <= 5120 && width * height <= 5120 * 2880) {
++            d->initialDesktopSize = QSize(width & ~7u, height & ~1u);
++        }
++    }
++
+     if (!freerdp_settings_set_bool(settings, FreeRDP_AutoLogonEnabled, true)) {
+         return false;
+     }

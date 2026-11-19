@@ -1,0 +1,1 @@
+{"account": "native-a", "requested": "1000x700", "before_geometry": [960, 1018], "actual_geometry": [1000, 700], "matched_stably": true, "client_running": true, "before_pids": {"kate": "2654", "kwin_wayland": "2005", "krdpserver": "60728"}, "after_pids": {"kate": "2654", "kwin_wayland": "2005", "krdpserver": "60728"}}
