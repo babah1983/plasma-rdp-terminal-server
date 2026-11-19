@@ -1,0 +1,29 @@
+NAME="ALT"
+VERSION="11"
+ID=altlinux
+VERSION_ID=11
+PRETTY_NAME="ALT Starterkit 11 (Salvia)"
+VARIANT="Starterkit"
+ANSI_COLOR="1;33"
+CPE_NAME="cpe:/o:alt:starterkit:11"
+BUILD_ID="ALT Starterkit 11"
+ALT_BRANCH_ID="p11"
+HOME_URL="https://en.altlinux.org/starterkits"
+BUG_REPORT_URL="https://bugs.altlinux.org/"
+LOGO=altlinux
+kernel-image-6.12 6.12.103-alt1.aarch64
+kf6-kcoreaddons-common 6.27.0-alt1.noarch
+libkf6coreaddons 6.27.0-alt1.aarch64
+libqt6-core 6.10.3-alt5.aarch64
+lightdm 1.32.0-alt15.aarch64
+pipewire 1.4.7-alt1.aarch64
+plasma-desktop 6.7.4-alt2.aarch64
+plasma-workspace 6.7.4-alt1.aarch64
+plasma6-kpipewire 6.7.4-alt1.aarch64
+qt6-base-common 6.10.3-alt5.aarch64
+wireplumber 0.5.13-alt1.aarch64
+/usr/lib/systemd/system/lightdm.service
+/mnt/matrix-next/usr/lib/modules/6.12.103-6.12-alt1
+/mnt/matrix-next/etc/apt/sources.list.d/alt.list:rpm [p11] http://ftp.altlinux.org/pub/distributions/ALTLinux p11/branch/aarch64 classic
+/mnt/matrix-next/etc/apt/sources.list.d/alt.list:rpm [p11] http://ftp.altlinux.org/pub/distributions/ALTLinux p11/branch/noarch classic
+/dev/nbd0 disconnected
