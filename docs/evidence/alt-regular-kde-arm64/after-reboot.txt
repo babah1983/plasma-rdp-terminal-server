@@ -1,0 +1,10 @@
+616805fb-f755-4ea6-b517-ac14dd1e9198
+BOOT_IMAGE=/boot/vmlinuz root=UUID=9c6321a1-8542-4526-b8a3-0010f588bf4b ro panic=30 splash
+1 977 plasmalogin seat0 1371 greeter       tty1 no -
+2 977 plasmalogin -     1383 manager-early -    no -
+3   0 root        -     1670 user          -    no -
+4   0 root        -     1676 manager-early -    no -
+active
+active
+LISTEN 0      100        127.0.0.1:3389      0.0.0.0:*   
+LISTEN 0      50         127.0.0.1:3390      0.0.0.0:*   

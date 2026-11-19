@@ -1,0 +1,4 @@
+native-a
+Geometry: 0,0,1920x1080
+native-b
+Geometry: 0,0,960x1018

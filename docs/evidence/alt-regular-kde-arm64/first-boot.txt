@@ -1,0 +1,35 @@
+matrix-alt-regular-kde
+99bca389-7352-4029-9c6c-f396b5873115
+6.18.62-6.18-alt1
+NAME="ALT"
+VERSION="20260806"
+ID=altlinux
+VERSION_ID=20260806
+PRETTY_NAME="ALT Regular"
+VARIANT="Regular"
+ANSI_COLOR="1;33"
+CPE_NAME="cpe:/o:alt:sisyphus:20260806"
+BUILD_ID="Sisyphus 20260806"
+ALT_BRANCH_ID="sisyphus"
+HOME_URL="http://en.altlinux.org"
+BUG_REPORT_URL="https://bugs.altlinux.org/"
+LOGO=altlinux
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda2        40G  6.7G   31G  18% /
+libkf6coreaddons 6.31.0-alt1.aarch64
+libqt6-core 6.11.2-alt2.aarch64
+lightdm 1.32.0-alt15.aarch64
+pipewire 1.6.11-alt1.aarch64
+plasma-desktop 6.7.6-alt1.aarch64
+plasma-workspace 6.7.6-alt1.aarch64
+plasma6-kpipewire 6.7.6-alt1.aarch64
+qemu-guest-agent 10.2.4-alt2.aarch64
+wireplumber 0.5.19-alt1.aarch64
+/lib/systemd/system/graphical.target
+/usr/lib/systemd/system/lightdm.service
+active
+alsa-set-initial-options
+fontconfig
+indexhtml
+/etc/apt/sources.list.d/alt.list:rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/aarch64 classic
+/etc/apt/sources.list.d/alt.list:rpm [alt] http://ftp.altlinux.org/pub/distributions/ALTLinux Sisyphus/noarch classic

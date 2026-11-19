@@ -1,0 +1,10 @@
+native-a
+2654
+2005
+2010
+Geometry: 0,0,1280x800
+native-b
+3530
+2808
+2812
+Geometry: 0,0,1280x800

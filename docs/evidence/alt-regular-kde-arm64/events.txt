@@ -1,0 +1,3 @@
+2026-11-19T20:55:01.837049+00:00 cycle1 Windows App SIGTERM; A1280x800 B1920x1080 before disconnect
+2026-11-19T21:02:14.675173+00:00 cycle2 Windows App SIGTERM; A/B window half-screen after fullscreen/resize
+2026-11-19T21:12:36.613481+00:00 final memory baseline: load stopped, Windows App SIGTERM; Kate retained

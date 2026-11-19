@@ -1,0 +1,136 @@
+{
+  "duration_s": 900.0,
+  "sample_rows": 182,
+  "users": {
+    "native-a": {
+      "krdp_pids": [
+        "2010"
+      ],
+      "kate_pids": [
+        "2654"
+      ],
+      "kwin_pids": [
+        "2005"
+      ],
+      "max_swap_kib": 0,
+      "disconnected_runs": [
+        {
+          "start_utc": "2026-11-19T20:55:10.842044+00:00",
+          "end_utc": "2026-11-19T20:56:31.164193+00:00",
+          "samples": 9,
+          "rss_kib": 194220,
+          "pss_kib": 75327,
+          "private_dirty_kib": 58508,
+          "thp_kib": 22528
+        },
+        {
+          "start_utc": "2026-11-19T21:02:22.628121+00:00",
+          "end_utc": "2026-11-19T21:04:23.094781+00:00",
+          "samples": 13,
+          "rss_kib": 184880,
+          "pss_kib": 72119,
+          "private_dirty_kib": 55824,
+          "thp_kib": 12288
+        }
+      ],
+      "final": {
+        "utc": "2026-11-19T21:07:50.257782+00:00",
+        "elapsed_s": "900.0",
+        "user": "native-a",
+        "pid": "2010",
+        "rss_kib": "231852",
+        "pss_kib": "119136",
+        "private_dirty_kib": "100892",
+        "threads": "34",
+        "fds": "68",
+        "cpu_ticks": "6261",
+        "kate_pid": "2654",
+        "kwin_pid": "2005",
+        "swap_kib": "0",
+        "anon_huge_pages_kib": "18432"
+      }
+    },
+    "native-b": {
+      "krdp_pids": [
+        "2812"
+      ],
+      "kate_pids": [
+        "3530"
+      ],
+      "kwin_pids": [
+        "2808"
+      ],
+      "max_swap_kib": 0,
+      "disconnected_runs": [
+        {
+          "start_utc": "2026-11-19T20:55:10.861018+00:00",
+          "end_utc": "2026-11-19T20:58:51.763980+00:00",
+          "samples": 23,
+          "rss_kib": 192312,
+          "pss_kib": 73445,
+          "private_dirty_kib": 58972,
+          "thp_kib": 22528
+        },
+        {
+          "start_utc": "2026-11-19T21:02:22.646205+00:00",
+          "end_utc": "2026-11-19T21:06:43.687980+00:00",
+          "samples": 27,
+          "rss_kib": 183508,
+          "pss_kib": 71483,
+          "private_dirty_kib": 57272,
+          "thp_kib": 16384
+        }
+      ],
+      "final": {
+        "utc": "2026-11-19T21:07:50.277022+00:00",
+        "elapsed_s": "900.0",
+        "user": "native-b",
+        "pid": "2812",
+        "rss_kib": "239180",
+        "pss_kib": "126923",
+        "private_dirty_kib": "110592",
+        "threads": "34",
+        "fds": "68",
+        "cpu_ticks": "3657",
+        "kate_pid": "3530",
+        "kwin_pid": "2808",
+        "swap_kib": "0",
+        "anon_huge_pages_kib": "73728"
+      }
+    }
+  },
+  "final_idle_120s": {
+    "native-a": {
+      "utc": "2026-11-19T21:14:37.319471+00:00",
+      "elapsed_s": "120.0",
+      "user": "native-a",
+      "pid": "2010",
+      "rss_kib": "184056",
+      "pss_kib": "72783",
+      "private_dirty_kib": "54744",
+      "threads": "4",
+      "fds": "20",
+      "cpu_ticks": "6456",
+      "kate_pid": "2654",
+      "kwin_pid": "2005",
+      "swap_kib": "0",
+      "anon_huge_pages_kib": "10240"
+    },
+    "native-b": {
+      "utc": "2026-11-19T21:14:37.474965+00:00",
+      "elapsed_s": "120.0",
+      "user": "native-b",
+      "pid": "2812",
+      "rss_kib": "184428",
+      "pss_kib": "73534",
+      "private_dirty_kib": "57424",
+      "threads": "4",
+      "fds": "20",
+      "cpu_ticks": "17252",
+      "kate_pid": "3530",
+      "kwin_pid": "2808",
+      "swap_kib": "0",
+      "anon_huge_pages_kib": "22528"
+    }
+  }
+}
