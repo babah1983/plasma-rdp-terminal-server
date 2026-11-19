@@ -1,0 +1,56 @@
+{
+  "negative_control": {
+    "account": "native-b",
+    "requested": "1920x1080",
+    "before_geometry": [
+      1920,
+      1080
+    ],
+    "actual_geometry": [
+      1920,
+      1080
+    ],
+    "matched_stably": false,
+    "client_running": true,
+    "before_dpms": "off",
+    "after_dpms": "off",
+    "before_pids": {
+      "kate": "3530",
+      "kwin_wayland": "2808",
+      "krdpserver": "74424"
+    },
+    "after_pids": {
+      "kate": "3530",
+      "kwin_wayland": "2808",
+      "krdpserver": "74424"
+    },
+    "pids_unchanged": true
+  },
+  "wake_patch": {
+    "account": "native-b",
+    "requested": "1920x1080",
+    "before_geometry": [
+      1920,
+      1080
+    ],
+    "actual_geometry": [
+      1920,
+      1080
+    ],
+    "matched_stably": true,
+    "client_running": true,
+    "before_dpms": "off",
+    "after_dpms": "on",
+    "before_pids": {
+      "kate": "3530",
+      "kwin_wayland": "2808",
+      "krdpserver": "96024"
+    },
+    "after_pids": {
+      "kate": "3530",
+      "kwin_wayland": "2808",
+      "krdpserver": "96024"
+    },
+    "pids_unchanged": true
+  }
+}

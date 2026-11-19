@@ -1,0 +1,11 @@
+Thu Nov 19 22:20:54 UTC 2026
+native-a
+2654
+2005
+97606
+Geometry: 0,0,960x1018
+native-b
+3530
+2808
+96024
+Geometry: 0,0,1920x1080

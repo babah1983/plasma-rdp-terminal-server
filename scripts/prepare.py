@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SERIES = {
     'krdp-greeter-6.7.4': ['krdp-6.7.4.patch', 'krdp-6.7.4-button-position.patch'],
-    'krdp-6.7.4': ['krdp-6.7.4.patch', 'krdp-6.7.4-display-control.patch', 'krdp-6.7.4-progressive-resize.patch', 'krdp-6.7.4-button-position.patch', 'krdp-6.7.4-initial-desktop-size.patch'],
+    'krdp-6.7.4': ['krdp-6.7.4.patch', 'krdp-6.7.4-display-control.patch', 'krdp-6.7.4-progressive-resize.patch', 'krdp-6.7.4-button-position.patch', 'krdp-6.7.4-initial-desktop-size.patch', 'krdp-6.7.4-wake-virtual-output.patch'],
     'plasma-login-manager-6.7.4': ['plasma-login-manager-6.7.4.patch'],
     'kpipewire-6.7.4': ['kpipewire-6.7.4-shared-memory.patch', 'kpipewire-6.7.4-encoder-lifetime.patch', 'kpipewire-6.7.4-frame-pool.patch'],
     'guacamole-server-1.6.0': ['guacamole-1.6.0-external-buffer-resize.patch'],

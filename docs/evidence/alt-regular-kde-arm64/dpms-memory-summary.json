@@ -1,0 +1,98 @@
+{
+  "duration_seconds": 900,
+  "samples_per_user": 91,
+  "client_disconnect_cycles_with_gui_return": 2,
+  "final_idle_seconds": 120,
+  "hour_test": false,
+  "users": {
+    "native-a": {
+      "krdp_pids": [
+        "97606"
+      ],
+      "kate_pids": [
+        "2654"
+      ],
+      "kwin_pids": [
+        "2005"
+      ],
+      "max_swap_kib": 0,
+      "quiet_intervals": [
+        {
+          "start_elapsed_s": 0.0,
+          "end_elapsed_s": 80.33,
+          "last_private_dirty_kib": 27912,
+          "last_rss_kib": 103988,
+          "last_fds": 15
+        },
+        {
+          "start_elapsed_s": 301.34,
+          "end_elapsed_s": 401.85,
+          "last_private_dirty_kib": 58476,
+          "last_rss_kib": 192696,
+          "last_fds": 20
+        },
+        {
+          "start_elapsed_s": 552.54,
+          "end_elapsed_s": 783.59,
+          "last_private_dirty_kib": 56368,
+          "last_rss_kib": 190588,
+          "last_fds": 20
+        }
+      ],
+      "final_idle": {
+        "rss_kib": 186236,
+        "pss_kib": 77611,
+        "private_dirty_kib": 58480,
+        "threads": 4,
+        "fds": 20,
+        "swap_kib": 0,
+        "anon_huge_pages_kib": 16384
+      }
+    },
+    "native-b": {
+      "krdp_pids": [
+        "96024"
+      ],
+      "kate_pids": [
+        "3530"
+      ],
+      "kwin_pids": [
+        "2808"
+      ],
+      "max_swap_kib": 0,
+      "quiet_intervals": [
+        {
+          "start_elapsed_s": 0.0,
+          "end_elapsed_s": 210.94,
+          "last_private_dirty_kib": 58980,
+          "last_rss_kib": 193136,
+          "last_fds": 20
+        },
+        {
+          "start_elapsed_s": 301.34,
+          "end_elapsed_s": 522.39,
+          "last_private_dirty_kib": 57508,
+          "last_rss_kib": 191728,
+          "last_fds": 20
+        },
+        {
+          "start_elapsed_s": 552.54,
+          "end_elapsed_s": 693.18,
+          "last_private_dirty_kib": 60992,
+          "last_rss_kib": 195212,
+          "last_fds": 20
+        }
+      ],
+      "final_idle": {
+        "rss_kib": 189952,
+        "pss_kib": 81327,
+        "private_dirty_kib": 62196,
+        "threads": 4,
+        "fds": 20,
+        "swap_kib": 0,
+        "anon_huge_pages_kib": 24576
+      }
+    }
+  },
+  "limitation": "A initial wide-window aspect mismatch remains. B final Private_Dirty is 4688 KiB above first post-disconnect baseline; this bounded run does not prove leak absence."
+}

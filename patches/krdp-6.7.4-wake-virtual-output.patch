@@ -1,0 +1,78 @@
+--- a/server/SessionController.cpp
++++ b/server/SessionController.cpp
+@@ -7,10 +7,12 @@
+ #include <QCoreApplication>
+ #include <QDBusInterface>
+ #include <QMenu>
++#include <QGuiApplication>
+ #include <QTimer>
+ 
+ #include <KLocalizedString>
+ #include <KScreen/Config>
++#include <KScreenDpms/Dpms>
+ #include <KScreen/GetConfigOperation>
+ #include <KScreen/Mode>
+ #include <KScreen/Output>
+@@ -56,6 +58,27 @@
+         });
+ 
+         connect(connection, &QObject::destroyed, this, &SessionWrapper::onConnectionDestroyed);
++        // A persistent headless desktop can be DPMS-off while disconnected.
++        // Wake only our dedicated virtual output after authenticated GFX setup.
++        connect(connection, &KRdp::RdpConnection::stateChanged, this, [this](KRdp::RdpConnection::State state) {
++            if (state != KRdp::RdpConnection::State::Streaming || m_dpms
++                || qEnvironmentVariableIntValue("PLASMA_RDP_RESIZE_VIRTUAL_OUTPUT") != 1) {
++                return;
++            }
++            const auto screens = QGuiApplication::screens();
++            if (screens.size() != 1 || screens.constFirst()->name() != u"Virtual-0"_s) {
++                return;
++            }
++            m_dpms = new KScreen::Dpms(this);
++            connect(m_dpms, &KScreen::Dpms::supportedChanged, this, [this](bool supported) {
++                if (supported) {
++                    wakeVirtualOutput();
++                }
++            });
++            if (m_dpms->isSupported()) {
++                wakeVirtualOutput();
++            }
++        }, Qt::QueuedConnection);
+         m_resizeTimer.setSingleShot(true);
+         m_resizeTimer.setInterval(150);
+         connect(&m_resizeTimer, &QTimer::timeout, this, [this] {
+@@ -107,6 +130,23 @@
+     bool m_sessionStarted = false;
+ 
+ private:
++    void wakeVirtualOutput()
++    {
++        if (m_virtualOutputWoken || !connection || connection->state() != KRdp::RdpConnection::State::Streaming) {
++            return;
++        }
++        const auto screens = QGuiApplication::screens();
++        if (screens.size() != 1 || screens.constFirst()->name() != u"Virtual-0"_s) {
++            return;
++        }
++        m_virtualOutputWoken = true;
++        m_dpms->switchMode(KScreen::Dpms::On, screens);
++        qInfo() << "KRdp: requested DPMS on for dedicated Virtual-0";
++    }
++
++    KScreen::Dpms *m_dpms = nullptr;
++    bool m_virtualOutputWoken = false;
++
+     enum class ResizeStep {
+         FindMode,
+         SelectNewMode,
+--- a/server/CMakeLists.txt
++++ b/server/CMakeLists.txt
+@@ -13,7 +13,7 @@
+ target_include_directories(krdpserver PRIVATE ${CMAKE_BINARY_DIR})
+ 
+ target_link_libraries(krdpserver PRIVATE Qt6::Gui KF6::CoreAddons KF6::ConfigGui KF6::DBusAddons KF6::Crash KRdp qt6keychain KF6::StatusNotifierItem KF6::I18n)
+-target_link_libraries(krdpserver PRIVATE KF6::Screen)
++target_link_libraries(krdpserver PRIVATE KF6::Screen KF6::ScreenDpms)
+ 
+ if (BUILD_PLASMA_SESSION)
+     target_compile_definitions(krdpserver PRIVATE -DWITH_PLASMA_SESSION)

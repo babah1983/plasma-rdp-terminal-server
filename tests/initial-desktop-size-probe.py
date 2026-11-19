@@ -18,6 +18,8 @@ if Path('/tmp/.X11-unix/X99').exists() or Path('/tmp/.X99-lock').exists():
 
 account = sys.argv[1] if len(sys.argv) > 1 else 'native-a'
 requested = sys.argv[2] if len(sys.argv) > 2 else '1000x700'
+check_dpms = len(sys.argv) > 3 and sys.argv[3] == '--expect-dpms-wake'
+assert len(sys.argv) <= 4 and (len(sys.argv) < 4 or check_dpms)
 assert account in ('native-a', 'native-b')
 assert re.fullmatch(r'[0-9]{3,4}x[0-9]{3,4}', requested)
 width, height = map(int, requested.split('x'))
@@ -37,11 +39,22 @@ def geometry():
     match = re.search(r'^Geometry: [^,]+,[^,]+,(\d+)x(\d+)$', info, re.M)
     return tuple(map(int, match.groups())) if match else None
 
+def dpms():
+    info = subprocess.check_output(bus_env + ['QT_QPA_PLATFORM=wayland', 'WAYLAND_DISPLAY=wayland-0',
+                                               'kscreen-doctor', '--dpms', 'show'], text=True)
+    match = re.fullmatch(r'dpms mode for screen Virtual-0: (on|off)\n?', info)
+    if not match:
+        raise RuntimeError('DPMS probe requires exactly the dedicated Virtual-0')
+    return match[1]
+
 def pid(name):
     return subprocess.check_output(['pgrep', '-u', account, '-x', name], text=True).strip()
 
 before = {name: pid(name) for name in ('kate', 'kwin_wayland', 'krdpserver')}
 initial = geometry()
+initial_dpms = dpms() if check_dpms else None
+if check_dpms and initial_dpms != 'off':
+    raise SystemExit('Set the disposable virtual output DPMS off before this negative/positive probe')
 for _ in range(100):
     if subprocess.check_output(['ss', '-H', '-lnt', 'sport', '=', f':{port}'], text=True).strip():
         break
@@ -76,13 +89,15 @@ with tempfile.TemporaryDirectory(prefix='rdp-initial-size-') as directory:
             deadline = time.monotonic() + 25
             while time.monotonic() < deadline and client.poll() is None:
                 actual = geometry()
-                stable = stable + 1 if actual == (width & ~7, height & ~1) else 0
+                awake = dpms() == 'on' if check_dpms else True
+                stable = stable + 1 if actual == (width & ~7, height & ~1) and awake else 0
                 if stable >= 5:
                     break
                 time.sleep(.5)
             result = {'account': account, 'requested': requested, 'before_geometry': initial,
                       'actual_geometry': actual, 'matched_stably': stable >= 5,
                       'client_running': client.poll() is None,
+                      'before_dpms': initial_dpms, 'after_dpms': dpms() if check_dpms else None,
                       'before_pids': before, 'after_pids': {name: pid(name) for name in before}}
             result['pids_unchanged'] = result['before_pids'] == result['after_pids']
             print(json.dumps(result), flush=True)

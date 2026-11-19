@@ -1,0 +1,50 @@
+Thu Nov 19 22:30:27 UTC 2026
+native-a
+2654
+2005
+97606
+Geometry: 0,0,960x1018
+native-b
+3530
+2808
+96024
+Geometry: 0,0,1920x1080
+2026-11-19T22:15:28+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: initial client desktop size QSize(1920, 1080)
+2026-11-19T22:15:28+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: requested DPMS on for dedicated Virtual-0
+2026-11-19T22:15:28+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: graphics surface reset QSize(1920, 1080) surface 1
+2026-11-19T22:17:23+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: initial client desktop size QSize(960, 1018)
+2026-11-19T22:17:23+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: requested DPMS on for dedicated Virtual-0
+2026-11-19T22:17:23+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(960, 1018) surface 1
+2026-11-19T22:18:02+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: applied virtual output mode QSize(960, 602)
+2026-11-19T22:18:02+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(960, 602) surface 2
+2026-11-19T22:18:03+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-19T22:18:03+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(960, 1018) surface 3
+2026-11-19T22:19:41+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: initial client desktop size QSize(1920, 1080)
+2026-11-19T22:19:41+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: requested DPMS on for dedicated Virtual-0
+2026-11-19T22:19:41+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: graphics surface reset QSize(1920, 1080) surface 1
+2026-11-19T22:20:07+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: applied virtual output mode QSize(960, 606)
+2026-11-19T22:20:07+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: graphics surface reset QSize(960, 606) surface 2
+2026-11-19T22:20:07+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-19T22:20:08+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: graphics surface reset QSize(960, 1018) surface 3
+2026-11-19T22:20:24+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: applied virtual output mode QSize(1920, 1080)
+2026-11-19T22:20:24+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: graphics surface reset QSize(1920, 1080) surface 4
+2026-11-19T22:22:46+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: initial client desktop size QSize(960, 1018)
+2026-11-19T22:22:46+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: requested DPMS on for dedicated Virtual-0
+2026-11-19T22:22:46+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(960, 1018) surface 1
+2026-11-19T22:23:03+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: applied virtual output mode QSize(1920, 1080)
+2026-11-19T22:23:03+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(1920, 1080) surface 2
+2026-11-19T22:23:23+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: applied virtual output mode QSize(960, 600)
+2026-11-19T22:23:23+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(960, 600) surface 3
+2026-11-19T22:24:48+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: initial client desktop size QSize(1920, 1080)
+2026-11-19T22:24:48+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: requested DPMS on for dedicated Virtual-0
+2026-11-19T22:24:49+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: graphics surface reset QSize(1920, 1080) surface 1
+2026-11-19T22:27:36+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: initial client desktop size QSize(1920, 1080)
+2026-11-19T22:27:36+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: requested DPMS on for dedicated Virtual-0
+2026-11-19T22:27:36+00:00 matrix-alt-regular-kde plasma-rdp-user[96024]: KRdp: graphics surface reset QSize(1920, 1080) surface 1
+2026-11-19T22:29:11+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: initial client desktop size QSize(960, 600)
+2026-11-19T22:29:11+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: requested DPMS on for dedicated Virtual-0
+2026-11-19T22:29:11+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(960, 600) surface 1
+2026-11-19T22:29:59+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: applied virtual output mode QSize(960, 606)
+2026-11-19T22:29:59+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(960, 606) surface 2
+2026-11-19T22:29:59+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-19T22:29:59+00:00 matrix-alt-regular-kde plasma-rdp-user[97606]: KRdp: graphics surface reset QSize(960, 1018) surface 3
