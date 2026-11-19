@@ -1,0 +1,86 @@
+{
+  "source": "local verified official RED OS 8 ARM64 ISO",
+  "image": "redos-8-20260816.0-Everything-aarch64-DVD1.iso",
+  "image_sha256": "789f3c9c0e9d0c6fb84b55a18b5557e749d6cb9b6639b201d930fa56a80e53b9",
+  "primary_metadata": "repodata/a15af211a75de3021dd03371d150fe359206ca512f5363847e8766283b9c2d52-primary.xml.gz",
+  "packages": [
+    {
+      "name": "freerdp",
+      "epoch": "4",
+      "version": "2.11.8",
+      "release": "1.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "freerdp-libs",
+      "epoch": "4",
+      "version": "2.11.8",
+      "release": "1.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "freerdp-libs",
+      "epoch": "3",
+      "version": "3.10.3",
+      "release": "1.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "freerdp3",
+      "epoch": "4",
+      "version": "3.28.0",
+      "release": "1.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "kf5-kcoreaddons",
+      "epoch": "0",
+      "version": "5.115.0",
+      "release": "4.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "kpipewire",
+      "epoch": "0",
+      "version": "5.27.11",
+      "release": "3.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "plasma-desktop",
+      "epoch": "0",
+      "version": "5.27.11",
+      "release": "3.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "plasma-workspace",
+      "epoch": "0",
+      "version": "5.27.11",
+      "release": "11.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "qt5-qtbase",
+      "epoch": "0",
+      "version": "5.15.18",
+      "release": "2.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "qt6-qtbase",
+      "epoch": "0",
+      "version": "6.9.3",
+      "release": "2.red80",
+      "arch": "aarch64"
+    },
+    {
+      "name": "sddm",
+      "epoch": "0",
+      "version": "0.21.0",
+      "release": "11.red80",
+      "arch": "aarch64"
+    }
+  ],
+  "scope": "Read-only ISO repository metadata; VM boot, current update repository and build not tested"
+}
