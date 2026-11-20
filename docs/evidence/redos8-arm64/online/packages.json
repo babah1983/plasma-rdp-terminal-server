@@ -1,0 +1,2107 @@
+{
+  "checked_utc": "2026-11-20T00:14:53.720195+00:00",
+  "architecture": "aarch64",
+  "repositories": [
+    {
+      "name": "os",
+      "baseurl": "https://repo2.red-soft.ru/redos/8.0/aarch64/os/",
+      "primary": "repodata/076fd2f8e4ef9f7c9ac502341bbab790e71db30fa467aca40694a061e5bc1546-primary.xml.zst",
+      "primary_checksum": "076fd2f8e4ef9f7c9ac502341bbab790e71db30fa467aca40694a061e5bc1546",
+      "checksum_type": "sha256",
+      "primary_timestamp": "1794483336",
+      "digests_verified": true,
+      "package_count": 66046,
+      "packages": [
+        {
+          "name": "kf5-kcoreaddons",
+          "epoch": "0",
+          "ver": "5.104.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf5-kcoreaddons-devel",
+          "epoch": "0",
+          "ver": "5.104.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kpipewire",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kpipewire-devel",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-desktop",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-desktop-doc",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-desktop-kimpanel-scim",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wallpapers",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "1.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "python3-pyqt6-base",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        }
+      ]
+    },
+    {
+      "name": "updates",
+      "baseurl": "https://repo2.red-soft.ru/redos/8.0/aarch64/updates/",
+      "primary": "repodata/9e7c266eed6fd5b6d4b5e823874df9dbfe36f3f5344409208327e8354ece86c5-primary.xml.zst",
+      "primary_checksum": "9e7c266eed6fd5b6d4b5e823874df9dbfe36f3f5344409208327e8354ece86c5",
+      "checksum_type": "sha256",
+      "primary_timestamp": "1794820062",
+      "digests_verified": true,
+      "package_count": 38105,
+      "packages": [
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.14.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.17.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.20.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.24.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.26.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.28.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.28.0",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.31.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3",
+          "epoch": "4",
+          "ver": "3.31.1",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.14.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.17.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.20.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.24.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.26.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.28.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.28.0",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.31.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-devel",
+          "epoch": "4",
+          "ver": "3.31.1",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.14.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.17.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.20.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.24.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.26.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.28.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.28.0",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.31.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-libs",
+          "epoch": "4",
+          "ver": "3.31.1",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.14.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.17.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.20.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.24.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.26.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.28.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.28.0",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.31.1",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "freerdp3-server",
+          "epoch": "4",
+          "ver": "3.31.1",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf5-kcoreaddons",
+          "epoch": "0",
+          "ver": "5.115.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf5-kcoreaddons",
+          "epoch": "0",
+          "ver": "5.115.0",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf5-kcoreaddons-devel",
+          "epoch": "0",
+          "ver": "5.115.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf5-kcoreaddons-devel",
+          "epoch": "0",
+          "ver": "5.115.0",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kpipewire",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kpipewire",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kpipewire-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kpipewire-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-desktop",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-desktop-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-desktop-kimpanel-scim",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-geolocation-libs",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wallpapers",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "1.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wayland",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "10.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "11.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "7.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "8.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.11",
+          "rel": "9.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "5.27.3",
+          "rel": "6.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "python3-pyqt6-base",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "python3-pyqt6-base",
+          "epoch": "0",
+          "ver": "6.6.1",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "python3-pyqt6-base",
+          "epoch": "0",
+          "ver": "6.9.0",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-ibase",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-ibase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-ibase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-ibase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-ibase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-ibase",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-ibase",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.6.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.6.3",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        }
+      ]
+    },
+    {
+      "name": "extras/kde6",
+      "baseurl": "https://repo2.red-soft.ru/redos/8.0/aarch64/extras/kde6/",
+      "primary": "repodata/2c05e8de734275cffca5c638e22c7f9e6feff7e7146d29537cd7ee28ffc740a0-primary.xml.gz",
+      "primary_checksum": "2c05e8de734275cffca5c638e22c7f9e6feff7e7146d29537cd7ee28ffc740a0",
+      "checksum_type": "sha256",
+      "primary_timestamp": "1790587154",
+      "digests_verified": true,
+      "package_count": 1997,
+      "packages": [
+        {
+          "name": "kf5-kcoreaddons",
+          "epoch": "0",
+          "ver": "5.116.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf5-kcoreaddons-devel",
+          "epoch": "0",
+          "ver": "5.116.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf6-kcoreaddons",
+          "epoch": "0",
+          "ver": "6.15.0",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf6-kcoreaddons-devel",
+          "epoch": "0",
+          "ver": "6.15.0",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kf6-kcoreaddons-doc",
+          "epoch": "0",
+          "ver": "6.15.0",
+          "rel": "2.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "kf6-kcoreaddons-html",
+          "epoch": "0",
+          "ver": "6.15.0",
+          "rel": "2.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "kpipewire",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "kpipewire-devel",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "krdp",
+          "epoch": "0",
+          "ver": "6.4.6",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "krdp-devel",
+          "epoch": "0",
+          "ver": "6.4.6",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "krdp-libs",
+          "epoch": "0",
+          "ver": "6.4.6",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-desktop",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-desktop-doc",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "3.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-desktop-kimpanel-scim",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "3.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-common",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-devel",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "4.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-doc",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "5.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "4.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-libs",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-wallpapers",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "2.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "plasma-workspace-x11",
+          "epoch": "0",
+          "ver": "6.4.2",
+          "rel": "5.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "python3-kf6-kcoreaddons",
+          "epoch": "0",
+          "ver": "6.15.0",
+          "rel": "2.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "python3-pyqt6-base",
+          "epoch": "0",
+          "ver": "6.9.0",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-common",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "noarch"
+        },
+        {
+          "name": "qt6-qtbase-devel",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-examples",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-gui",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-ibase",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-mysql",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-odbc",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-postgresql",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-private-devel",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        },
+        {
+          "name": "qt6-qtbase-static",
+          "epoch": "0",
+          "ver": "6.9.3",
+          "rel": "1.red80",
+          "arch": "aarch64"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+RED OS 8 aarch64 official repository metadata preflight, 2026-11-20.
+No VM created or booted; no build, installation or RDP acceptance attempted.
+User authorized skipping if packaged Plasma Login Manager is absent.
+
+Repository                         Package entries    Primary metadata UTC
+os                                         66046    2026-11-12 11:35:36
+updates                                    38105    2026-11-16 09:07:42
+extras/kde6                                 1997    2026-09-28 09:19:14
+
+Base URL: https://repo2.red-soft.ru/redos/8.0/aarch64/
+Each compressed primary digest verified against repomd.xml; open-checksum
+also checked when present. HTTPS certificate validation enabled via curl.
+This is NOT a detached PGP verification of repository metadata or RPM files.
+
+extras/kde6: plasma-desktop/workspace 6.4.2, kpipewire6.4.2, krdp6.4.6,
+qt6-qtbase6.9.3, kf6-kcoreaddons6.15.0.
+No plasma-login-manager, plasma6-login-manager or plasmalogin package;
+no package names matching plasma.*login in any of these three repositories.
+
+Current source requires Qt>=6.10, KF6>=6.26 and Plasma components>=6.7.
+Skip limited to this ARM64 repository snapshot, not a claim about x86_64,
+private repositories or the feasibility of building a newer desktop stack.
