@@ -1,0 +1,9 @@
+Sat Nov 21 18:23:30 UTC 2026
+native-a
+Geometry: 0,0,960x1018
+Scale: 1
+Compositing Type: OpenGL
+native-b
+Geometry: 0,0,1920x1080
+Scale: 1
+Compositing Type: OpenGL

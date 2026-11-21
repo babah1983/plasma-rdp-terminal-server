@@ -1,0 +1,45 @@
+--- a/src/VideoStream.cpp
++++ b/src/VideoStream.cpp
+@@ -158,6 +158,8 @@
+ 
+     std::atomic_int encodedFrames = 0;
+     std::atomic_int frameDelay = 0;
++    clk::steady_clock::time_point nextCapacityTrace{};
++    uint64_t packetTraceCount = 0;
+     bool initialized = false;
+     quint8 quality = 100;
+ 
+@@ -647,6 +649,9 @@
+ uint32_t VideoStream::onFrameAcknowledge(const RDPGFX_FRAME_ACKNOWLEDGE_PDU *frameAcknowledge)
+ {
+     auto id = frameAcknowledge->frameId;
++    if (qEnvironmentVariableIsSet("PLASMA_RDP_TRACE_FRAMES") && (id % 100 == 0 || frameAcknowledge->queueDepth == 0xFFFFFFFFu)) {
++        qInfo() << "KRdp trace ACK" << id << "queueDepth" << frameAcknowledge->queueDepth << "decoded" << frameAcknowledge->totalFramesDecoded;
++    }
+ 
+     std::lock_guard lock(d->pendingFramesMutex);
+ 
+@@ -664,6 +669,9 @@
+ 
+ void VideoStream::onPacketReceived(const PipeWireEncodedStream::Packet &data)
+ {
++    if (qEnvironmentVariableIsSet("PLASMA_RDP_TRACE_FRAMES") && (++d->packetTraceCount % 100 == 1 || data.isKeyFrame())) {
++        qInfo() << "KRdp trace packet" << d->packetTraceCount << "generation" << d->sourceGeneration.load() << "size" << d->size << "key" << data.isKeyFrame();
++    }
+     VideoFrame frameData;
+     frameData.size = d->size;
+     frameData.data = data.data();
+@@ -813,7 +821,12 @@
+ bool VideoStream::hasInFlightCapacity() const
+ {
+     std::lock_guard lock(d->pendingFramesMutex);
+-    return d->pendingFrames.size() < MaximumInFlightFrames;
++    const bool capacity = d->pendingFrames.size() < MaximumInFlightFrames;
++    if (!capacity && qEnvironmentVariableIsSet("PLASMA_RDP_TRACE_FRAMES") && clk::steady_clock::now() >= d->nextCapacityTrace) {
++        d->nextCapacityTrace = clk::steady_clock::now() + std::chrono::seconds(5);
++        qInfo() << "KRdp trace waiting for ACK" << d->pendingFrames << "encoded" << d->encodedFrames.load();
++    }
++    return capacity;
+ }
+ 
+ bool VideoStream::sendFrame(const VideoFrame &frame)

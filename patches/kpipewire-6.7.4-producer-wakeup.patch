@@ -1,0 +1,172 @@
+--- /dev/null
++++ b/src/producerwakeup_p.h
+@@ -0,0 +1,47 @@
++// SPDX-License-Identifier: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
++#pragma once
++
++#include <condition_variable>
++#include <mutex>
++
++// A latched wakeup: work and shutdown are remembered even before wait().
++// One consumer per gate; notifications can be coalesced because encoders drain
++// their queues. Closing is terminal for this producer's lifetime.
++class PipeWireProducerWakeup
++{
++public:
++    void notify()
++    {
++        {
++            std::lock_guard lock(m_mutex);
++            m_pending = true;
++        }
++        m_condition.notify_one();
++    }
++
++    bool wait()
++    {
++        std::unique_lock lock(m_mutex);
++        m_condition.wait(lock, [this] { return m_pending || m_closed; });
++        if (m_closed) {
++            return false;
++        }
++        m_pending = false;
++        return true;
++    }
++
++    void close()
++    {
++        {
++            std::lock_guard lock(m_mutex);
++            m_closed = true;
++        }
++        m_condition.notify_one();
++    }
++
++private:
++    std::mutex m_mutex;
++    std::condition_variable m_condition;
++    bool m_pending = false;
++    bool m_closed = false;
++};
+--- a/src/pipewireproduce_p.h
++++ b/src/pipewireproduce_p.h
+@@ -7,6 +7,7 @@
+ #pragma once
+ 
+ #include <QObject>
++#include "producerwakeup_p.h"
+ #include <epoxy/egl.h>
+ 
+ extern "C" {
+@@ -132,15 +133,8 @@
+ 
+     std::thread m_passthroughThread;
+     std::thread m_outputThread;
+-    // Can't use jthread directly as it's not available in libc++ yet,
+-    // so manually handle the stop source.
+-    std::atomic_bool m_passthroughRunning = false;
+-    std::atomic_bool m_outputRunning = false;
+-
+-    std::condition_variable m_passthroughCondition;
+-    std::mutex m_passthroughMutex;
+-    std::condition_variable m_outputCondition;
+-    std::mutex m_outputMutex;
++    PipeWireProducerWakeup m_passthroughWakeup;
++    PipeWireProducerWakeup m_outputWakeup;
+ 
+     std::atomic_bool m_deactivated = false;
+ 
+--- a/src/pipewireproduce.cpp
++++ b/src/pipewireproduce.cpp
+@@ -111,7 +111,7 @@
+         }
+ 
+         m_pendingFilterFrames++;
+-        m_passthroughCondition.notify_all();
++        m_passthroughWakeup.notify();
+     });
+ }
+ 
+@@ -167,20 +167,13 @@
+     connect(m_stream.data(), &PipeWireSourceStream::frameReceived, this, &PipeWireProduce::processFrame);
+ 
+     m_passthroughThread = std::thread([this]() {
+-        m_passthroughRunning = true;
+-        while (m_passthroughRunning) {
+-            std::unique_lock<std::mutex> lock(m_passthroughMutex);
+-            m_passthroughCondition.wait(lock);
+-
+-            if (!m_passthroughRunning) {
+-                break;
+-            }
++        while (m_passthroughWakeup.wait()) {
+ 
+             auto [filtered, queued] = m_encoder->encodeFrame(m_maxPendingFrames - m_pendingEncodeFrames);
+             m_pendingFilterFrames -= filtered;
+             m_pendingEncodeFrames += queued;
+ 
+-            m_outputCondition.notify_all();
++            m_outputWakeup.notify();
+         }
+     });
+ #if defined(Q_OS_OPENBSD)
+@@ -190,14 +183,7 @@
+ #endif
+ 
+     m_outputThread = std::thread([this]() {
+-        m_outputRunning = true;
+-        while (m_outputRunning) {
+-            std::unique_lock<std::mutex> lock(m_outputMutex);
+-            m_outputCondition.wait(lock);
+-
+-            if (!m_outputRunning) {
+-                break;
+-            }
++        while (m_outputWakeup.wait()) {
+ 
+             auto received = m_encoder->receivePacket();
+             m_pendingEncodeFrames -= received;
+@@ -254,14 +240,12 @@
+     m_frameStatisticsTimer = nullptr;
+ 
+     if (m_passthroughThread.joinable()) {
+-        m_passthroughRunning = false;
+-        m_passthroughCondition.notify_all();
++        m_passthroughWakeup.close();
+         m_passthroughThread.join();
+     }
+ 
+     if (m_outputThread.joinable()) {
+-        m_outputRunning = false;
+-        m_outputCondition.notify_all();
++        m_outputWakeup.close();
+         m_outputThread.join();
+     }
+ 
+@@ -339,7 +323,7 @@
+     m_pendingFilterFrames++;
+     m_previousPts = pts;
+ 
+-    m_passthroughCondition.notify_all();
++    m_passthroughWakeup.notify();
+ }
+ 
+ void PipeWireProduce::stateChanged(pw_stream_state state)
+@@ -366,7 +350,7 @@
+         // If we have pending frames, wait with cleanup until all frames have been processed.
+         qCDebug(PIPEWIRERECORD_LOGGING) << "Waiting for frame queues to empty, still pending filter" << m_pendingFilterFrames << "encode"
+                                         << m_pendingEncodeFrames;
+-        m_passthroughCondition.notify_all();
++        m_passthroughWakeup.notify();
+     }
+ }
+ 
+@@ -381,7 +365,7 @@
+     // need a different trigger to make the filtering thread process frames.
+     // Triggering here means the filter thread runs as fast as the encode thread
+     // can process the frames.
+-    m_passthroughCondition.notify_all();
++    m_passthroughWakeup.notify();
+ 
+     if (m_pendingFilterFrames <= 0) {
+         m_encoder->finish();

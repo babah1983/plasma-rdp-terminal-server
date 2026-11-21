@@ -1,0 +1,14 @@
+native-a    1952 kwin_wayland_wr
+native-a    1958 kwin_wayland
+native-a    2553 kate
+native-a    2556 konsole
+native-b    5750 kwin_wayland_wr
+native-b    5755 kwin_wayland
+native-b    7516 kate
+native-b    7519 konsole
+native-a   21058 krdpserver
+native-b   21092 krdpserver
+plasmal+   66508 kwin_wayland
+plasmal+   66602 krdpserver
+2026-11-21T18:24:15.339194+00:00,460.85,native-a,21058,176100,55492,37408,4,21,9992,2553,1958,0,6144
+2026-11-21T18:24:15.461857+00:00,460.85,native-b,21092,179020,58029,38656,4,21,4302,7516,5755,0,6144

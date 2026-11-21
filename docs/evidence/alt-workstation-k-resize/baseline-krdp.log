@@ -1,0 +1,135 @@
+2026-11-21T20:48:17+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: kf.statusnotifieritem: KDE platform plugin is loaded but SNI unavailable
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: *************************************************
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: This build is using [experimental] build options:
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: * 'WITH_CLIENT_SDL2=ON'
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: *
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: [experimental] build options might crash the application
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: *************************************************
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: *************************************************
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: This build is using [runtime-check] build options:
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: * 'WITH_VERBOSE_WINPR_ASSERT=ON'
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:401] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: *
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:402] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: [runtime-check] build options might slow down the application
+2026-11-21T20:48:38+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:48:38:402] [1706:000006aa] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x5602113c18d0]: *************************************************
+2026-11-21T20:48:51+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: org.kde.krdp: New client connected:  OS X platform Unspecified version
+2026-11-21T20:48:51+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: libEGL warning: egl: failed to create dri2 screen
+2026-11-21T20:48:51+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: libEGL warning: egl: failed to create dri2 screen
+2026-11-21T20:48:51+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: kpipewire_vaapi_logging: VAAPI: could not resolve the current session render node; hardware encoding will not be auto-selected
+2026-11-21T20:48:51+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: kpipewire_record_logging: Forcing encoder to "libx264"
+2026-11-21T20:48:51+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+2026-11-21T20:48:51+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] profile Constrained Baseline, level 6.0, 4:2:0, 8-bit
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: org.kde.krdp: Sent server redirection
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:50:00:141] [1706:0000072f] [ERROR][com.freerdp.core.peer] - [rdp_set_error_info]: ERRINFO_LOGOFF_BY_USER [0x0001000C]
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] frame I:2     Avg QP:16.00  size:107182
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] frame P:186   Avg QP:18.58  size:  5953
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] mb I  I16..4: 100.0%  0.0%  0.0%
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] mb P  I16..4:  9.1%  0.0%  0.0%  P16..4: 16.3%  0.0%  0.0%  0.0%  0.0%    skip:74.5%
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] coded y,uvDC,uvAC intra: 14.5% 25.1% 8.2% inter: 5.5% 8.2% 0.8%
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] i16 v,h,dc,p: 23% 33% 13% 31%
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] i8c dc,h,v,p: 49% 28% 13%  9%
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [libx264 @ 0x7ffa90295480] kb/s:56235.57
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:50:00:152] [1706:000006aa] [ERROR][com.freerdp.core.transport] - [transport_default_write]: BIO_should_retry returned an error: error:80000020:system library::Broken pipe
+2026-11-21T20:50:00+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:50:00:152] [1706:000006aa] [ERROR][com.freerdp.core.transport] - [transport_default_write]: BIO_should_retry returned an error: error:80000020:system library::Broken pipe
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: kf.statusnotifieritem: KDE platform plugin is loaded but SNI unavailable
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Listening for connections on QHostAddress("127.0.0.1") 3391
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:649] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: *************************************************
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:649] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: This build is using [experimental] build options:
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:649] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: * 'WITH_CLIENT_SDL2=ON'
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:649] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: *
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:649] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: [experimental] build options might crash the application
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:649] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: *************************************************
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:650] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: *************************************************
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:650] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: This build is using [runtime-check] build options:
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:650] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: * 'WITH_VERBOSE_WINPR_ASSERT=ON'
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:650] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: *
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:650] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: [runtime-check] build options might slow down the application
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [20:50:01:650] [1960:000007a8] [WARN][com.freerdp.core.rdp] - [log_build_warn][0x55b295248090]: *************************************************
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Session setup completed, start processing...
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Started Plasma session
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: New client connected:  OS X platform Unspecified version
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: User "greeter" authenticated successfully
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Video stream initialized with H.264 enabled
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp: initial client desktop size QSize(1920, 1080)
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp: requested DPMS on for dedicated Virtual-0
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Received caps:
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   RDPGFX_CAPVERSION_8 flags: 2 AVC: false YUV420: false
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   RDPGFX_CAPVERSION_81 flags: 2 AVC: false YUV420: false
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   RDPGFX_CAPVERSION_10 flags: 22 AVC: false YUV420: false
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   RDPGFX_CAPVERSION_102 flags: 22 AVC: false YUV420: false
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   RDPGFX_CAPVERSION_103 flags: 20 AVC: false YUV420: false
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   RDPGFX_CAPVERSION_104 flags: 2 AVC: true YUV420: true
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   RDPGFX_CAPVERSION_107 flags: 82 AVC: true YUV420: true
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   UNKNOWN_VERSION flags: 82 AVC: false YUV420: false
+2026-11-21T20:50:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp:   UNKNOWN_VERSION flags: 82 AVC: false YUV420: false
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: libEGL warning: egl: failed to create dri2 screen
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: libEGL warning: egl: failed to create dri2 screen
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: kpipewire_vaapi_logging: VAAPI: could not resolve the current session render node; hardware encoding will not be auto-selected
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Selected encoding mode: "h264"
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Selected caps: UNKNOWN_VERSION
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp: applied virtual output mode QSize(1920, 1080)
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Started Plasma session
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: kpipewire_record_logging: Forcing encoder to "libx264"
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] profile Constrained Baseline, level 6.1, 4:2:0, 8-bit
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 1 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp: graphics surface reset QSize(1920, 1080) surface 1
+2026-11-21T20:50:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 0 queueDepth 0 decoded 1
+2026-11-21T20:50:03+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.portal.Error.Failed", "Could not register app ID: Connection already associated with an application ID")
+2026-11-21T20:50:03+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace waiting for ACK QSet(7, 8) encoded 9
+2026-11-21T20:50:06+03:00 matrix-alt-kworkstation plasma-rdp-greeter[1706]: [20:50:00:141] [1706:0000072f] [INFO][com.freerdp.core] - [rdp_print_errinfo]: ERRINFO_LOGOFF_BY_USER (0x0000000C):The disconnection was initiated by the user logging off their session on the server.
+2026-11-21T20:50:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace waiting for ACK QSet(51, 50) encoded 52
+2026-11-21T20:50:10+03:00 matrix-alt-kworkstation plasma-rdp-greeter[2538]: kf.statusnotifieritem: KDE platform plugin is loaded but SNI unavailable
+2026-11-21T20:51:00+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace waiting for ACK QSet(95, 94) encoded 96
+2026-11-21T20:51:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 101 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:51:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 100 queueDepth 0 decoded 101
+2026-11-21T20:51:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 201 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:51:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 200 queueDepth 0 decoded 201
+2026-11-21T20:51:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 301 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:51:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace waiting for ACK QSet(300, 301) encoded 302
+2026-11-21T20:51:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 300 queueDepth 0 decoded 301
+2026-11-21T20:51:26+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 401 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:51:26+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 400 queueDepth 0 decoded 401
+2026-11-21T20:51:34+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 501 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:51:34+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 500 queueDepth 0 decoded 501
+2026-11-21T20:51:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 601 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:51:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace waiting for ACK QSet(601, 600) encoded 602
+2026-11-21T20:51:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 600 queueDepth 0 decoded 601
+2026-11-21T20:51:51+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 701 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:51:51+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace waiting for ACK QSet(701, 700) encoded 702
+2026-11-21T20:51:51+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 700 queueDepth 0 decoded 701
+2026-11-21T20:51:57+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace waiting for ACK QSet(773, 772) encoded 774
+2026-11-21T20:51:59+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 801 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:51:59+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 800 queueDepth 0 decoded 801
+2026-11-21T20:52:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace waiting for ACK QSet(841, 842) encoded 843
+2026-11-21T20:52:07+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 901 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:52:07+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 900 queueDepth 1232 decoded 901
+2026-11-21T20:52:15+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 1001 generation 2 size QSize(1920, 1080) key true
+2026-11-21T20:52:15+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace ACK 1000 queueDepth 0 decoded 1001
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp: applied virtual output mode QSize(960, 678)
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] frame I:11    Avg QP:13.64  size:432694
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] frame P:1010  Avg QP:16.42  size:  4013
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] mb I  I16..4: 100.0%  0.0%  0.0%
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] mb P  I16..4:  0.4%  0.0%  0.0%  P16..4:  1.3%  0.0%  0.0%  0.0%  0.0%    skip:98.3%
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] coded y,uvDC,uvAC intra: 55.1% 45.8% 38.2% inter: 0.6% 0.9% 0.5%
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] i16 v,h,dc,p: 26% 39% 16% 20%
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] i8c dc,h,v,p: 51% 35%  7%  7%
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18342fc0] kb/s:69054.32
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Started Plasma session
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: kpipewire_record_logging: Forcing encoder to "libx264"
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18111b00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18111b00] profile Constrained Baseline, level 6.0, 4:2:0, 8-bit
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 1022 generation 3 size QSize(960, 678) key true
+2026-11-21T20:52:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp: graphics surface reset QSize(960, 678) surface 2
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18111b00] frame I:1     Avg QP:18.00  size:105337
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18111b00] mb I  I16..4: 100.0%  0.0%  0.0%
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18111b00] coded y,uvDC,uvAC intra: 39.1% 34.1% 29.0%
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18111b00] i16 v,h,dc,p: 43% 41% 10%  5%
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18111b00] i8c dc,h,v,p: 59% 28% 10%  3%
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee18111b00] kb/s:842695.94
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: org.kde.krdp: Started Plasma session
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: kpipewire_record_logging: Forcing encoder to "libx264"
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee182f6740] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: [libx264 @ 0x7fee182f6740] profile Constrained Baseline, level 6.0, 4:2:0, 8-bit
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp trace packet 1023 generation 4 size QSize(960, 1018) key true
+2026-11-21T20:52:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1960]: KRdp: graphics surface reset QSize(960, 1018) surface 3

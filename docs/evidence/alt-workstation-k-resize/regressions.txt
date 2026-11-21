@@ -1,0 +1,10 @@
+producer_wakeup: queued work, early stop, late work, 1000 two-worker shutdowns passed
+surface=1 size=256x192 decode=1 corners_painted=0 policy=old-partial
+surface=2 size=384x256 decode=1 corners_painted=0 policy=old-partial
+surface=3 size=128x128 decode=1 corners_painted=0 policy=old-partial
+surface=1 size=256x192 decode=1 corners_painted=1 policy=full-first-frame
+surface=2 size=384x256 decode=1 corners_painted=1 policy=full-first-frame
+surface=3 size=128x128 decode=1 corners_painted=1 policy=full-first-frame
+suppress_output_owner_thread=1 close_owner_thread=1
+button_position_press=1 release_at_origin=1 extended=1 motion=1
+Staged files in build/resize-wakeup-stage

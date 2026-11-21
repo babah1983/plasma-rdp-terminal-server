@@ -1,0 +1,38 @@
+{
+  "native-a": {
+    "first_disconnected_sample_elapsed_s": 234.64,
+    "first_disconnected_pss_kib": 58635,
+    "peak_pss_kib": 173401,
+    "last_active_pss_kib": 128844,
+    "final_idle_pss_kib": 56013,
+    "final_idle_threads": 4,
+    "final_idle_fds": 21,
+    "kate_pids": [
+      "2553"
+    ],
+    "kwin_pids": [
+      "1958"
+    ],
+    "krdp_pids": [
+      "21058"
+    ]
+  },
+  "native-b": {
+    "first_disconnected_sample_elapsed_s": 234.64,
+    "first_disconnected_pss_kib": 57518,
+    "peak_pss_kib": 164021,
+    "last_active_pss_kib": 119368,
+    "final_idle_pss_kib": 57019,
+    "final_idle_threads": 4,
+    "final_idle_fds": 21,
+    "kate_pids": [
+      "7516"
+    ],
+    "kwin_pids": [
+      "5755"
+    ],
+    "krdp_pids": [
+      "21092"
+    ]
+  }
+}

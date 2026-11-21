@@ -1,0 +1,30 @@
+Sat Nov 21 18:29:09 UTC 2026
+b2df7448-49a0-4121-9328-85c6e50f33c7
+native-a
+   1952 kwin_wayland_wr
+   1958 kwin_wayland
+   2553 kate
+   2556 konsole
+  21058 krdpserver
+Geometry: 0,0,960x1018
+Scale: 1
+Compositing Type: OpenGL
+18:29:10 frame=00019728 resize diagnostic
+18:29:10 frame=00019729 resize diagnostic
+18:29:10 frame=00019730 resize diagnostic
+native-b
+   5750 kwin_wayland_wr
+   5755 kwin_wayland
+   7516 kate
+   7519 konsole
+  21092 krdpserver
+Geometry: 0,0,960x1018
+Scale: 1
+Compositing Type: OpenGL
+18:29:10 frame=00017815 resize diagnostic
+18:29:10 frame=00017816 resize diagnostic
+18:29:10 frame=00017817 resize diagnostic
+KWin allocation failures after VGEM boot: 0
+/etc/pam.d/plasmalogin: OK
+/etc/pam.d/plasmalogin-autologin: OK
+/etc/pam.d/plasmalogin-greeter: OK

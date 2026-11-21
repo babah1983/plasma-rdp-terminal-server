@@ -1,0 +1,2 @@
+/dev/dri/renderD128 CREATE_DUMB FAILED 13 Permission denied
+/dev/dri/card0 CREATE_DUMB OK pitch 1280 size 307200

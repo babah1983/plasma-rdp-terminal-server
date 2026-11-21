@@ -1,0 +1,66 @@
+Baseline KWin journal: 24544 lines, CREATE_DUMB failures: 9822.
+Excerpt: first 36 and last 24 lines; repeated errors omitted.
+
+kwin_core: Failed to open drm node : No such file or directory
+kwin_scene_opengl: couldn't find dev node for drm device
+kwin_core: Failed to open drm node : No such file or directory
+kwin_scene_opengl: couldn't find dev node for drm device
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 1280x800) -> dst KWin::Rect(0,0 1280x800)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 24x24) -> dst KWin::Rect(634,398 24x24)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 24x24) -> dst KWin::Rect(954,538 24x24)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 24x24) -> dst KWin::Rect(954,538 24x24)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 1920x1080) -> dst KWin::Rect(0,0 1920x1080)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+
+[omitted 24484 repeated lines]
+
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 960x1018) -> dst KWin::Rect(0,0 960x1018)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 960x1018) -> dst KWin::Rect(0,0 960x1018)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 960x1018) -> dst KWin::Rect(0,0 960x1018)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 960x1018) -> dst KWin::Rect(0,0 960x1018)
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+KMS: DRM_IOCTL_MODE_CREATE_DUMB failed: Permission denied
+kwin_core: Rendering a layer failed!
+kwin_core: Failed to find a working output layer configuration! Enabled layers:
+kwin_core: src KWin::RectF(0,0 960x1018) -> dst KWin::Rect(0,0 960x1018)

@@ -1,0 +1,23 @@
+active
+active
+active
+SESSION UID USER        SEAT  LEADER CLASS         TTY  IDLE SINCE
+      1 969 plasmalogin seat0 1393   greeter       tty1 no   -
+      2 969 plasmalogin -     1433   manager-early -    no   -
+      3   0 root        -     1802   user          -    no   -
+      4   0 root        -     1807   manager-early -    no   -
+
+4 sessions listed.
+plasmal+    1679 kwin_wayland
+plasmal+    1706 krdpserver
+# file: /dev/dri/card0
+# owner: root
+# group: xgrp
+user::rw-
+user:plasmalogin:rw-
+group::rw-
+group:plasma-rdp-render:rw-
+mask::rw-
+other::---
+
+MODALIAS=platform:vgem

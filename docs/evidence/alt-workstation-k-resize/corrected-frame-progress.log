@@ -1,0 +1,931 @@
+2026-11-21T20:59:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1 generation 1 size QSize(960, 1018) key true
+2026-11-21T20:59:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp: graphics surface reset QSize(960, 1018) surface 1
+2026-11-21T20:59:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 0 queueDepth 0 decoded 1
+2026-11-21T20:59:15+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 101 generation 1 size QSize(960, 1018) key true
+2026-11-21T20:59:15+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 100 queueDepth 0 decoded 101
+2026-11-21T20:59:30+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 201 generation 1 size QSize(960, 1018) key true
+2026-11-21T20:59:30+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 200 queueDepth 0 decoded 201
+2026-11-21T21:00:00+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:00+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 300 queueDepth 0 decoded 301
+2026-11-21T21:00:05+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 401 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:05+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 400 queueDepth 0 decoded 401
+2026-11-21T21:00:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 501 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 500 queueDepth 0 decoded 501
+2026-11-21T21:00:13+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 601 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:13+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 600 queueDepth 0 decoded 601
+2026-11-21T21:00:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 701 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 700 queueDepth 0 decoded 701
+2026-11-21T21:00:21+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 801 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:21+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 800 queueDepth 0 decoded 801
+2026-11-21T21:00:25+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 901 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:25+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 900 queueDepth 179 decoded 901
+2026-11-21T21:00:29+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1001 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:29+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1000 queueDepth 0 decoded 1001
+2026-11-21T21:00:33+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:33+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1100 queueDepth 0 decoded 1101
+2026-11-21T21:00:36+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1201 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:37+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1200 queueDepth 0 decoded 1201
+2026-11-21T21:00:40+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:00:40+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1300 queueDepth 0 decoded 1301
+2026-11-21T21:00:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp: applied virtual output mode QSize(960, 604)
+2026-11-21T21:00:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1360 generation 2 size QSize(960, 604) key true
+2026-11-21T21:00:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp: graphics surface reset QSize(960, 604) surface 2
+2026-11-21T21:00:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-21T21:00:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1366 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:00:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp: graphics surface reset QSize(960, 1018) surface 3
+2026-11-21T21:00:46+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:00:46+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1400 queueDepth 0 decoded 1401
+2026-11-21T21:00:50+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1466 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:00:53+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:00:53+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1500 queueDepth 0 decoded 1501
+2026-11-21T21:00:55+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1566 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:00:57+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:00:57+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1600 queueDepth 0 decoded 1601
+2026-11-21T21:00:59+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1666 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1700 queueDepth 0 decoded 1701
+2026-11-21T21:01:03+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1766 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:04+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:05+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1800 queueDepth 0 decoded 1801
+2026-11-21T21:01:07+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1866 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 1900 queueDepth 0 decoded 1901
+2026-11-21T21:01:11+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 1966 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:12+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:12+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2000 queueDepth 0 decoded 2001
+2026-11-21T21:01:15+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2066 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:16+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:16+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2100 queueDepth 0 decoded 2101
+2026-11-21T21:01:19+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2166 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:21+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:21+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2200 queueDepth 0 decoded 2201
+2026-11-21T21:01:23+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2266 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:25+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:25+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2300 queueDepth 0 decoded 2301
+2026-11-21T21:01:27+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2366 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:29+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:29+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2400 queueDepth 0 decoded 2401
+2026-11-21T21:01:32+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2466 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:33+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:33+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2500 queueDepth 0 decoded 2501
+2026-11-21T21:01:36+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2566 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:38+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:38+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2600 queueDepth 0 decoded 2601
+2026-11-21T21:01:40+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2666 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2700 queueDepth 0 decoded 2701
+2026-11-21T21:01:44+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2766 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:46+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:46+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2800 queueDepth 0 decoded 2801
+2026-11-21T21:01:48+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2866 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:50+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:50+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 2900 queueDepth 0 decoded 2901
+2026-11-21T21:01:52+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 2966 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:54+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:54+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3000 queueDepth 14164 decoded 3001
+2026-11-21T21:01:57+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3066 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:01:58+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:01:58+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3100 queueDepth 0 decoded 3101
+2026-11-21T21:02:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3166 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:03+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:03+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3200 queueDepth 0 decoded 3201
+2026-11-21T21:02:05+03:00 matrix-alt-kworkstation plasma-rdp-user[5762]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-21T21:02:06+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3266 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:08+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:09+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3300 queueDepth 861 decoded 3301
+2026-11-21T21:02:12+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3366 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:15+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:15+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3400 queueDepth 0 decoded 3401
+2026-11-21T21:02:19+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3466 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:21+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:22+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3500 queueDepth 0 decoded 3501
+2026-11-21T21:02:26+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3566 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:28+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:28+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3600 queueDepth 0 decoded 3601
+2026-11-21T21:02:32+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3666 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:34+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:34+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3700 queueDepth 3299 decoded 3701
+2026-11-21T21:02:37+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3766 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:39+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:39+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3800 queueDepth 0 decoded 3801
+2026-11-21T21:02:41+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3866 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 3900 queueDepth 0 decoded 3901
+2026-11-21T21:02:45+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 3966 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:47+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:47+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4000 queueDepth 2625 decoded 4001
+2026-11-21T21:02:50+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4066 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:52+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:52+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4100 queueDepth 0 decoded 4101
+2026-11-21T21:02:54+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4166 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:02:56+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:02:56+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4200 queueDepth 0 decoded 4201
+2026-11-21T21:02:59+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4266 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4300 queueDepth 15400 decoded 4301
+2026-11-21T21:03:03+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4366 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:05+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:05+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4400 queueDepth 0 decoded 4401
+2026-11-21T21:03:08+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4466 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:10+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:10+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4500 queueDepth 0 decoded 4501
+2026-11-21T21:03:12+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4566 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:13+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:14+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4600 queueDepth 0 decoded 4601
+2026-11-21T21:03:16+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4666 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4700 queueDepth 0 decoded 4701
+2026-11-21T21:03:20+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4766 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:22+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:22+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4800 queueDepth 0 decoded 4801
+2026-11-21T21:03:24+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4866 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:26+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:26+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 4900 queueDepth 0 decoded 4901
+2026-11-21T21:03:28+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 4966 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:30+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:30+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5000 queueDepth 0 decoded 5001
+2026-11-21T21:03:32+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5066 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:34+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:34+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5100 queueDepth 0 decoded 5101
+2026-11-21T21:03:36+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5166 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:38+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:38+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5200 queueDepth 0 decoded 5201
+2026-11-21T21:03:41+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5266 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5300 queueDepth 0 decoded 5301
+2026-11-21T21:03:45+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5366 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:46+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:46+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5400 queueDepth 0 decoded 5401
+2026-11-21T21:03:49+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5466 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:50+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:50+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5500 queueDepth 0 decoded 5501
+2026-11-21T21:03:53+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5566 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:54+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:55+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5600 queueDepth 0 decoded 5601
+2026-11-21T21:03:57+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5666 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:03:58+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:03:58+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5700 queueDepth 0 decoded 5701
+2026-11-21T21:04:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5766 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5800 queueDepth 0 decoded 5801
+2026-11-21T21:04:05+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5866 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:06+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:06+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 5900 queueDepth 0 decoded 5901
+2026-11-21T21:04:08+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 5966 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:10+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:10+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6000 queueDepth 0 decoded 6001
+2026-11-21T21:04:12+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6066 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:14+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:14+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6100 queueDepth 0 decoded 6101
+2026-11-21T21:04:17+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6166 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6200 queueDepth 14015 decoded 6201
+2026-11-21T21:04:20+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6266 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:22+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:22+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6300 queueDepth 0 decoded 6301
+2026-11-21T21:04:24+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6366 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:25+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:26+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6400 queueDepth 0 decoded 6401
+2026-11-21T21:04:28+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6466 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:29+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:30+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6500 queueDepth 0 decoded 6501
+2026-11-21T21:04:32+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6566 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:33+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:33+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6600 queueDepth 0 decoded 6601
+2026-11-21T21:04:36+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6666 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:37+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:37+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6700 queueDepth 0 decoded 6701
+2026-11-21T21:04:40+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6766 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:41+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:41+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6800 queueDepth 0 decoded 6801
+2026-11-21T21:04:44+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6866 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:45+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:45+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 6900 queueDepth 0 decoded 6901
+2026-11-21T21:04:48+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 6966 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:49+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:49+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7000 queueDepth 0 decoded 7001
+2026-11-21T21:04:52+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7066 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:53+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:53+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7100 queueDepth 0 decoded 7101
+2026-11-21T21:04:55+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7166 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:04:57+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:04:57+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7200 queueDepth 0 decoded 7201
+2026-11-21T21:05:00+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7266 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:05:04+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:05:05+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7300 queueDepth 14527 decoded 7301
+2026-11-21T21:05:10+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7366 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:05:14+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:05:15+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7400 queueDepth 0 decoded 7401
+2026-11-21T21:05:20+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7466 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:05:24+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:05:24+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7500 queueDepth 0 decoded 7501
+2026-11-21T21:05:29+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7566 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:05:32+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:05:33+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7600 queueDepth 0 decoded 7601
+2026-11-21T21:05:38+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7666 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:05:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:05:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7700 queueDepth 2152 decoded 7701
+2026-11-21T21:05:48+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7766 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:05:51+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:05:52+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7800 queueDepth 0 decoded 7801
+2026-11-21T21:05:55+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7866 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:05:57+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:05:58+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 7900 queueDepth 0 decoded 7901
+2026-11-21T21:06:01+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 7966 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:02+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:03+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8000 queueDepth 0 decoded 8001
+2026-11-21T21:06:06+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8066 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:07+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:08+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8100 queueDepth 0 decoded 8101
+2026-11-21T21:06:10+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8166 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:12+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:12+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8200 queueDepth 13986 decoded 8201
+2026-11-21T21:06:14+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8266 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:16+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:16+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8300 queueDepth 0 decoded 8301
+2026-11-21T21:06:18+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8366 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:20+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:20+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8400 queueDepth 0 decoded 8401
+2026-11-21T21:06:22+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8466 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:23+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:24+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8500 queueDepth 0 decoded 8501
+2026-11-21T21:06:26+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8566 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:27+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:28+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8600 queueDepth 0 decoded 8601
+2026-11-21T21:06:30+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8666 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:31+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:31+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8700 queueDepth 0 decoded 8701
+2026-11-21T21:06:34+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8766 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:35+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:36+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8800 queueDepth 15036 decoded 8801
+2026-11-21T21:06:38+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8866 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:39+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:39+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 8900 queueDepth 2700 decoded 8901
+2026-11-21T21:06:42+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 8966 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 9001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:43+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 9000 queueDepth 0 decoded 9001
+2026-11-21T21:06:46+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 9066 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:06:47+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 9101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:06:48+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace ACK 9100 queueDepth 15189 decoded 9101
+2026-11-21T21:06:50+03:00 matrix-alt-kworkstation plasma-rdp-user[1963]: KRdp trace packet 9166 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:14:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(960, 1018) surface 1
+2026-11-21T21:14:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 0 queueDepth 0 decoded 1
+2026-11-21T21:14:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 100 queueDepth 0 decoded 101
+2026-11-21T21:14:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 201 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 200 queueDepth 121 decoded 201
+2026-11-21T21:14:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 300 queueDepth 8111 decoded 301
+2026-11-21T21:14:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 401 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 400 queueDepth 0 decoded 401
+2026-11-21T21:14:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 501 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 500 queueDepth 0 decoded 501
+2026-11-21T21:14:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 601 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 600 queueDepth 0 decoded 601
+2026-11-21T21:14:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 701 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 700 queueDepth 0 decoded 701
+2026-11-21T21:14:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 801 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 800 queueDepth 121 decoded 801
+2026-11-21T21:14:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 901 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 900 queueDepth 0 decoded 901
+2026-11-21T21:14:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1001 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:14:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1000 queueDepth 0 decoded 1001
+2026-11-21T21:15:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1100 queueDepth 8706 decoded 1101
+2026-11-21T21:15:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1201 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1200 queueDepth 0 decoded 1201
+2026-11-21T21:15:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1300 queueDepth 0 decoded 1301
+2026-11-21T21:15:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1401 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:18+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1400 queueDepth 0 decoded 1401
+2026-11-21T21:15:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1501 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1500 queueDepth 0 decoded 1501
+2026-11-21T21:15:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1601 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1600 queueDepth 0 decoded 1601
+2026-11-21T21:15:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1701 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1700 queueDepth 0 decoded 1701
+2026-11-21T21:15:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: graphics surface reset QSize(960, 1018) surface 1
+2026-11-21T21:15:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 0 queueDepth 0 decoded 1
+2026-11-21T21:15:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1801 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1800 queueDepth 0 decoded 1801
+2026-11-21T21:15:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 100 queueDepth 0 decoded 101
+2026-11-21T21:15:45+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1901 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:45+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1900 queueDepth 3615 decoded 1901
+2026-11-21T21:15:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 201 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 200 queueDepth 121 decoded 201
+2026-11-21T21:15:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2001 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2000 queueDepth 0 decoded 2001
+2026-11-21T21:15:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 300 queueDepth 0 decoded 301
+2026-11-21T21:15:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:15:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2100 queueDepth 3642 decoded 2101
+2026-11-21T21:16:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 401 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 400 queueDepth 121 decoded 401
+2026-11-21T21:16:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2201 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2200 queueDepth 0 decoded 2201
+2026-11-21T21:16:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 501 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 500 queueDepth 0 decoded 501
+2026-11-21T21:16:07+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:07+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2300 queueDepth 3814 decoded 2301
+2026-11-21T21:16:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 601 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 600 queueDepth 314 decoded 601
+2026-11-21T21:16:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2401 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2400 queueDepth 0 decoded 2401
+2026-11-21T21:16:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2501 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2500 queueDepth 0 decoded 2501
+2026-11-21T21:16:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 701 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 700 queueDepth 0 decoded 701
+2026-11-21T21:16:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 801 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2601 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 800 queueDepth 0 decoded 801
+2026-11-21T21:16:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2600 queueDepth 0 decoded 2601
+2026-11-21T21:16:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2701 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2700 queueDepth 0 decoded 2701
+2026-11-21T21:16:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 901 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 900 queueDepth 0 decoded 901
+2026-11-21T21:16:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2801 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1001 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2800 queueDepth 0 decoded 2801
+2026-11-21T21:16:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1000 queueDepth 179 decoded 1001
+2026-11-21T21:16:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2901 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2900 queueDepth 0 decoded 2901
+2026-11-21T21:16:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1100 queueDepth 0 decoded 1101
+2026-11-21T21:16:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: applied virtual output mode QSize(960, 604)
+2026-11-21T21:16:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-21T21:16:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1129 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:16:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3001 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3000 queueDepth 0 decoded 3001
+2026-11-21T21:16:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:16:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1200 queueDepth 0 decoded 1201
+2026-11-21T21:16:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1229 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:16:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3100 queueDepth 0 decoded 3101
+2026-11-21T21:16:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:16:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1300 queueDepth 0 decoded 1301
+2026-11-21T21:16:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1329 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:16:56+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3201 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:16:56+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3200 queueDepth 0 decoded 3201
+2026-11-21T21:16:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:16:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1400 queueDepth 121 decoded 1401
+2026-11-21T21:17:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1429 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:17:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:17:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3300 queueDepth 11497 decoded 3301
+2026-11-21T21:17:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:17:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1500 queueDepth 0 decoded 1501
+2026-11-21T21:17:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: applied virtual output mode QSize(1920, 1080)
+2026-11-21T21:17:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1529 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:17:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3378 generation 2 size QSize(1920, 1080) key true
+2026-11-21T21:17:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(1920, 1080) surface 2
+2026-11-21T21:17:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3401 generation 2 size QSize(1920, 1080) key false
+2026-11-21T21:17:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3400 queueDepth 0 decoded 3401
+2026-11-21T21:17:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:17:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1600 queueDepth 0 decoded 1601
+2026-11-21T21:17:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1629 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:17:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:17:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1700 queueDepth 0 decoded 1701
+2026-11-21T21:17:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3478 generation 2 size QSize(1920, 1080) key true
+2026-11-21T21:17:18+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1729 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:17:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3501 generation 2 size QSize(1920, 1080) key false
+2026-11-21T21:17:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3500 queueDepth 0 decoded 3501
+2026-11-21T21:17:22+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:17:22+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1800 queueDepth 0 decoded 1801
+2026-11-21T21:17:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3578 generation 2 size QSize(1920, 1080) key true
+2026-11-21T21:17:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1829 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:17:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3601 generation 2 size QSize(1920, 1080) key false
+2026-11-21T21:17:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3600 queueDepth 0 decoded 3601
+2026-11-21T21:17:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:17:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1900 queueDepth 131 decoded 1901
+2026-11-21T21:17:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1929 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:17:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3678 generation 2 size QSize(1920, 1080) key true
+2026-11-21T21:17:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3701 generation 2 size QSize(1920, 1080) key false
+2026-11-21T21:17:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3700 queueDepth 0 decoded 3701
+2026-11-21T21:17:32+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:17:32+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2000 queueDepth 496 decoded 2001
+2026-11-21T21:17:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: applied virtual output mode QSize(960, 600)
+2026-11-21T21:17:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2029 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:17:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3761 generation 3 size QSize(960, 600) key true
+2026-11-21T21:17:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(960, 600) surface 3
+2026-11-21T21:17:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:17:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2100 queueDepth 0 decoded 2101
+2026-11-21T21:17:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3801 generation 3 size QSize(960, 600) key false
+2026-11-21T21:17:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3800 queueDepth 0 decoded 3801
+2026-11-21T21:17:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2129 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:17:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:17:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3861 generation 3 size QSize(960, 600) key true
+2026-11-21T21:17:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2200 queueDepth 0 decoded 2201
+2026-11-21T21:17:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2229 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:20:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1 generation 1 size QSize(960, 600) key true
+2026-11-21T21:20:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(960, 600) surface 1
+2026-11-21T21:20:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 0 queueDepth 0 decoded 1
+2026-11-21T21:20:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 101 generation 1 size QSize(960, 600) key true
+2026-11-21T21:20:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 100 queueDepth 0 decoded 101
+2026-11-21T21:20:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 201 generation 1 size QSize(960, 600) key true
+2026-11-21T21:20:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 200 queueDepth 0 decoded 201
+2026-11-21T21:20:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 301 generation 1 size QSize(960, 600) key true
+2026-11-21T21:20:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 300 queueDepth 0 decoded 301
+2026-11-21T21:20:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 401 generation 1 size QSize(960, 600) key true
+2026-11-21T21:20:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 400 queueDepth 0 decoded 401
+2026-11-21T21:20:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 501 generation 1 size QSize(960, 600) key true
+2026-11-21T21:20:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 500 queueDepth 0 decoded 501
+2026-11-21T21:21:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 601 generation 1 size QSize(960, 600) key true
+2026-11-21T21:21:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 600 queueDepth 0 decoded 601
+2026-11-21T21:21:03+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: applied virtual output mode QSize(960, 608)
+2026-11-21T21:21:03+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 617 generation 2 size QSize(960, 608) key true
+2026-11-21T21:21:03+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(960, 608) surface 2
+2026-11-21T21:21:03+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-21T21:21:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 621 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(960, 1018) surface 3
+2026-11-21T21:21:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 700 queueDepth 0 decoded 701
+2026-11-21T21:21:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 721 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 800 queueDepth 0 decoded 801
+2026-11-21T21:21:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 821 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 900 queueDepth 0 decoded 901
+2026-11-21T21:21:22+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 921 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1000 queueDepth 0 decoded 1001
+2026-11-21T21:21:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1021 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1100 queueDepth 2999 decoded 1101
+2026-11-21T21:21:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1121 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1200 queueDepth 0 decoded 1201
+2026-11-21T21:21:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1221 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1300 queueDepth 0 decoded 1301
+2026-11-21T21:21:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1321 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1400 queueDepth 0 decoded 1401
+2026-11-21T21:21:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1421 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1500 queueDepth 0 decoded 1501
+2026-11-21T21:21:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1521 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1600 queueDepth 13912 decoded 1601
+2026-11-21T21:21:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1621 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:21:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:21:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1700 queueDepth 0 decoded 1701
+2026-11-21T21:22:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1721 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1800 queueDepth 2578 decoded 1801
+2026-11-21T21:22:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1821 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1900 queueDepth 0 decoded 1901
+2026-11-21T21:22:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1921 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2000 queueDepth 0 decoded 2001
+2026-11-21T21:22:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2021 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2100 queueDepth 14063 decoded 2101
+2026-11-21T21:22:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:22:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: graphics surface reset QSize(960, 1018) surface 1
+2026-11-21T21:22:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 0 queueDepth 121 decoded 1
+2026-11-21T21:22:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2121 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2200 queueDepth 0 decoded 2201
+2026-11-21T21:22:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2221 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:22:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 100 queueDepth 0 decoded 101
+2026-11-21T21:22:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2300 queueDepth 0 decoded 2301
+2026-11-21T21:22:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2321 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:32+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 201 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:22:32+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 200 queueDepth 0 decoded 201
+2026-11-21T21:22:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2400 queueDepth 0 decoded 2401
+2026-11-21T21:22:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2421 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:22:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 300 queueDepth 317 decoded 301
+2026-11-21T21:22:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2500 queueDepth 0 decoded 2501
+2026-11-21T21:22:45+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2521 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 401 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:22:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 400 queueDepth 121 decoded 401
+2026-11-21T21:22:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2600 queueDepth 0 decoded 2601
+2026-11-21T21:22:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2621 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:22:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: applied virtual output mode QSize(1920, 1080)
+2026-11-21T21:22:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 457 generation 2 size QSize(1920, 1080) key true
+2026-11-21T21:22:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: graphics surface reset QSize(1920, 1080) surface 2
+2026-11-21T21:22:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:22:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2700 queueDepth 0 decoded 2701
+2026-11-21T21:23:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2721 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 501 generation 2 size QSize(1920, 1080) key false
+2026-11-21T21:23:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 500 queueDepth 0 decoded 501
+2026-11-21T21:23:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:23:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2800 queueDepth 14234 decoded 2801
+2026-11-21T21:23:07+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2821 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:23:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2900 queueDepth 0 decoded 2901
+2026-11-21T21:23:13+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2921 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 557 generation 2 size QSize(1920, 1080) key true
+2026-11-21T21:23:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:23:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3000 queueDepth 0 decoded 3001
+2026-11-21T21:23:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3021 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 601 generation 2 size QSize(1920, 1080) key false
+2026-11-21T21:23:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 600 queueDepth 0 decoded 601
+2026-11-21T21:23:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:23:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3100 queueDepth 0 decoded 3101
+2026-11-21T21:23:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3121 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:23:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3200 queueDepth 0 decoded 3201
+2026-11-21T21:23:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3221 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 657 generation 2 size QSize(1920, 1080) key true
+2026-11-21T21:23:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:23:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3300 queueDepth 0 decoded 3301
+2026-11-21T21:23:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3321 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 701 generation 2 size QSize(1920, 1080) key false
+2026-11-21T21:23:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 700 queueDepth 0 decoded 701
+2026-11-21T21:23:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:23:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3400 queueDepth 0 decoded 3401
+2026-11-21T21:23:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3421 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 757 generation 2 size QSize(1920, 1080) key true
+2026-11-21T21:23:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:23:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3500 queueDepth 14354 decoded 3501
+2026-11-21T21:23:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3521 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:23:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 801 generation 2 size QSize(1920, 1080) key false
+2026-11-21T21:23:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 800 queueDepth 0 decoded 801
+2026-11-21T21:24:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:24:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3600 queueDepth 0 decoded 3601
+2026-11-21T21:26:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(960, 1018) surface 1
+2026-11-21T21:26:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 0 queueDepth 0 decoded 1
+2026-11-21T21:26:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 101 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 100 queueDepth 0 decoded 101
+2026-11-21T21:26:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 201 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 200 queueDepth 0 decoded 201
+2026-11-21T21:26:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 301 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 300 queueDepth 0 decoded 301
+2026-11-21T21:26:22+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 401 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:22+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 400 queueDepth 0 decoded 401
+2026-11-21T21:26:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 501 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 500 queueDepth 0 decoded 501
+2026-11-21T21:26:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 601 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 600 queueDepth 0 decoded 601
+2026-11-21T21:26:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 701 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 700 queueDepth 0 decoded 701
+2026-11-21T21:26:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 801 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 800 queueDepth 121 decoded 801
+2026-11-21T21:26:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 901 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 900 queueDepth 0 decoded 901
+2026-11-21T21:26:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1001 generation 1 size QSize(960, 1018) key true
+2026-11-21T21:26:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1000 queueDepth 0 decoded 1001
+2026-11-21T21:26:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: applied virtual output mode QSize(960, 606)
+2026-11-21T21:26:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1032 generation 2 size QSize(960, 606) key true
+2026-11-21T21:26:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(960, 606) surface 2
+2026-11-21T21:26:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-21T21:26:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1036 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:26:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp: graphics surface reset QSize(960, 1018) surface 3
+2026-11-21T21:26:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:26:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1100 queueDepth 0 decoded 1101
+2026-11-21T21:26:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1136 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1200 queueDepth 0 decoded 1201
+2026-11-21T21:27:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1236 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1300 queueDepth 0 decoded 1301
+2026-11-21T21:27:07+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1336 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1400 queueDepth 344 decoded 1401
+2026-11-21T21:27:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1436 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1500 queueDepth 0 decoded 1501
+2026-11-21T21:27:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1536 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:18+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:18+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1600 queueDepth 0 decoded 1601
+2026-11-21T21:27:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1636 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:22+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:22+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1700 queueDepth 0 decoded 1701
+2026-11-21T21:27:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1736 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1800 queueDepth 0 decoded 1801
+2026-11-21T21:27:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1836 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 1900 queueDepth 0 decoded 1901
+2026-11-21T21:27:32+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 1936 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2000 queueDepth 0 decoded 2001
+2026-11-21T21:27:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2036 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2100 queueDepth 0 decoded 2101
+2026-11-21T21:27:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2136 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2200 queueDepth 2992 decoded 2201
+2026-11-21T21:27:45+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2236 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2300 queueDepth 0 decoded 2301
+2026-11-21T21:27:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2336 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1 generation 1 size QSize(1920, 1080) key true
+2026-11-21T21:27:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: graphics surface reset QSize(1920, 1080) surface 1
+2026-11-21T21:27:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 0 queueDepth 0 decoded 1
+2026-11-21T21:27:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2400 queueDepth 0 decoded 2401
+2026-11-21T21:27:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2436 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:27:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:27:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2500 queueDepth 0 decoded 2501
+2026-11-21T21:27:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 101 generation 1 size QSize(1920, 1080) key true
+2026-11-21T21:27:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 100 queueDepth 275 decoded 101
+2026-11-21T21:27:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2536 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:03+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2600 queueDepth 14630 decoded 2601
+2026-11-21T21:28:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2636 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 201 generation 1 size QSize(1920, 1080) key true
+2026-11-21T21:28:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 200 queueDepth 123 decoded 201
+2026-11-21T21:28:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2700 queueDepth 3174 decoded 2701
+2026-11-21T21:28:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2736 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2800 queueDepth 0 decoded 2801
+2026-11-21T21:28:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 301 generation 1 size QSize(1920, 1080) key true
+2026-11-21T21:28:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 300 queueDepth 0 decoded 301
+2026-11-21T21:28:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2836 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 2900 queueDepth 0 decoded 2901
+2026-11-21T21:28:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 2936 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 401 generation 1 size QSize(1920, 1080) key true
+2026-11-21T21:28:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 400 queueDepth 0 decoded 401
+2026-11-21T21:28:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3000 queueDepth 0 decoded 3001
+2026-11-21T21:28:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3036 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 501 generation 1 size QSize(1920, 1080) key true
+2026-11-21T21:28:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 500 queueDepth 0 decoded 501
+2026-11-21T21:28:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: applied virtual output mode QSize(960, 600)
+2026-11-21T21:28:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3100 queueDepth 0 decoded 3101
+2026-11-21T21:28:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: applied virtual output mode QSize(960, 1018)
+2026-11-21T21:28:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 532 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp: graphics surface reset QSize(960, 1018) surface 2
+2026-11-21T21:28:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3136 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3200 queueDepth 351 decoded 3201
+2026-11-21T21:28:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 600 queueDepth 0 decoded 601
+2026-11-21T21:28:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3236 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 632 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3300 queueDepth 0 decoded 3301
+2026-11-21T21:28:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 700 queueDepth 0 decoded 701
+2026-11-21T21:28:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3336 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 732 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3400 queueDepth 0 decoded 3401
+2026-11-21T21:28:45+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3436 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:45+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:45+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 800 queueDepth 0 decoded 801
+2026-11-21T21:28:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 832 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3500 queueDepth 3169 decoded 3501
+2026-11-21T21:28:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3536 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 900 queueDepth 0 decoded 901
+2026-11-21T21:28:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 932 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3600 queueDepth 14445 decoded 3601
+2026-11-21T21:28:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3636 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1000 queueDepth 0 decoded 1001
+2026-11-21T21:28:56+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1032 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3700 queueDepth 0 decoded 3701
+2026-11-21T21:28:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3736 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:28:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:28:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1100 queueDepth 0 decoded 1101
+2026-11-21T21:29:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1132 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3800 queueDepth 0 decoded 3801
+2026-11-21T21:29:03+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3836 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1200 queueDepth 0 decoded 1201
+2026-11-21T21:29:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1232 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 3900 queueDepth 0 decoded 3901
+2026-11-21T21:29:07+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 3936 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1300 queueDepth 0 decoded 1301
+2026-11-21T21:29:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1332 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4000 queueDepth 0 decoded 4001
+2026-11-21T21:29:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4036 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1400 queueDepth 0 decoded 1401
+2026-11-21T21:29:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4100 queueDepth 0 decoded 4101
+2026-11-21T21:29:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1432 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:17+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4136 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1500 queueDepth 121 decoded 1501
+2026-11-21T21:29:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4200 queueDepth 0 decoded 4201
+2026-11-21T21:29:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1532 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4236 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1600 queueDepth 0 decoded 1601
+2026-11-21T21:29:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4300 queueDepth 0 decoded 4301
+2026-11-21T21:29:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1632 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4336 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1700 queueDepth 0 decoded 1701
+2026-11-21T21:29:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4400 queueDepth 0 decoded 4401
+2026-11-21T21:29:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1732 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4436 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1800 queueDepth 0 decoded 1801
+2026-11-21T21:29:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4500 queueDepth 14928 decoded 4501
+2026-11-21T21:29:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1832 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4536 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4600 queueDepth 2918 decoded 4601
+2026-11-21T21:29:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 1900 queueDepth 121 decoded 1901
+2026-11-21T21:29:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4636 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 1932 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4700 queueDepth 14102 decoded 4701
+2026-11-21T21:29:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2000 queueDepth 0 decoded 2001
+2026-11-21T21:29:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4736 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2032 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4800 queueDepth 0 decoded 4801
+2026-11-21T21:29:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2100 queueDepth 0 decoded 2101
+2026-11-21T21:29:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4836 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2132 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 4900 queueDepth 0 decoded 4901
+2026-11-21T21:29:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2200 queueDepth 0 decoded 2201
+2026-11-21T21:29:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 4936 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2232 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:54+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5000 queueDepth 0 decoded 5001
+2026-11-21T21:29:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2300 queueDepth 348 decoded 2301
+2026-11-21T21:29:56+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5036 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:57+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2332 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:29:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:29:59+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5100 queueDepth 0 decoded 5101
+2026-11-21T21:30:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2400 queueDepth 0 decoded 2401
+2026-11-21T21:30:00+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5136 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2432 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:03+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:04+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5200 queueDepth 0 decoded 5201
+2026-11-21T21:30:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5236 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2500 queueDepth 131 decoded 2501
+2026-11-21T21:30:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2532 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:07+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:08+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5300 queueDepth 0 decoded 5301
+2026-11-21T21:30:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5336 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2600 queueDepth 0 decoded 2601
+2026-11-21T21:30:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2632 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5400 queueDepth 0 decoded 5401
+2026-11-21T21:30:13+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5436 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2700 queueDepth 0 decoded 2701
+2026-11-21T21:30:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2732 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5500 queueDepth 0 decoded 5501
+2026-11-21T21:30:18+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5536 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:18+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2800 queueDepth 0 decoded 2801
+2026-11-21T21:30:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2832 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5600 queueDepth 0 decoded 5601
+2026-11-21T21:30:22+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5636 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 2900 queueDepth 0 decoded 2901
+2026-11-21T21:30:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 2932 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5700 queueDepth 0 decoded 5701
+2026-11-21T21:30:26+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5736 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3000 queueDepth 0 decoded 3001
+2026-11-21T21:30:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3032 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5800 queueDepth 0 decoded 5801
+2026-11-21T21:30:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5836 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3100 queueDepth 0 decoded 3101
+2026-11-21T21:30:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3132 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:34+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 5900 queueDepth 0 decoded 5901
+2026-11-21T21:30:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 5936 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3200 queueDepth 0 decoded 3201
+2026-11-21T21:30:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6000 queueDepth 0 decoded 6001
+2026-11-21T21:30:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3232 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6036 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3300 queueDepth 0 decoded 3301
+2026-11-21T21:30:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6100 queueDepth 0 decoded 6101
+2026-11-21T21:30:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3332 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6136 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3400 queueDepth 0 decoded 3401
+2026-11-21T21:30:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6200 queueDepth 0 decoded 6201
+2026-11-21T21:30:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3432 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6236 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3500 queueDepth 163 decoded 3501
+2026-11-21T21:30:52+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6300 queueDepth 0 decoded 6301
+2026-11-21T21:30:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3532 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6336 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:56+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:56+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:30:56+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3600 queueDepth 0 decoded 3601
+2026-11-21T21:30:56+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6400 queueDepth 0 decoded 6401
+2026-11-21T21:30:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3632 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:30:58+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6436 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6500 queueDepth 0 decoded 6501
+2026-11-21T21:31:01+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3700 queueDepth 0 decoded 3701
+2026-11-21T21:31:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6536 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:02+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3732 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:05+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6600 queueDepth 0 decoded 6601
+2026-11-21T21:31:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:06+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3800 queueDepth 0 decoded 3801
+2026-11-21T21:31:07+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6636 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:07+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3832 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:09+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6700 queueDepth 0 decoded 6701
+2026-11-21T21:31:10+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 3900 queueDepth 0 decoded 3901
+2026-11-21T21:31:11+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6736 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:12+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 3932 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:14+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6800 queueDepth 0 decoded 6801
+2026-11-21T21:31:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4000 queueDepth 0 decoded 4001
+2026-11-21T21:31:15+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6836 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:16+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4032 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:18+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6901 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 6900 queueDepth 0 decoded 6901
+2026-11-21T21:31:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:19+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4100 queueDepth 0 decoded 4101
+2026-11-21T21:31:20+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 6936 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:21+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4132 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7001 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:23+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 7000 queueDepth 0 decoded 7001
+2026-11-21T21:31:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4200 queueDepth 0 decoded 4201
+2026-11-21T21:31:24+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7036 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:25+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4232 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7101 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:27+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 7100 queueDepth 0 decoded 7101
+2026-11-21T21:31:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:28+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7136 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:29+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4300 queueDepth 0 decoded 4301
+2026-11-21T21:31:30+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4332 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7201 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:31+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 7200 queueDepth 0 decoded 7201
+2026-11-21T21:31:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7236 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:33+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4400 queueDepth 0 decoded 4401
+2026-11-21T21:31:35+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4432 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7301 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:36+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 7300 queueDepth 0 decoded 7301
+2026-11-21T21:31:37+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7336 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:38+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4500 queueDepth 0 decoded 4501
+2026-11-21T21:31:39+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4532 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7401 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:40+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 7400 queueDepth 0 decoded 7401
+2026-11-21T21:31:41+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7436 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:42+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:43+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4600 queueDepth 121 decoded 4601
+2026-11-21T21:31:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4632 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:44+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7501 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:45+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 7500 queueDepth 0 decoded 7501
+2026-11-21T21:31:46+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7536 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:47+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4700 queueDepth 0 decoded 4701
+2026-11-21T21:31:48+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4732 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7601 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:49+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 7600 queueDepth 0 decoded 7601
+2026-11-21T21:31:50+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7636 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4801 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:51+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace ACK 4800 queueDepth 0 decoded 4801
+2026-11-21T21:31:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21092]: KRdp trace packet 4832 generation 3 size QSize(960, 1018) key true
+2026-11-21T21:31:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7701 generation 3 size QSize(960, 1018) key false
+2026-11-21T21:31:53+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace ACK 7700 queueDepth 0 decoded 7701
+2026-11-21T21:31:55+03:00 matrix-alt-kworkstation plasma-rdp-user[21058]: KRdp trace packet 7736 generation 3 size QSize(960, 1018) key true

@@ -5,6 +5,9 @@ repo=$(cd -- "$(dirname -- "$0")/.." && pwd)
 sources=${1:-"$repo/build/sources"}
 out="$repo/build/tests"
 mkdir -p "$out"
+c++ -std=c++17 -pthread "$repo/tests/producer-wakeup.cpp" \
+    -I"$sources/kpipewire-6.7.4/src" -o "$out/producer-wakeup"
+"$out/producer-wakeup"
 read -r -a codec_flags <<< "$(pkg-config --cflags --libs freerdp3)"
 c++ -std=c++17 "$repo/tests/progressive-surface-roundtrip.cpp" "${codec_flags[@]}" -o "$out/progressive-roundtrip"
 set +e

@@ -1,5 +1,7 @@
 # ALT «Рабочая станция К» 11.4 → 11.5 x86_64 / Proxmox VE
 
+> Повторная диагностика и исправления зависания при resize: [ALT-K-RESIZE-FIX.md](ALT-K-RESIZE-FIX.md). Ниже сохранены условия первого прогона; раздел с результатами первоначального теста не является результатом повторной проверки.
+
 ## Установочный образ и ВМ
 
 Использован официальный установочный ISO `alt-kworkstation-11.4-install-x86_64.iso`
@@ -33,8 +35,8 @@ libffi-devel, nftables, PipeWire/WirePlumber и `plasma6-libkscreen-utils`.
 
 **Сначала проверяйте симуляцию APT.** На свежем ISO первоначальный план
 предлагал удалить Plasma и essential-метапакеты KDE. Он не применялся.
-Явное включение следующих пакетов в ту же команду установки сохранило рабочее
-окружение:
+Явное сохранение уже установленных метапакетов в той же команде установки
+сохранило окружение. Возможные имена:
 
 ```text
 kde kde-big kde-small kde-mini plasma-desktop plasma-workspace
@@ -46,8 +48,12 @@ kde kde-big kde-small kde-mini plasma-desktop plasma-workspace
 mapfile -t build_deps < <(grep -v '^rpmlib(' docs/evidence/alt-workstation-k-x86_64/srpm-build-requirements.txt)
 packages=("${build_deps[@]}" cmake make gcc-c++ python3 patch git gettext-tools
           libffi-devel nftables pipewire wireplumber plasma6-libkscreen-utils
-          plasma-login-manager krdp plasma6-integration acl
-          kde kde-big kde-small kde-mini plasma-desktop plasma-workspace)
+          plasma-login-manager krdp plasma6-integration acl)
+# Сохраняем только установленные метапакеты: установка отсутствующих kde/kde-big
+# существенно расширяет окружение и не нужна для сборки.
+for meta in kde kde-big kde-small kde-mini plasma-desktop plasma-workspace; do
+    if rpm -q "$meta" >/dev/null 2>&1; then packages+=("$meta"); fi
+done
 apt-get update
 apt-get -s install "${packages[@]}"
 # Только после проверки плана и создания снимка тестовой ВМ:
@@ -99,10 +105,15 @@ bash scripts/stage-kde.sh build/alt-k-sources build/alt-k-stage
 изоляция backend-портов, пользовательские PipeWire/WirePlumber.
 Все три библиотеки KPipeWire каждого варианта перенесены вместе.
 
-В этой ВМ VirtIO предоставляет `/dev/dri/renderD128`; greeter использует
-OpenGL без дополнительного VGEM. Узкий ACL для `/dev/udmabuf` даёт доступ
-группе `plasma-rdp-render`, сохраняя штатные owner/group/mode.
-Нельзя переносить сюда ARM64-рецепт с номерами DRM-устройств без проверки.
+Первый прогон использовал VirtIO `/dev/dri/renderD128` без VGEM. Повторная
+диагностика выявила отказ `CREATE_DUMB` на этом узле и остановку отрисовки
+после resize. Само наличие render-node и OpenGL недостаточно для этого
+программного headless-сеанса. В исправленном стенде загружается VGEM;
+KWin использует его первичный узел с узким ACL для `plasma-rdp-render`.
+Правило не затрагивает физические GPU. Для `/dev/udmabuf` используется
+отдельный узкий ACL. Подробности и проверка буфера — в
+[разборе исправления](ALT-K-RESIZE-FIX.md). Номера DRM-устройств нужно
+определять по `/sys/class/drm` и дескрипторам KWin на конкретной машине.
 
 Команды включения выполняются **в отдельной тестовой гостевой ОС**, не на
 хосте PVE. Нужны заранее созданные обычные пользователи `native-a` и
@@ -126,8 +137,17 @@ groupadd -f plasma-rdp-render
 for account in plasmalogin native-a native-b; do
     usermod -aG plasma-rdp-render "$account"
 done
+modprobe vgem
+printf 'vgem\n' > /etc/modules-load.d/plasma-rdp-lab.conf
+install -m 0644 runtime/altlinux/99-plasma-rdp-vgem.rules /etc/udev/rules.d/
 install -m 0644 runtime/fedora/99-plasma-rdp-udmabuf.rules /etc/udev/rules.d/
 udevadm control --reload-rules
+# Применяем правило только к проверенному программному устройству VGEM.
+for device in /sys/class/drm/card[0-9]*; do
+    if grep -qx 'MODALIAS=platform:vgem' "$device/device/uevent" 2>/dev/null; then
+        udevadm trigger --action=add "$device"
+    fi
+done
 udevadm trigger --action=add /sys/class/misc/udmabuf
 udevadm settle
 cp -a build/alt-k-stage/opt/. /opt/

@@ -1,0 +1,48 @@
+Thread 34 (Thread 0x7fbc244896c0 (LWP 5976) "PipeWireProduce"):
+#0  0x00007fbc7ce9f60e in ?? () from /lib64/libc.so.6
+#1  0x00007fbc7cea1a68 in pthread_cond_wait () from /lib64/libc.so.6
+#2  0x00007fbc7e5cd5cf in std::thread::_State_impl<std::thread::_Invoker<std::tuple<PipeWireProduce::setupStream()::{lambda()#2}> > >::_M_run() () from /opt/system-kpipewire-pool/lib/libKPipeWireRecord.so.6
+#3  0x00007fbc7d10cc93 in ?? () from /lib64/libstdc++.so.6
+#4  0x00007fbc7cea242f in ?? () from /lib64/libc.so.6
+#5  0x00007fbc7cf24ba8 in ?? () from /lib64/libc.so.6
+
+Thread 33 (Thread 0x7fbc24c8a6c0 (LWP 5975) "PipeWireProduce"):
+#0  0x00007fbc7ce9f60e in ?? () from /lib64/libc.so.6
+#1  0x00007fbc7cea1a68 in pthread_cond_wait () from /lib64/libc.so.6
+#2  0x00007fbc7e5cd75c in std::thread::_State_impl<std::thread::_Invoker<std::tuple<PipeWireProduce::setupStream()::{lambda()#1}> > >::_M_run() () from /opt/system-kpipewire-pool/lib/libKPipeWireRecord.so.6
+#3  0x00007fbc7d10cc93 in ?? () from /lib64/libstdc++.so.6
+#4  0x00007fbc7cea242f in ?? () from /lib64/libc.so.6
+#5  0x00007fbc7cf24ba8 in ?? () from /lib64/libc.so.6
+
+Thread 11 (Thread 0x7fbc555ff6c0 (LWP 5925) "PipeWireProduce"):
+#0  0x00007fbc7ce9f60e in ?? () from /lib64/libc.so.6
+#1  0x00007fbc7cea3f33 in ?? () from /lib64/libc.so.6
+#2  0x00007fbc7d10cd07 in std::thread::join() () from /lib64/libstdc++.so.6
+#3  0x00007fbc7e5cd948 in PipeWireProduce::destroy() [clone .part.0] () from /opt/system-kpipewire-pool/lib/libKPipeWireRecord.so.6
+#4  0x00007fbc7d5f5bc7 in QObject::event(QEvent*) () from /lib64/libQt6Core.so.6
+#5  0x00007fbc7e7b68ea in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /lib64/libQt6Widgets.so.6
+#6  0x00007fbc7d5a5e88 in QCoreApplication::notifyInternal2(QObject*, QEvent*) () from /lib64/libQt6Core.so.6
+#7  0x00007fbc7d5a612a in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) () from /lib64/libQt6Core.so.6
+#8  0x00007fbc7d7fce57 in ?? () from /lib64/libQt6Core.so.6
+#9  0x00007fbc7c7b3c83 in ?? () from /lib64/libglib-2.0.so.0
+#10 0x00007fbc7c810197 in ?? () from /lib64/libglib-2.0.so.0
+#11 0x00007fbc7c7b312c in g_main_context_iteration () from /lib64/libglib-2.0.so.0
+#12 0x00007fbc7d7fb130 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /lib64/libQt6Core.so.6
+#13 0x00007fbc7d5b0be3 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /lib64/libQt6Core.so.6
+
+Thread 1 (Thread 0x7fbc6e8528c0 (LWP 5762) "krdpserver"):
+#0  0x00007fbc7ce9f60e in ?? () from /lib64/libc.so.6
+#1  0x00007fbc7cea1a68 in pthread_cond_wait () from /lib64/libc.so.6
+#2  0x00007fbc7d71fffb in QWaitCondition::wait(QMutex*, QDeadlineTimer) () from /lib64/libQt6Core.so.6
+#3  0x00007fbc7d6936ba in QThread::wait(QDeadlineTimer) () from /lib64/libQt6Core.so.6
+#4  0x00007fbc7e5c733f in PipeWireBaseEncodedStream::~PipeWireBaseEncodedStream() () from /opt/system-kpipewire-pool/lib/libKPipeWireRecord.so.6
+#5  0x00007fbc7e5c96d9 in PipeWireEncodedStream::~PipeWireEncodedStream() () from /opt/system-kpipewire-pool/lib/libKPipeWireRecord.so.6
+#6  0x00007fbc7f4927d8 in KRdp::VideoStream::setActiveEncodingMode(KRdp::VideoStream::EncodingMode) () from /opt/system-krdp-display/lib/libKRdp.so.6
+#7  0x0000558e3c13e141 in SessionWrapper::onSessionStarted() ()
+#8  0x00007fbc7d601122 in ?? () from /lib64/libQt6Core.so.6
+#9  0x00007fbc7d601122 in ?? () from /lib64/libQt6Core.so.6
+#10 0x00007fbc7f472dfe in ScreencastingStream::created(unsigned int) () from /opt/system-krdp-display/lib/libKRdp.so.6
+#11 0x00007fbc7b6249c2 in ?? () from /lib64/libffi.so.8
+#12 0x00007fbc7b6212c4 in ?? () from /lib64/libffi.so.8
+#13 0x00007fbc7b623f86 in ffi_call () from /lib64/libffi.so.8
+[Inferior 1 (process 5762) detached]
