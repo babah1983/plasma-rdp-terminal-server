@@ -1,0 +1,52 @@
+{
+  "active_duration_s": 900,
+  "idle_duration_s": 120,
+  "transport_cuts": 2,
+  "limitation": "Display stalled after final resize; not a continuous successful rendering stress test or a one-hour test.",
+  "users": {
+    "native-a": {
+      "krdp_pids": [
+        "3888"
+      ],
+      "kate_pids": [
+        "4665"
+      ],
+      "kwin_pids": [
+        "3884"
+      ],
+      "peak_pss_kib": 137286,
+      "after_cut1_pss_kib": 54534,
+      "final_idle": {
+        "rss_kib": 153208,
+        "pss_kib": 53761,
+        "private_dirty_kib": 39260,
+        "threads": 4,
+        "fds": 20,
+        "swap_kib": 0,
+        "anon_huge_pages_kib": 8192
+      }
+    },
+    "native-b": {
+      "krdp_pids": [
+        "4899"
+      ],
+      "kate_pids": [
+        "5366"
+      ],
+      "kwin_pids": [
+        "4894"
+      ],
+      "peak_pss_kib": 133769,
+      "after_cut1_pss_kib": 55123,
+      "final_idle": {
+        "rss_kib": 152388,
+        "pss_kib": 52689,
+        "private_dirty_kib": 38104,
+        "threads": 4,
+        "fds": 20,
+        "swap_kib": 96,
+        "anon_huge_pages_kib": 6144
+      }
+    }
+  }
+}

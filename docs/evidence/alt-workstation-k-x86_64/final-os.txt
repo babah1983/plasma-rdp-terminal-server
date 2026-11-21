@@ -1,0 +1,19 @@
+NAME="ALT"
+RELEASE_TYPE="stable"
+VERSION_CODENAME="nemorosa"
+VERSION="11.5"
+ID=altlinux
+VARIANT="Workstation K"
+VARIANT_ID=kworkstation
+LOGO="alt-distro-logo"
+VERSION_ID=11.5
+PRETTY_NAME="ALT Workstation K 11.5 (Nemorosa)"
+ANSI_COLOR="1;33"
+CPE_NAME="cpe:/o:alt:kworkstation:11"
+BUILD_ID="ALT 11.4 Workstation K"
+ALT_BRANCH_ID="p11"
+HOME_URL="https://www.basealt.ru/"
+BUG_REPORT_URL="https://bugs.altlinux.org/"
+DOCUMENTATION_URL="https://docs.altlinux.org/"
+SUPPORT_URL="https://support.basealt.ru/"
+6.12.85-6.12-alt1

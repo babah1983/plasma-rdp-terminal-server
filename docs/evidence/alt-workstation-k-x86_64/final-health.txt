@@ -1,0 +1,10 @@
+Sat Nov 21 16:34:32 UTC 2026
+16:34:32 native-a frame=00011048 Plasma/Guacamole resize and reconnect load
+16:34:32 native-a frame=00011049 Plasma/Guacamole resize and reconnect load
+16:34:32 native-a frame=00011050 Plasma/Guacamole resize and reconnect load
+native-a    3884 kwin_wayland
+native-a    3888 krdpserver
+native-a    4665 kate
+native-b    4894 kwin_wayland
+native-b    4899 krdpserver
+native-b    5366 kate

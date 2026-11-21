@@ -1,0 +1,60 @@
+Sat Nov 21 16:19:21 UTC 2026
+native-a
+Geometry: 0,0,960x600
+Compositing Type: OpenGL
+native-b
+Geometry: 0,0,1920x1080
+Compositing Type: OpenGL
+Sat Nov 21 16:20:13 UTC 2026
+native-a
+Geometry: 0,0,960x600
+Sat Nov 21 16:20:13 UTC 2026
+native-b
+Geometry: 0,0,960x1018
+Sat Nov 21 16:20:39 UTC 2026
+native-a
+Geometry: 0,0,1920x1080
+3884
+3888
+4665
+Sat Nov 21 16:20:39 UTC 2026
+native-b
+Geometry: 0,0,960x1018
+4894
+4899
+5366
+2026-11-21T16:20:45.086469+00:00 cut1: terminated only test tunnel PID54627
+native-a    3884 kwin_wayland
+native-a    3888 krdpserver
+native-a    4665 kate
+native-b    4894 kwin_wayland
+native-b    4899 krdpserver
+native-b    5366 kate
+Sat Nov 21 16:24:16 UTC 2026
+native-a after cut1, B fullscreen
+Geometry: 0,0,960x600
+Sat Nov 21 16:24:16 UTC 2026
+native-b after cut1, B fullscreen
+Geometry: 0,0,1920x1080
+Sat Nov 21 16:24:50 UTC 2026
+native-a after cut1, A fullscreen
+Geometry: 0,0,1920x1080
+Sat Nov 21 16:24:51 UTC 2026
+native-b after cut1, A fullscreen
+Geometry: 0,0,960x600
+2026-11-21T16:24:56.587700+00:00 cut2: terminated only test tunnel PID55939
+native-a    3884 kwin_wayland
+native-a    3888 krdpserver
+native-a    4665 kate
+native-b    4894 kwin_wayland
+native-b    4899 krdpserver
+native-b    5366 kate
+Sat Nov 21 16:30:06 UTC 2026
+native-a after cut2, left half
+Geometry: 0,0,960x1018
+Sat Nov 21 16:30:31 UTC 2026
+native-b after cut2, right half
+Geometry: 0,0,960x1018
+2026-11-21T16:30:31Z last counter visible in A after half-window resize; remained unchanged on later snapshots through ~16:31 UTC. Native Raise did not restore it.
+2026-11-21T16:32:20Z Konsole getAllDisplayedText via guest D-Bus confirmed live frame=9469, while Windows App snapshot was still at frame~8137/time16:30:31.
+2026-11-21T16:32:39Z A fullscreen transition restored displayed counter; Kate contained altka00123, proving earlier input3 reached session. Cause client/server not isolated. Dynamic-resolution acceptance PARTIAL.

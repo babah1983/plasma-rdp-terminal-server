@@ -1,0 +1,995 @@
+patching file src/RdpConnection.cpp
+patching file src/InputHandler.cpp
+patching file src/RdpConnection.cpp
+patching file src/RdpConnection.cpp
+patching file src/RdpConnection.h
+patching file server/CMakeLists.txt
+patching file server/SessionController.cpp
+patching file src/PlasmaScreencastV1Session.cpp
+patching file src/VideoStream.cpp
+patching file src/VideoStream.cpp
+patching file src/VideoStream.h
+patching file src/VideoFrame.h
+patching file src/RdpConnection.cpp
+patching file src/InputHandler.cpp
+patching file src/RdpConnection.cpp
+patching file server/SessionController.cpp
+patching file server/CMakeLists.txt
+patching file src/daemon/Display.cpp
+patching file src/pipewiresourcestream.cpp
+patching file src/encoder.cpp
+patching file src/encoder_p.h
+patching file src/encoder_p.h
+patching file src/encoder.cpp
+patching file src/libguac/display-layer.c
+Prepared patched sources: /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources
+-- The C compiler identification is GNU 13.2.1
+-- The CXX compiler identification is GNU 13.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+--
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.13") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Wayland_Client: /usr/lib64/libwayland-client.so (found version "1.26.0")
+-- Found Wayland_Server: /usr/lib64/libwayland-server.so (found version "1.26.0")
+-- Found Wayland_Cursor: /usr/lib64/libwayland-cursor.so (found version "1.26.0")
+-- Found Wayland_Egl: /usr/lib64/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so;/usr/lib64/libwayland-cursor.so;/usr/lib64/libwayland-egl.so (found version "1.26.0")
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.13.1", minimum required is "0.9.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.31.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.31.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.21")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.31.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6StatusNotifierItem: /usr/lib64/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemConfig.cmake (found version "6.31.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.31.0")
+-- Found KF6GuiAddons: /usr/lib64/cmake/KF6GuiAddons/KF6GuiAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found suitable version "6.31.0", minimum required is "6.26.0") found components: Config DBusAddons KCMUtils I18n CoreAddons StatusNotifierItem Crash GuiAddons
+-- Found XKB: /usr/lib64/libxkbcommon.so (found version "1.13.1")
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+-- Performing Test PAM_MESSAGE_CONST
+-- Performing Test PAM_MESSAGE_CONST - Success
+-- Found PAM: /usr/lib64/libpam.so;/usr/lib64/libdl.a
+-- Found org.kde.kirigamiaddons.formcard-QMLModule: TRUE
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6QuickTools (required version >= 6.11.2)
+ * OpenGL
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6WaylandScannerTools (required version >= 6.11.2)
+ * Qt6WaylandClient (required version >= 6.10.0)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6Qml (required version >= 6.10.0)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * Qt6DBusTools (required version >= 6.11.2)
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6GuiTools (required version >= 6.11.2)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6GuiPrivate (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6Config (required version >= 6.31.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.26.0)
+ * KF6StatusNotifierItem (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+ * KF6GuiAddons (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * WinPR (required version >= 3.1)
+ * FreeRDP (required version >= 3.32.2)
+ * FreeRDP-Server (required version >= 3.1)
+ * KPipeWire (required version >= 5.27.80)
+ * XKB, XKB API common to servers and clients., <http://xkbcommon.org>
+ * Qt6Keychain, Provides support for secure credentials storage, <https://github.com/frankosterfeld/qtkeychain>
+ * PlasmaWaylandProtocols
+ * PAM, PAM Libraries, <https://www.kernel.org/pub/linux/libs/pam/>
+   Required for authentication
+ * Qt6
+ * org.kde.kirigamiaddons.formcard-QMLModule, QML module 'org.kde.kirigamiaddons.formcard' is a dependency.
+ * Qt6Core (required version >= 6.10.0)
+ * KF6Screen
+
+-- Configuring done (2.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/build
+[  3%] Generating qwayland-fake-input.h
+[  3%] Generating qwayland-fake-input.cpp
+[  6%] Generating qwayland-wayland.h
+[  6%] Generating qwayland-wayland.cpp
+[  9%] Generating qwayland-zkde-screencast-unstable-v1.cpp
+[  9%] Generating qwayland-zkde-screencast-unstable-v1.h
+[ 13%] Generating wayland-fake-input-protocol.c
+[ 13%] Generating wayland-fake-input-client-protocol.h
+[ 16%] Generating wayland-wayland-protocol.c
+[ 16%] Generating wayland-wayland-client-protocol.h
+[ 18%] Generating wayland-zkde-screencast-unstable-v1-client-protocol.h
+[ 19%] Generating wayland-zkde-screencast-unstable-v1-protocol.c
+[ 19%] Built target KRdp_autogen_timestamp_deps
+[ 21%] Automatic MOC for target KRdp
+AutoMoc warning
+---------------
+"SRC:/src/AbstractSession.cpp"
+includes the moc file "AbstractSession.moc", but does not contain a Q_OBJECT, Q_GADGET, Q_NAMESPACE, Q_NAMESPACE_EXPORT, Q_GADGET_EXPORT, Q_ENUM_NS, K_PLUGIN_FACTORY, K_PLUGIN_CLASS, K_PLUGIN_FACTORY_WITH_JSON or K_PLUGIN_CLASS_WITH_JSON macro.
+
+AutoMoc: /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/AbstractSession.cpp: note: No relevant classes found. No output generated.
+[ 21%] Built target KRdp_autogen
+[ 24%] Generating xdp_dbus_remotedesktop_interface.cpp, xdp_dbus_remotedesktop_interface.h
+[ 24%] Generating xdp_dbus_screencast_interface.cpp, xdp_dbus_screencast_interface.h
+[ 26%] Generating moc_xdp_dbus_remotedesktop_interface.cpp
+[ 27%] Generating moc_xdp_dbus_screencast_interface.cpp
+[ 31%] Building C object src/CMakeFiles/KRdp.dir/wayland-zkde-screencast-unstable-v1-protocol.c.o
+[ 31%] Building CXX object src/CMakeFiles/KRdp.dir/KRdp_autogen/mocs_compilation.cpp.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+[ 32%] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-zkde-screencast-unstable-v1.cpp.o
+[ 34%] Building C object src/CMakeFiles/KRdp.dir/wayland-fake-input-protocol.c.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+[ 36%] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-fake-input.cpp.o
+[ 37%] Building C object src/CMakeFiles/KRdp.dir/wayland-wayland-protocol.c.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+[ 39%] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-wayland.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/KRdp.dir/screencasting.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/KRdp.dir/PlasmaScreencastV1Session.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KRdp.dir/AbstractSession.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/KRdp.dir/Clipboard.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/KRdp.dir/RdpConnection.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/Clipboard.cpp: In member function ‘uint32_t KRdp::Clipboard::Private::onClientFormatListResponse(const CLIPRDR_FORMAT_LIST_RESPONSE*)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/Clipboard.cpp:219:93: warning: unused parameter ‘formatListResponse’ [-Wunused-parameter]
+  219 | uint32_t Clipboard::Private::onClientFormatListResponse(const CLIPRDR_FORMAT_LIST_RESPONSE *formatListResponse)
+      |                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/Clipboard.cpp: In member function ‘uint32_t KRdp::Clipboard::Private::onClientFormatDataResponse(const CLIPRDR_FORMAT_DATA_RESPONSE*)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/Clipboard.cpp:258:21: warning: comparison of unsigned expression in ‘< 0’ is always false [-Wtype-limits]
+  258 |     if (nCharacters < 0) {
+      |         ~~~~~~~~~~~~^~~
+[ 49%] Building CXX object src/CMakeFiles/KRdp.dir/Server.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/KRdp.dir/InputHandler.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/KRdp.dir/PeerContext.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/KRdp.dir/PortalSession.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/KRdp.dir/VideoStream.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.cpp: In member function ‘void KRdp::VideoStream::setActiveEncodingMode(EncodingMode)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.cpp:276:40: warning: ‘void PipeWireBaseEncodedStream::setNodeId(uint)’ is deprecated [-Wdeprecated-declarations]
+  276 |             d->encodedStream->setNodeId(d->nodeId);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /usr/include/KF6/KPipeWire/pipewireencodedstream.h:11,
+                 from /usr/include/KF6/KPipeWire/PipeWireEncodedStream:1,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.h:14,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.cpp:10:
+/usr/include/KF6/KPipeWire/pipewirebaseencodedstream.h:53:31: note: declared here
+   53 |     KPIPEWIRE_DEPRECATED void setNodeId(uint nodeId);
+      |                               ^~~~~~~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.cpp:311:47: warning: ‘bool PipeWireSourceStream::createStream(uint, int)’ is deprecated [-Wdeprecated-declarations]
+  311 |             if (!d->sourceStream->createStream(d->nodeId, d->pipeWireFd)) {
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/KF6/KPipeWire/PipeWireSourceStream:1,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.h:15:
+/usr/include/KF6/KPipeWire/pipewiresourcestream.h:139:31: note: declared here
+  139 |     KPIPEWIRE_DEPRECATED bool createStream(uint nodeid, int fd);
+      |                               ^~~~~~~~~~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.cpp: In member function ‘void KRdp::VideoStream::setPipeWireSource(quint32, int)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.cpp:521:36: warning: ‘void PipeWireBaseEncodedStream::setNodeId(uint)’ is deprecated [-Wdeprecated-declarations]
+  521 |         d->encodedStream->setNodeId(nodeId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/usr/include/KF6/KPipeWire/pipewirebaseencodedstream.h:53:31: note: declared here
+   53 |     KPIPEWIRE_DEPRECATED void setNodeId(uint nodeId);
+      |                               ^~~~~~~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/VideoStream.cpp:528:43: warning: ‘bool PipeWireSourceStream::createStream(uint, int)’ is deprecated [-Wdeprecated-declarations]
+  528 |         if (!d->sourceStream->createStream(nodeId, d->pipeWireFd)) {
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/KF6/KPipeWire/pipewiresourcestream.h:139:31: note: declared here
+  139 |     KPIPEWIRE_DEPRECATED bool createStream(uint nodeid, int fd);
+      |                               ^~~~~~~~~~~~
+[ 57%] Building CXX object src/CMakeFiles/KRdp.dir/Cursor.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/Cursor.cpp: In function ‘QByteArray createXorMask(const QImage&)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/Cursor.cpp:19:21: warning: ‘void QImage::mirror(bool, bool)’ is deprecated: Use flip(Qt::Orientations) instead [-Wdeprecated-declarations]
+   19 |     converted.mirror(false, true);
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtGui/QImage:1,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/Cursor.h:11,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/Cursor.cpp:5:
+/usr/include/qt6/QtGui/qimage.h:226:10: note: declared here
+  226 |     void mirror(bool horizontally = false, bool vertically = true)
+      |          ^~~~~~
+[ 59%] Building CXX object src/CMakeFiles/KRdp.dir/NetworkDetection.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/KRdp.dir/krdp_logging.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/NetworkDetection.cpp: In member function ‘void KRdp::NetworkDetection::updateAverageRtt()’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-6.7.4/src/NetworkDetection.cpp:206:36: warning: comparison of unsigned expression in ‘< 0’ is always false [-Wtype-limits]
+  206 |     if (d->lastBandwithMeasurement < 0) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[ 62%] Building CXX object src/CMakeFiles/KRdp.dir/xdp_dbus_remotedesktop_interface.cpp.o
+[ 63%] Building CXX object src/CMakeFiles/KRdp.dir/xdp_dbus_screencast_interface.cpp.o
+[ 65%] Linking CXX shared library ../bin/libKRdp.so
+[ 86%] Built target KRdp
+[ 86%] Built target krdpserver_autogen_timestamp_deps
+[ 88%] Automatic MOC for target krdpserver
+[ 88%] Built target krdpserver_autogen
+[ 90%] Generating krdpserversettings.h, krdpserversettings.cpp
+[ 93%] Building CXX object server/CMakeFiles/krdpserver.dir/main.cpp.o
+[ 93%] Building CXX object server/CMakeFiles/krdpserver.dir/krdpserver_autogen/mocs_compilation.cpp.o
+[ 95%] Building CXX object server/CMakeFiles/krdpserver.dir/SessionController.cpp.o
+[ 96%] Building CXX object server/CMakeFiles/krdpserver.dir/krdpserversettings.cpp.o
+[ 98%] Linking CXX executable ../bin/krdpserver
+[100%] Built target krdpserver
+-- The C compiler identification is GNU 13.2.1
+-- The CXX compiler identification is GNU 13.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+--
+
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.13") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found Wayland_Client: /usr/lib64/libwayland-client.so (found version "1.26.0")
+-- Found Wayland_Server: /usr/lib64/libwayland-server.so (found version "1.26.0")
+-- Found Wayland_Cursor: /usr/lib64/libwayland-cursor.so (found version "1.26.0")
+-- Found Wayland_Egl: /usr/lib64/libwayland-egl.so (found version "18.1.0")
+-- Found Wayland: /usr/lib64/libwayland-client.so;/usr/lib64/libwayland-server.so;/usr/lib64/libwayland-cursor.so;/usr/lib64/libwayland-egl.so (found version "1.26.0")
+-- Found WaylandScanner: /usr/bin/wayland-scanner
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.13.1", minimum required is "0.9.0")
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.31.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.31.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.21")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.31.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6StatusNotifierItem: /usr/lib64/cmake/KF6StatusNotifierItem/KF6StatusNotifierItemConfig.cmake (found version "6.31.0")
+-- Found KF6Crash: /usr/lib64/cmake/KF6Crash/KF6CrashConfig.cmake (found version "6.31.0")
+-- Found KF6GuiAddons: /usr/lib64/cmake/KF6GuiAddons/KF6GuiAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found suitable version "6.31.0", minimum required is "6.26.0") found components: Config DBusAddons KCMUtils I18n CoreAddons StatusNotifierItem Crash GuiAddons
+-- Found XKB: /usr/lib64/libxkbcommon.so (found version "1.13.1")
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+-- Performing Test PAM_MESSAGE_CONST
+-- Performing Test PAM_MESSAGE_CONST - Success
+-- Found PAM: /usr/lib64/libpam.so;/usr/lib64/libdl.a
+-- Found org.kde.kirigamiaddons.formcard-QMLModule: TRUE
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * Qt6QuickTools (required version >= 6.11.2)
+ * OpenGL
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6WaylandScannerTools (required version >= 6.11.2)
+ * Qt6WaylandClient (required version >= 6.10.0)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6Qml (required version >= 6.10.0)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * WrapVulkanHeaders
+ * Qt6GuiTools (required version >= 6.11.2)
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6DBusTools (required version >= 6.11.2)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0), Extra CMake Modules., <https://commits.kde.org/extra-cmake-modules>
+ * Qt6GuiPrivate (required version >= 6.10.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6Config (required version >= 6.31.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6CoreAddons (required version >= 6.26.0)
+ * KF6StatusNotifierItem (required version >= 6.26.0)
+ * KF6Crash (required version >= 6.26.0)
+ * KF6GuiAddons (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * WinPR (required version >= 3.1)
+ * FreeRDP (required version >= 3.32.2)
+ * FreeRDP-Server (required version >= 3.1)
+ * KPipeWire (required version >= 5.27.80)
+ * XKB, XKB API common to servers and clients., <http://xkbcommon.org>
+ * Qt6Core
+ * Qt6Keychain, Provides support for secure credentials storage, <https://github.com/frankosterfeld/qtkeychain>
+ * PlasmaWaylandProtocols
+ * PAM, PAM Libraries, <https://www.kernel.org/pub/linux/libs/pam/>
+   Required for authentication
+ * Qt6
+ * org.kde.kirigamiaddons.formcard-QMLModule, QML module 'org.kde.kirigamiaddons.formcard' is a dependency.
+
+-- Configuring done (2.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/build
+[  3%] Generating qwayland-fake-input.cpp
+[  3%] Generating qwayland-fake-input.h
+[  6%] Generating qwayland-wayland.cpp
+[  6%] Generating qwayland-wayland.h
+[  8%] Generating qwayland-zkde-screencast-unstable-v1.cpp
+[  9%] Generating qwayland-zkde-screencast-unstable-v1.h
+[ 13%] Generating wayland-fake-input-protocol.c
+[ 13%] Generating wayland-fake-input-client-protocol.h
+[ 14%] Generating wayland-wayland-client-protocol.h
+[ 16%] Generating wayland-wayland-protocol.c
+[ 19%] Generating wayland-zkde-screencast-unstable-v1-protocol.c
+[ 19%] Generating wayland-zkde-screencast-unstable-v1-client-protocol.h
+[ 19%] Built target KRdp_autogen_timestamp_deps
+[ 21%] Automatic MOC for target KRdp
+AutoMoc warning
+---------------
+"SRC:/src/AbstractSession.cpp"
+includes the moc file "AbstractSession.moc", but does not contain a Q_OBJECT, Q_GADGET, Q_NAMESPACE, Q_NAMESPACE_EXPORT, Q_GADGET_EXPORT, Q_ENUM_NS, K_PLUGIN_FACTORY, K_PLUGIN_CLASS, K_PLUGIN_FACTORY_WITH_JSON or K_PLUGIN_CLASS_WITH_JSON macro.
+
+AutoMoc: /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/AbstractSession.cpp: note: No relevant classes found. No output generated.
+[ 21%] Built target KRdp_autogen
+[ 24%] Generating xdp_dbus_screencast_interface.cpp, xdp_dbus_screencast_interface.h
+[ 24%] Generating xdp_dbus_remotedesktop_interface.cpp, xdp_dbus_remotedesktop_interface.h
+[ 27%] Generating moc_xdp_dbus_remotedesktop_interface.cpp
+[ 27%] Generating moc_xdp_dbus_screencast_interface.cpp
+[ 31%] Building C object src/CMakeFiles/KRdp.dir/wayland-zkde-screencast-unstable-v1-protocol.c.o
+[ 31%] Building CXX object src/CMakeFiles/KRdp.dir/KRdp_autogen/mocs_compilation.cpp.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+[ 32%] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-zkde-screencast-unstable-v1.cpp.o
+[ 34%] Building C object src/CMakeFiles/KRdp.dir/wayland-fake-input-protocol.c.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+[ 36%] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-fake-input.cpp.o
+[ 37%] Building C object src/CMakeFiles/KRdp.dir/wayland-wayland-protocol.c.o
+cc1: warning: command-line option ‘-Wno-zero-as-null-pointer-constant’ is valid for C++/ObjC++ but not for C
+[ 39%] Building CXX object src/CMakeFiles/KRdp.dir/qwayland-wayland.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/KRdp.dir/screencasting.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/KRdp.dir/PlasmaScreencastV1Session.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KRdp.dir/AbstractSession.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/KRdp.dir/Clipboard.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/KRdp.dir/RdpConnection.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/Clipboard.cpp: In member function ‘uint32_t KRdp::Clipboard::Private::onClientFormatListResponse(const CLIPRDR_FORMAT_LIST_RESPONSE*)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/Clipboard.cpp:219:93: warning: unused parameter ‘formatListResponse’ [-Wunused-parameter]
+  219 | uint32_t Clipboard::Private::onClientFormatListResponse(const CLIPRDR_FORMAT_LIST_RESPONSE *formatListResponse)
+      |                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/Clipboard.cpp: In member function ‘uint32_t KRdp::Clipboard::Private::onClientFormatDataResponse(const CLIPRDR_FORMAT_DATA_RESPONSE*)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/Clipboard.cpp:258:21: warning: comparison of unsigned expression in ‘< 0’ is always false [-Wtype-limits]
+  258 |     if (nCharacters < 0) {
+      |         ~~~~~~~~~~~~^~~
+[ 49%] Building CXX object src/CMakeFiles/KRdp.dir/Server.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/KRdp.dir/InputHandler.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/KRdp.dir/PeerContext.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/KRdp.dir/PortalSession.cpp.o
+[ 55%] Building CXX object src/CMakeFiles/KRdp.dir/VideoStream.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.cpp: In member function ‘void KRdp::VideoStream::setActiveEncodingMode(EncodingMode)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.cpp:273:40: warning: ‘void PipeWireBaseEncodedStream::setNodeId(uint)’ is deprecated [-Wdeprecated-declarations]
+  273 |             d->encodedStream->setNodeId(d->nodeId);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+In file included from /usr/include/KF6/KPipeWire/pipewireencodedstream.h:11,
+                 from /usr/include/KF6/KPipeWire/PipeWireEncodedStream:1,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.h:14,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.cpp:10:
+/usr/include/KF6/KPipeWire/pipewirebaseencodedstream.h:53:31: note: declared here
+   53 |     KPIPEWIRE_DEPRECATED void setNodeId(uint nodeId);
+      |                               ^~~~~~~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.cpp:302:47: warning: ‘bool PipeWireSourceStream::createStream(uint, int)’ is deprecated [-Wdeprecated-declarations]
+  302 |             if (!d->sourceStream->createStream(d->nodeId, d->pipeWireFd)) {
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/KF6/KPipeWire/PipeWireSourceStream:1,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.h:15:
+/usr/include/KF6/KPipeWire/pipewiresourcestream.h:139:31: note: declared here
+  139 |     KPIPEWIRE_DEPRECATED bool createStream(uint nodeid, int fd);
+      |                               ^~~~~~~~~~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.cpp: In member function ‘void KRdp::VideoStream::setPipeWireSource(quint32, int)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.cpp:496:36: warning: ‘void PipeWireBaseEncodedStream::setNodeId(uint)’ is deprecated [-Wdeprecated-declarations]
+  496 |         d->encodedStream->setNodeId(nodeId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/usr/include/KF6/KPipeWire/pipewirebaseencodedstream.h:53:31: note: declared here
+   53 |     KPIPEWIRE_DEPRECATED void setNodeId(uint nodeId);
+      |                               ^~~~~~~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/VideoStream.cpp:503:43: warning: ‘bool PipeWireSourceStream::createStream(uint, int)’ is deprecated [-Wdeprecated-declarations]
+  503 |         if (!d->sourceStream->createStream(nodeId, d->pipeWireFd)) {
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/KF6/KPipeWire/pipewiresourcestream.h:139:31: note: declared here
+  139 |     KPIPEWIRE_DEPRECATED bool createStream(uint nodeid, int fd);
+      |                               ^~~~~~~~~~~~
+[ 57%] Building CXX object src/CMakeFiles/KRdp.dir/Cursor.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/Cursor.cpp: In function ‘QByteArray createXorMask(const QImage&)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/Cursor.cpp:19:21: warning: ‘void QImage::mirror(bool, bool)’ is deprecated: Use flip(Qt::Orientations) instead [-Wdeprecated-declarations]
+   19 |     converted.mirror(false, true);
+      |     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtGui/QImage:1,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/Cursor.h:11,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/Cursor.cpp:5:
+/usr/include/qt6/QtGui/qimage.h:226:10: note: declared here
+  226 |     void mirror(bool horizontally = false, bool vertically = true)
+      |          ^~~~~~
+[ 59%] Building CXX object src/CMakeFiles/KRdp.dir/NetworkDetection.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/KRdp.dir/krdp_logging.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/NetworkDetection.cpp: In member function ‘void KRdp::NetworkDetection::updateAverageRtt()’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/krdp-greeter-6.7.4/src/NetworkDetection.cpp:206:36: warning: comparison of unsigned expression in ‘< 0’ is always false [-Wtype-limits]
+  206 |     if (d->lastBandwithMeasurement < 0) {
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[ 62%] Building CXX object src/CMakeFiles/KRdp.dir/xdp_dbus_remotedesktop_interface.cpp.o
+[ 63%] Building CXX object src/CMakeFiles/KRdp.dir/xdp_dbus_screencast_interface.cpp.o
+[ 65%] Linking CXX shared library ../bin/libKRdp.so
+[ 86%] Built target KRdp
+[ 86%] Built target krdpserver_autogen_timestamp_deps
+[ 88%] Automatic MOC for target krdpserver
+[ 88%] Built target krdpserver_autogen
+[ 90%] Generating krdpserversettings.h, krdpserversettings.cpp
+[ 93%] Building CXX object server/CMakeFiles/krdpserver.dir/krdpserver_autogen/mocs_compilation.cpp.o
+[ 93%] Building CXX object server/CMakeFiles/krdpserver.dir/main.cpp.o
+[ 95%] Building CXX object server/CMakeFiles/krdpserver.dir/SessionController.cpp.o
+[ 96%] Building CXX object server/CMakeFiles/krdpserver.dir/krdpserversettings.cpp.o
+[ 98%] Linking CXX executable ../bin/krdpserver
+[100%] Built target krdpserver
+-- The C compiler identification is GNU 13.2.1
+-- The CXX compiler identification is GNU 13.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.13") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found KF6Config: /usr/lib64/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.31.0")
+-- Found KF6Package: /usr/lib64/cmake/KF6Package/KF6PackageConfig.cmake (found version "6.31.0")
+-- Found X11: /usr/include
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so
+-- Looking for XOpenDisplay in /usr/lib64/libX11.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Found KF6WindowSystem: /usr/lib64/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake (found version "6.31.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.21")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.31.0")
+-- Found KF6DBusAddons: /usr/lib64/cmake/KF6DBusAddons/KF6DBusAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6KCMUtils: /usr/lib64/cmake/KF6KCMUtils/KF6KCMUtilsConfig.cmake (found version "6.31.0")
+-- Found KF6Auth: /usr/lib64/cmake/KF6Auth/KF6AuthConfig.cmake (found version "6.31.0")
+-- Found KF6KIO: /usr/lib64/cmake/KF6KIO/KF6KIOConfig.cmake (found version "6.31.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found suitable version "6.31.0", minimum required is "6.26.0") found components: Config Package WindowSystem I18n DBusAddons KCMUtils Auth KIO CoreAddons
+-- Performing Test PAM_MESSAGE_CONST
+-- Performing Test PAM_MESSAGE_CONST - Success
+-- Found PAM: /usr/lib64/libpam.so;/usr/lib64/libdl.a
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'xau'
+--   Found xau, version 1.0.11
+-- Checking for module 'systemd'
+--   Found systemd, version 258
+-- Checking for module 'libsystemd'
+--   Found libsystemd, version 258
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+Package libcap was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libcap.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libcap', required by 'libsystemd', not found
+WallpaperFader.frag -> WallpaperFader.frag.qsb exposed as :/qt/qml/org/kde/plasma/login/wallpaper/shaders/WallpaperFader.frag.qsb
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6LinguistTools
+ * Qt6Test
+ * Qt6QuickTest
+ * Qt6ShaderToolsTools (required version >= 6.11.2)
+ * Qt6ShaderTools
+ * Qt6DBusTools (required version >= 6.11.2)
+ * Qt6DBus (required version >= 6.10.0)
+ * Qt6WidgetsTools (required version >= 6.11.2)
+ * Qt6QmlTools (required version >= 6.11.2)
+ * Qt6QuickTools (required version >= 6.11.2)
+ * WrapVulkanHeaders
+ * Qt6CoreTools (required version >= 6.11.2)
+ * Qt6GuiTools (required version >= 6.11.2)
+ * PkgConfig
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.26.0)
+ * Qt6
+ * Gettext
+ * KF6I18n (required version >= 6.26.0)
+ * KF6DBusAddons (required version >= 6.26.0)
+ * KF6Config (required version >= 6.31.0)
+ * KF6KCMUtils (required version >= 6.26.0)
+ * KF6Auth (required version >= 6.26.0)
+ * KF6KIO (required version >= 6.26.0)
+ * KF6 (required version >= 6.26.0)
+ * Qt6Core (required version >= 6.10.0)
+ * Qt6Qml (required version >= 6.10.0)
+ * Qt6Quick (required version >= 6.10.0)
+ * Qt6Gui (required version >= 6.10.0)
+ * PlasmaQuick (required version >= 6.7.0)
+ * LayerShellQt (required version >= 6.7.0)
+ * LibKWorkspace (required version >= 6.7.0)
+ * LibKLookAndFeel (required version >= 6.7.0)
+ * KF6Screen (required version >= 6.7.0)
+ * PAM
+
+-- Configuring done (2.2s)
+-- Generating done (0.1s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    PAM_OS_CONFIGURATION
+
+
+-- Build files have been written to: /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/plasma-login-manager-6.7.4/build
+[  4%] Generating mainconfig.h, mainconfig.cpp
+[  4%] Built target plasmalogin-common_autogen_timestamp_deps
+[  4%] Automatic MOC for target plasmalogin-common
+[  4%] Built target plasmalogin-common_autogen
+[  8%] Building CXX object src/common/CMakeFiles/plasmalogin-common.dir/SafeDataStream.cpp.o
+[  8%] Building CXX object src/common/CMakeFiles/plasmalogin-common.dir/plasmalogin-common_autogen/mocs_compilation.cpp.o
+[  8%] Building CXX object src/common/CMakeFiles/plasmalogin-common.dir/Session.cpp.o
+[ 12%] Building CXX object src/common/CMakeFiles/plasmalogin-common.dir/SocketWriter.cpp.o
+[ 16%] Building CXX object src/common/CMakeFiles/plasmalogin-common.dir/VirtualTerminal.cpp.o
+[ 16%] Building CXX object src/common/CMakeFiles/plasmalogin-common.dir/MainConfigLoader.cpp.o
+[ 20%] Building CXX object src/common/CMakeFiles/plasmalogin-common.dir/mainconfig.cpp.o
+[ 20%] Built target plasmalogin-common
+[ 20%] Built target plasmalogin_autogen_timestamp_deps
+[ 24%] Automatic MOC for target plasmalogin
+[ 24%] Built target plasmalogin_autogen
+[ 32%] Generating Login1Manager.cpp, Login1Manager.h
+[ 32%] Generating sessionadaptor.cpp, sessionadaptor.h
+[ 32%] Generating Login1Session.cpp, Login1Session.h
+[ 32%] Generating Login1Seat.cpp, Login1Seat.h
+[ 40%] Generating seatadaptor.cpp, seatadaptor.h
+[ 40%] Generating displaymanageradaptor.cpp, displaymanageradaptor.h
+[ 40%] Generating moc_Login1Manager.cpp
+[ 44%] Generating moc_Login1Seat.cpp
+[ 48%] Generating moc_Login1Session.cpp
+[ 52%] Generating moc_displaymanageradaptor.cpp
+[ 52%] Generating moc_sessionadaptor.cpp
+[ 52%] Generating moc_seatadaptor.cpp
+[ 60%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/__/auth/Auth.cpp.o
+[ 60%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/plasmalogin_autogen/mocs_compilation.cpp.o
+[ 60%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/__/auth/AuthPrompt.cpp.o
+[ 64%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/__/auth/AuthRequest.cpp.o
+[ 64%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/DaemonApp.cpp.o
+[ 68%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/Display.cpp.o
+In file included from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/plasma-login-manager-6.7.4/src/daemon/DaemonApp.cpp:23:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/plasma-login-manager-6.7.4/src/common/MessageHandler.h: In function ‘void PLASMALOGIN::standardLogger(QtMsgType, const QString&)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/plasma-login-manager-6.7.4/src/common/MessageHandler.h:72:22: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   72 |             file.open(QFile::Truncate | QFile::WriteOnly);
+      |             ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/qt6/QtCore/qdir.h:11,
+                 from /usr/include/qt6/QtCore/QtCore:92,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/plasma-login-manager-6.7.4/src/daemon/DaemonApp.h:21,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/plasma-login-manager-6.7.4/src/daemon/DaemonApp.cpp:17:
+/usr/include/qt6/QtCore/qfile.h:264:32: note: declared here
+  264 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/plasma-login-manager-6.7.4/src/common/MessageHandler.h:81:26: warning: ignoring return value of ‘virtual bool QFile::open(QIODeviceBase::OpenMode)’, declared with attribute ‘nodiscard’ [-Wunused-result]
+   81 |                 file.open(QFile::Truncate | QFile::WriteOnly);
+      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/qt6/QtCore/qfile.h:264:32: note: declared here
+  264 |     QFILE_MAYBE_NODISCARD bool open(OpenMode flags) override;
+      |                                ^~~~
+[ 72%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/DisplayManager.cpp.o
+[ 72%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/LogindDBusTypes.cpp.o
+[ 76%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/Greeter.cpp.o
+[ 76%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/Seat.cpp.o
+[ 80%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/SeatManager.cpp.o
+[ 84%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/SocketServer.cpp.o
+[ 84%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/displaymanageradaptor.cpp.o
+[ 88%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/seatadaptor.cpp.o
+[ 88%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/sessionadaptor.cpp.o
+[ 92%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/Login1Manager.cpp.o
+[ 96%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/Login1Seat.cpp.o
+[ 96%] Building CXX object src/daemon/CMakeFiles/plasmalogin.dir/Login1Session.cpp.o
+[100%] Linking CXX executable ../../bin/plasmalogin
+[100%] Built target plasmalogin
+-- The C compiler identification is GNU 13.2.1
+-- The CXX compiler identification is GNU 13.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/bin/python3.12 (found version "3.12.13") found components: Interpreter
+-- Looking for __GLIBC__
+-- Looking for __GLIBC__ - found
+-- Performing Test _OFFT_IS_64BIT
+-- Performing Test _OFFT_IS_64BIT - Success
+-- Performing Test HAVE_DATE_TIME
+-- Performing Test HAVE_DATE_TIME - Success
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found WrapVulkanHeaders: /usr/include
+-- Found OpenGL: /usr/lib64/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Found XKB: /usr/lib64/libxkbcommon.so (found suitable version "1.13.1", minimum required is "0.9.0")
+-- Found Gettext: /usr/bin/msgmerge (found version "0.21")
+-- Found KF6I18n: /usr/lib64/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.31.0")
+-- Found KF6CoreAddons: /usr/lib64/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found version "6.31.0") found components: I18n CoreAddons
+-- Performing Test HAVE_EGL
+-- Performing Test HAVE_EGL - Success
+-- Found EGL: /usr/include (found version "1.5")
+-- Checking for module 'libpipewire-0.3>=0.3.33'
+--   Found libpipewire-0.3, version 1.4.7
+-- Checking for module 'libavcodec'
+--   Found libavcodec, version 61.19.101
+Package libswresample was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libswresample.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libswresample', required by 'libavcodec', not found
+Package libswresample was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libswresample.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libswresample', required by 'libavcodec', not found
+Package libswresample was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libswresample.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libswresample', required by 'libavcodec', not found
+Package libswresample was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libswresample.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libswresample', required by 'libavcodec', not found
+-- Checking for module 'libavutil'
+--   Found libavutil, version 59.39.100
+-- Checking for module 'libavformat'
+--   Found libavformat, version 61.7.103
+Package libswresample was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libswresample.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libswresample', required by 'libavcodec', not found
+Package libswresample was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libswresample.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libswresample', required by 'libavcodec', not found
+Package libswresample was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libswresample.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libswresample', required by 'libavcodec', not found
+Package libswresample was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libswresample.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libswresample', required by 'libavcodec', not found
+-- Checking for module 'libavfilter'
+--   Found libavfilter, version 10.5.100
+Package libpostproc was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libpostproc.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libpostproc', required by 'libavfilter', not found
+Package libpostproc was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libpostproc.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libpostproc', required by 'libavfilter', not found
+Package libpostproc was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libpostproc.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libpostproc', required by 'libavfilter', not found
+Package libpostproc was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libpostproc.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libpostproc', required by 'libavfilter', not found
+-- Checking for module 'gbm'
+--   Found gbm, version 26.1.8
+-- Checking for module 'libswscale'
+--   Found libswscale, version 8.3.100
+Package xdmcp was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xdmcp.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xdmcp', required by 'xcb', not found
+Package xdmcp was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xdmcp.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xdmcp', required by 'xcb', not found
+Package xdmcp was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xdmcp.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xdmcp', required by 'xcb', not found
+Package xdmcp was not found in the pkg-config search path.
+Perhaps you should add the directory containing `xdmcp.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'xdmcp', required by 'xcb', not found
+-- Found epoxy: /usr/lib64/libepoxy.so (found suitable version "1.5.10", minimum required is "1.3")
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+-- Found Libdrm: /usr/lib64/libdrm.so (found suitable version "2.4.134", minimum required is "2.4.62")
+-- Checking for module 'libva'
+--   Found libva, version 1.24.0
+-- Checking for module 'libva-drm'
+--   Found libva-drm, version 1.24.0
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Configuring done (2.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/build
+[  9%] Populating .qmlls.ini file at /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/build/.qt/.qmlls.build.ini
+[  9%] Copying KPipeWire qml resources into build dir
+[  9%] Built target KPipeWire_copy_res
+[ 14%] Copying KPipeWire qml sources into build dir
+[ 14%] Built target generate_qmlls_build_ini_file
+[ 14%] Built target KPipeWire_copy_qml
+[ 14%] Built target KPipeWire_autogen_timestamp_deps
+[ 19%] Automatic MOC for target KPipeWire
+[ 19%] Built target KPipeWire_autogen
+[ 28%] Running AUTOMOC file extraction for target KPipeWire
+[ 28%] Running rcc for resource qmake_org_kde_pipewire
+[ 28%] Running moc --collect-json for target KPipeWire
+[ 33%] Generating meta_types/qt6kpipewire_metatypes.json
+[ 38%] Automatic QML type registration for target KPipeWire
+[ 47%] Building CXX object src/CMakeFiles/KPipeWire.dir/KPipeWire_autogen/mocs_compilation.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/KPipeWire.dir/pipewirecore.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/KPipeWire.dir/pipewiresourceitem.cpp.o
+[ 57%] Building CXX object src/CMakeFiles/KPipeWire.dir/pipewiresourcestream.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewiresourceitem.cpp: In member function ‘void PipeWireSourceItem::refresh()’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewiresourceitem.cpp:156:48: warning: ‘bool PipeWireSourceStream::createStream(uint, int)’ is deprecated [-Wdeprecated-declarations]
+  156 |             created = d->m_stream->createStream(d->m_nodeId, d->m_fd.value_or(0));
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/glhelpers.h:9,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewiresourceitem.cpp:9:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewiresourcestream.h:139:31: note: declared here
+  139 |     KPIPEWIRE_DEPRECATED bool createStream(uint nodeid, int fd);
+      |                               ^~~~~~~~~~~~
+[ 57%] Building CXX object src/CMakeFiles/KPipeWire.dir/rendernodecontext.cpp.o
+[ 61%] Building CXX object src/CMakeFiles/KPipeWire.dir/glhelpers.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/KPipeWire.dir/pwhelpers.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/KPipeWire.dir/vaapiutils.cpp.o
+[ 76%] Building CXX object src/CMakeFiles/KPipeWire.dir/logging.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/KPipeWire.dir/logging_vaapi.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/KPipeWire.dir/kpipewire_qmltyperegistrations.cpp.o
+[ 90%] Building CXX object src/CMakeFiles/KPipeWire.dir/.qt/rcc/qrc_qmake_org_kde_pipewire.cpp.o
+[ 95%] Linking CXX shared library ../bin/libKPipeWire.so
+[100%] Built target KPipeWire
+[  3%] Built target generate_qmlls_build_ini_file
+[  3%] Copying KPipeWireRecord qml resources into build dir
+[  3%] Built target KPipeWireRecord_copy_res
+[  5%] Built target KPipeWire_copy_res
+[  7%] Built target KPipeWire_copy_qml
+[  8%] Copying KPipeWireRecord qml sources into build dir
+[  8%] Built target KPipeWire_autogen_timestamp_deps
+[  8%] Built target KPipeWireRecord_copy_qml
+[ 10%] Built target KPipeWire_autogen
+[ 41%] Built target KPipeWire
+[ 41%] Built target KPipeWireDmaBuf_autogen_timestamp_deps
+[ 42%] Automatic MOC for target KPipeWireDmaBuf
+[ 42%] Built target KPipeWireDmaBuf_autogen
+[ 44%] Building CXX object src/CMakeFiles/KPipeWireDmaBuf.dir/KPipeWireDmaBuf_autogen/mocs_compilation.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/KPipeWireDmaBuf.dir/dmabufhandler.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/KPipeWireDmaBuf.dir/rendernodecontext.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/KPipeWireDmaBuf.dir/logging_dmabuf.cpp.o
+[ 50%] Linking CXX shared library ../bin/libKPipeWireDmaBuf.so
+[ 51%] Built target KPipeWireDmaBuf
+[ 51%] Built target KPipeWireRecord_autogen_timestamp_deps
+[ 53%] Automatic MOC for target KPipeWireRecord
+[ 53%] Built target KPipeWireRecord_autogen
+[ 55%] Running rcc for resource qmake_org_kde_pipewire_record
+[ 57%] Running AUTOMOC file extraction for target KPipeWireRecord
+[ 58%] Running moc --collect-json for target KPipeWireRecord
+[ 60%] Generating meta_types/qt6kpipewirerecord_metatypes.json
+[ 62%] Automatic QML type registration for target KPipeWireRecord
+[ 66%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/logging_record.cpp.o
+[ 66%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/KPipeWireRecord_autogen/mocs_compilation.cpp.o
+[ 67%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/logging_frame_statistics.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/pipewirebaseencodedstream.cpp.o
+[ 69%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/logging_libav.cpp.o
+[ 71%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/pipewireencodedstream.cpp.o
+[ 73%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/pipewirerecord.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewireencodedstream.cpp: In member function ‘virtual std::unique_ptr<PipeWireProduce> PipeWireEncodedStream::makeProduce()’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewireencodedstream.cpp:87:63: warning: ‘uint PipeWireBaseEncodedStream::nodeId() const’ is deprecated [-Wdeprecated-declarations]
+   87 |     auto produce = new PipeWireEncodeProduce(encoder(), nodeId(), objectSerial(), fd(), maxFramerate(), this);
+      |                                                         ~~~~~~^~
+In file included from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewireencodedstream.h:11,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewireencodedstream.cpp:7:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewirebaseencodedstream.h:54:31: note: declared here
+   54 |     KPIPEWIRE_DEPRECATED uint nodeId() const;
+      |                               ^~~~~~
+[ 75%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/pipewireproduce.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewirerecord.cpp: In member function ‘virtual std::unique_ptr<PipeWireProduce> PipeWireRecord::makeProduce()’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewirerecord.cpp:191:69: warning: ‘uint PipeWireBaseEncodedStream::nodeId() const’ is deprecated [-Wdeprecated-declarations]
+  191 |     return std::make_unique<PipeWireRecordProduce>(encoder(), nodeId(), objectSerial(), fd(), maxFramerate(), d->m_output);
+      |                                                               ~~~~~~^~
+In file included from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewirerecord.h:12,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewirerecord.cpp:7:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewirebaseencodedstream.h:54:31: note: declared here
+   54 |     KPIPEWIRE_DEPRECATED uint nodeId() const;
+      |                               ^~~~~~
+[ 76%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/encoder.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewireproduce.cpp: In member function ‘virtual void PipeWireProduce::initialize()’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewireproduce.cpp:73:41: warning: ‘bool PipeWireSourceStream::createStream(uint, int)’ is deprecated [-Wdeprecated-declarations]
+   73 |         created = m_stream->createStream(m_nodeId, m_fd);
+      |                   ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+In file included from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewireproduce_p.h:36,
+                 from /home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewireproduce.cpp:7:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/pipewiresourcestream.h:139:31: note: declared here
+  139 |     KPIPEWIRE_DEPRECATED bool createStream(uint nodeid, int fd);
+      |                               ^~~~~~~~~~~~
+[ 78%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/gifencoder.cpp.o
+[ 80%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/h264vaapiencoder.cpp.o
+[ 82%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/libx264encoder.cpp.o
+[ 83%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/libopenh264encoder.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/libvpxencoder.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/libvpxvp9encoder.cpp.o
+[ 87%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/libwebpencoder.cpp.o
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/libvpxvp9encoder.cpp: In member function ‘virtual bool LibVpxVp9Encoder::initialize(const QSize&)’:
+/home/labadmin/plasma-rdp-terminal-server/build/pve-alt-k-sources/kpipewire-6.7.4/src/libvpxvp9encoder.cpp:56:16: warning: unused variable ‘area’ [-Wunused-variable]
+   56 |     const auto area = size.width() * size.height();
+      |                ^~~~
+[ 89%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/kpipewirerecord_qmltyperegistrations.cpp.o
+[ 91%] Building CXX object src/CMakeFiles/KPipeWireRecord.dir/.qt/rcc/qrc_qmake_org_kde_pipewire_record.cpp.o
+[ 92%] Linking CXX shared library ../bin/libKPipeWireRecord.so
+[100%] Built target KPipeWireRecord
+surface=1 size=256x192 decode=1 corners_painted=0 policy=old-partial
+surface=2 size=384x256 decode=1 corners_painted=0 policy=old-partial
+surface=3 size=128x128 decode=1 corners_painted=0 policy=old-partial
+surface=1 size=256x192 decode=1 corners_painted=1 policy=full-first-frame
+surface=2 size=384x256 decode=1 corners_painted=1 policy=full-first-frame
+surface=3 size=128x128 decode=1 corners_painted=1 policy=full-first-frame
+In file included from /usr/include/winpr3/winpr/winpr.h:22,
+                 from /usr/include/winpr3/winpr/stream.h:26,
+                 from /usr/include/freerdp3/freerdp/freerdp.h:25,
+                 from build/pve-alt-k-sources/krdp-6.7.4/src/RdpConnection.h:13,
+                 from /home/labadmin/plasma-rdp-terminal-server/tests/video-owner-thread.cpp:10:
+/usr/include/winpr3/winpr/sspi.h:942:38: warning: ‘SEC_WINPR_NTLM_SETTINGS’ is deprecated: [deprecated] [since 3.31.0] use SEC_WINPR_NTLM_SETTINGS_V2 [-Wdeprecated-declarations]
+  942 |             SEC_WINPR_NTLM_SETTINGS* ntlmSettings;
+      |                                      ^~~~~~~~~~~~
+/usr/include/winpr3/winpr/platform.h:601:78: note: in definition of macro ‘WINPR_DEPRECATED_VAR’
+  601 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/include/winpr3/winpr/sspi.h:922:7: note: declared here
+  922 |     } SEC_WINPR_NTLM_SETTINGS);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/winpr3/winpr/platform.h:601:78: note: in definition of macro ‘WINPR_DEPRECATED_VAR’
+  601 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/include/winpr3/winpr/sspi.h:943:42: warning: ‘SEC_WINPR_KERBEROS_SETTINGS’ is deprecated: [deprecated] [since 3.31.0] use SEC_WINPR_KERBEROS_SETTINGS_V2 [-Wdeprecated-declarations]
+  943 |             SEC_WINPR_KERBEROS_SETTINGS* kerberosSettings;
+      |                                          ^~~~~~~~~~~~~~~~
+/usr/include/winpr3/winpr/platform.h:601:78: note: in definition of macro ‘WINPR_DEPRECATED_VAR’
+  601 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/include/winpr3/winpr/sspi.h:937:7: note: declared here
+  937 |     } SEC_WINPR_KERBEROS_SETTINGS);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/winpr3/winpr/platform.h:601:78: note: in definition of macro ‘WINPR_DEPRECATED_VAR’
+  601 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+suppress_output_owner_thread=1 close_owner_thread=1
+In file included from /usr/include/winpr3/winpr/winpr.h:22,
+                 from /usr/include/winpr3/winpr/stream.h:26,
+                 from /usr/include/freerdp3/freerdp/freerdp.h:25,
+                 from build/pve-alt-k-sources/krdp-6.7.4/src/InputHandler.h:12,
+                 from /home/labadmin/plasma-rdp-terminal-server/tests/input-button-position.cpp:9:
+/usr/include/winpr3/winpr/sspi.h:942:38: warning: ‘SEC_WINPR_NTLM_SETTINGS’ is deprecated: [deprecated] [since 3.31.0] use SEC_WINPR_NTLM_SETTINGS_V2 [-Wdeprecated-declarations]
+  942 |             SEC_WINPR_NTLM_SETTINGS* ntlmSettings;
+      |                                      ^~~~~~~~~~~~
+/usr/include/winpr3/winpr/platform.h:601:78: note: in definition of macro ‘WINPR_DEPRECATED_VAR’
+  601 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/include/winpr3/winpr/sspi.h:922:7: note: declared here
+  922 |     } SEC_WINPR_NTLM_SETTINGS);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/winpr3/winpr/platform.h:601:78: note: in definition of macro ‘WINPR_DEPRECATED_VAR’
+  601 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/include/winpr3/winpr/sspi.h:943:42: warning: ‘SEC_WINPR_KERBEROS_SETTINGS’ is deprecated: [deprecated] [since 3.31.0] use SEC_WINPR_KERBEROS_SETTINGS_V2 [-Wdeprecated-declarations]
+  943 |             SEC_WINPR_KERBEROS_SETTINGS* kerberosSettings;
+      |                                          ^~~~~~~~~~~~~~~~
+/usr/include/winpr3/winpr/platform.h:601:78: note: in definition of macro ‘WINPR_DEPRECATED_VAR’
+  601 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+/usr/include/winpr3/winpr/sspi.h:937:7: note: declared here
+  937 |     } SEC_WINPR_KERBEROS_SETTINGS);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/winpr3/winpr/platform.h:601:78: note: in definition of macro ‘WINPR_DEPRECATED_VAR’
+  601 | #define WINPR_DEPRECATED_VAR(text, obj) [[deprecated("[deprecated] " text)]] obj
+      |                                                                              ^~~
+button_position_press=1 release_at_origin=1 extended=1 motion=1
+Staged files in build/pve-alt-k-stage
